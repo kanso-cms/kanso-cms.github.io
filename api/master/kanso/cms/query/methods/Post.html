@@ -1,0 +1,1011 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>kanso\cms\query\methods\Post | Kanso API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:kanso_cms_query_methods_Post" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../../master/index.html" data-version="master">master branch</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Kanso API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">trait</span></li>
+                        <li><a href="../../../../kanso.html">kanso</a></li><li class="backslash">\</li><li><a href="../../../../kanso/cms.html">cms</a></li><li class="backslash">\</li><li><a href="../../../../kanso/cms/query.html">query</a></li><li class="backslash">\</li><li><a href="../../../../kanso/cms/query/methods.html">methods</a></li><li class="backslash">\</li><li>Post</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Post
+                
+        </h1>
+    </div>
+
+    <p>    trait
+    <strong>Post</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>CMS Query post methods.</p>                                </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int|false
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_post_id">the_post_id</a>()
+        
+                                            <p>Get the current post id.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_excerpt">the_excerpt</a>(int $post_id = null)
+        
+                                            <p>Get the excerpt of the current post or a post by id.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_post_status">the_post_status</a>(int $post_id = null)
+        
+                                            <p>Get the status of the current post or post by id.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_post_type">the_post_type</a>(int $post_id = null)
+        
+                                            <p>Get the type of the current post or post by id.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_post_meta">the_post_meta</a>(int $post_id = null)
+        
+                                            <p>Get the meta for the current post or post by id.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_time">the_time</a>(string $format = &#039;U&#039;, int $post_id = null)
+        
+                                            <p>Get the created time of the current post or a post by id.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_modified_time">the_modified_time</a>(string $format = &#039;U&#039;, int $post_id = null)
+        
+                                            <p>Get the last modified time of the current post or a post by id.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_has_post_thumbnail">has_post_thumbnail</a>(int $post_id = null)
+        
+                                            <p>Does the current post or a post by id have a thumbnail attachment.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_title">the_title</a>(int $post_id = null)
+        
+                                            <p>Get the title of the current post or a post by id.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_permalink">the_permalink</a>(int $post_id = null)
+        
+                                            <p>Get the full URL of the current post or a post by id.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_slug">the_slug</a>(int $post_id = null)
+        
+                                            <p>Get the slug of the current post or a post by id.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_content">the_content</a>(int $post_id = null, bool $raw = false)
+        
+                                            <p>Gets the HTML content for current post or a post by id.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/cms/wrappers/Media.html"><abbr title="kanso\cms\wrappers\Media">Media</abbr></a>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_post_thumbnail">the_post_thumbnail</a>(int $post_id = null)
+        
+                                            <p>Gets an attachment object for the current post or a post by id.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_post_thumbnail_src">the_post_thumbnail_src</a>(int $post_id = null, string $size = &#039;original&#039;)
+        
+                                            <p>Gets the thumbnail src for the current post or a post by id in a given size.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_display_thumbnail">display_thumbnail</a>(<a href="../../../../kanso/cms/wrappers/Media.html"><abbr title="kanso\cms\wrappers\Media">Media</abbr></a> $thumbnail, string $size = &#039;original&#039;, int $width = &#039;&#039;, int $height = &#039;&#039;, string $classes = &#039;&#039;, string $id = &#039;&#039;)
+        
+                                            <p>Prints an HTML img tag from Kanso attachment object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_all_static_pages">all_static_pages</a>(bool $published = true)
+        
+                                            <p>Get an array of POST objects of all static pages.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_all_custom_posts">all_custom_posts</a>(string $type, bool $published = true)
+        
+                                            <p>Get an array of POST objects of custom post types by type.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_the_post_id">
+        <div class="location">at         line 25</div>
+        <code>                    int|false
+    <strong>the_post_id</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the current post id.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|false</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_excerpt">
+        <div class="location">at         line 42</div>
+        <code>                    string|null
+    <strong>the_excerpt</strong>(int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the excerpt of the current post or a post by id.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td>Post id or null for current post (optional) (Default NULL)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_post_status">
+        <div class="location">at         line 71</div>
+        <code>                    string|null
+    <strong>the_post_status</strong>(int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the status of the current post or post by id.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td>Post id or null for current post (optional) (Default NULL)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_post_type">
+        <div class="location">at         line 100</div>
+        <code>                    string|null
+    <strong>the_post_type</strong>(int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the type of the current post or post by id.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td>Post id or null for current post (optional) (Default NULL)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_post_meta">
+        <div class="location">at         line 129</div>
+        <code>                    array
+    <strong>the_post_meta</strong>(int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the meta for the current post or post by id.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td>Post id or null for current post (optional) (Default NULL)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_time">
+        <div class="location">at         line 159</div>
+        <code>                    string|null
+    <strong>the_time</strong>(string $format = &#039;U&#039;, int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the created time of the current post or a post by id.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$format</td>
+                <td>PHP date() string format (optional) (Default 'U')</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td>Post id or null for current post (optional) (Default NULL)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_modified_time">
+        <div class="location">at         line 189</div>
+        <code>                    string|null
+    <strong>the_modified_time</strong>(string $format = &#039;U&#039;, int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the last modified time of the current post or a post by id.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$format</td>
+                <td>PHP date() string format (optional) (Default 'U')</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td>Post id or null for current post (optional) (Default NULL)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_has_post_thumbnail">
+        <div class="location">at         line 218</div>
+        <code>                    bool
+    <strong>has_post_thumbnail</strong>(int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Does the current post or a post by id have a thumbnail attachment.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td>Post id or null for current post (optional) (Default NULL)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_title">
+        <div class="location">at         line 247</div>
+        <code>                    string|null
+    <strong>the_title</strong>(int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the title of the current post or a post by id.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td>Post id or null for current post (optional) (Default NULL)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_permalink">
+        <div class="location">at         line 281</div>
+        <code>                    string|null
+    <strong>the_permalink</strong>(int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the full URL of the current post or a post by id.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td>Post id or null for current post (optional) (Default NULL)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_slug">
+        <div class="location">at         line 314</div>
+        <code>                    string|null
+    <strong>the_slug</strong>(int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the slug of the current post or a post by id.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td>Post id or null for current post (optional) (Default NULL)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_content">
+        <div class="location">at         line 344</div>
+        <code>                    string
+    <strong>the_content</strong>(int $post_id = null, bool $raw = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the HTML content for current post or a post by id.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td>Post id or null for current post (optional) (Default NULL)</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$raw</td>
+                <td>Return raw content not HTML formatted (optional) (default false)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_post_thumbnail">
+        <div class="location">at         line 385</div>
+        <code>                    <a href="../../../../kanso/cms/wrappers/Media.html"><abbr title="kanso\cms\wrappers\Media">Media</abbr></a>|null
+    <strong>the_post_thumbnail</strong>(int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets an attachment object for the current post or a post by id.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td>Post id or null for current post (optional) (Default NULL)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/cms/wrappers/Media.html"><abbr title="kanso\cms\wrappers\Media">Media</abbr></a>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_post_thumbnail_src">
+        <div class="location">at         line 414</div>
+        <code>                    string|null
+    <strong>the_post_thumbnail_src</strong>(int $post_id = null, string $size = &#039;original&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the thumbnail src for the current post or a post by id in a given size.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td>Post id or null for current post (optional) (Default NULL)</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$size</td>
+                <td>The post thumbnail size "small"|"medium"|"large"|"original" (optional) (Default 'original')</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_display_thumbnail">
+        <div class="location">at         line 437</div>
+        <code>                    string
+    <strong>display_thumbnail</strong>(<a href="../../../../kanso/cms/wrappers/Media.html"><abbr title="kanso\cms\wrappers\Media">Media</abbr></a> $thumbnail, string $size = &#039;original&#039;, int $width = &#039;&#039;, int $height = &#039;&#039;, string $classes = &#039;&#039;, string $id = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Prints an HTML img tag from Kanso attachment object.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../kanso/cms/wrappers/Media.html"><abbr title="kanso\cms\wrappers\Media">Media</abbr></a></td>
+                <td>$thumbnail</td>
+                <td>The attachment to print</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$size</td>
+                <td>The post thumbnail size "small"|"medium"|"large"|"original" (optional) (Default 'original')</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$width</td>
+                <td>The img tag's width attribute  (optional) (Default '')</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$height</td>
+                <td>The img tag's height attribute (optional) (Default '')</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$classes</td>
+                <td>The img tag's class attribute  (optional) (Default '')</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td>The img tag's id attribute (optional) (Default '')</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_all_static_pages">
+        <div class="location">at         line 461</div>
+        <code>                    array
+    <strong>all_static_pages</strong>(bool $published = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get an array of POST objects of all static pages.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$published</td>
+                <td>Return only published posts (optional) (default true)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_all_custom_posts">
+        <div class="location">at         line 473</div>
+        <code>                    array
+    <strong>all_custom_posts</strong>(string $type, bool $published = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get an array of POST objects of custom post types by type.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$published</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

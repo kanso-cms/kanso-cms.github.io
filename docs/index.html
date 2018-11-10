@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="description" content="Description">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
+    <style type="text/css">
+        .sidebar .app-name img
+        {
+            width: 100%;
+            max-width: 48px;
+        }
+        .markdown-section li > a
+        {
+            font-weight: 400;
+        }
+        .markdown-section blockquote
+        {
+            border-left: 4px solid #daf0fd;
+            margin: 2em 0;
+            padding-left: 20px;
+            background-color: #DBF0FC;
+            color: #5388C1;
+            padding: 3px 20px;
+        }
+        .markdown-section blockquote code
+        {
+            background: #acc7e4;
+            color: #3f6896;
+        }
+        .markdown-section blockquote a
+        {
+            color: #354e69;
+        }
+    </style>
+</head>
+<body>
+    <div id="app"></div>
+    <script>
+        window.$docsify = {
+            name: 'Kanso',
+            nameLink: '/#/readme.md',
+            logo: '_media/logo.svg',
+            mergeNavbar: true,
+            auto2top: true,
+            coverpage: false,
+            executeScript: true,
+            loadSidebar: true,
+            loadNavbar: true,
+            mergeNavbar: true,
+            maxLevel: 4,
+            subMaxLevel: 2,
+            auto2top: true,
+            themeColor: '#62c4b6',
+            
+        }
+    </script>
+    <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
+    <script src="//unpkg.com/prismjs/components/prism-bash.min.js"></script>
+    <script src="//unpkg.com/prismjs/components/prism-php.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,889 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>kanso\framework\http\response\Response | Kanso API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:kanso_framework_http_response_Response" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../../master/index.html" data-version="master">master branch</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Kanso API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../kanso.html">kanso</a></li><li class="backslash">\</li><li><a href="../../../../kanso/framework.html">framework</a></li><li class="backslash">\</li><li><a href="../../../../kanso/framework/http.html">http</a></li><li class="backslash">\</li><li><a href="../../../../kanso/framework/http/response.html">response</a></li><li class="backslash">\</li><li>Response</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Response
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Response</strong>
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>HTTP Response manager.</p>                                </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../../kanso/framework/http/response/Protocol.html"><abbr title="kanso\framework\http\response\Protocol">Protocol</abbr></a> $protocol, <a href="../../../../kanso/framework/http/response/Format.html"><abbr title="kanso\framework\http\response\Format">Format</abbr></a> $format, <a href="../../../../kanso/framework/http/response/Body.html"><abbr title="kanso\framework\http\response\Body">Body</abbr></a> $body, <a href="../../../../kanso/framework/http/response/Status.html"><abbr title="kanso\framework\http\response\Status">Status</abbr></a> $status, <a href="../../../../kanso/framework/http/response/Headers.html"><abbr title="kanso\framework\http\response\Headers">Headers</abbr></a> $headers, <a href="../../../../kanso/framework/http/cookie/Cookie.html"><abbr title="kanso\framework\http\cookie\Cookie">Cookie</abbr></a> $cookie, <a href="../../../../kanso/framework/http/session/Session.html"><abbr title="kanso\framework\http\session\Session">Session</abbr></a> $session, <a href="../../../../kanso/framework/http/response/Cache.html"><abbr title="kanso\framework\http\response\Cache">Cache</abbr></a> $cache, <a href="../../../../kanso/framework/http/response/CDN.html"><abbr title="kanso\framework\http\response\CDN">CDN</abbr></a> $CDN, <a href="../../../../kanso/framework/mvc/view/View.html"><abbr title="kanso\framework\mvc\view\View">View</abbr></a> $view, string $requestMethod)
+        
+                                            <p>Constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/http/response/Protocol.html"><abbr title="kanso\framework\http\response\Protocol">Protocol</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_protocol">protocol</a>()
+        
+                                            <p>Get the protocol object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/http/response/Body.html"><abbr title="kanso\framework\http\response\Body">Body</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_body">body</a>()
+        
+                                            <p>Get the body object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/http/response/Format.html"><abbr title="kanso\framework\http\response\Format">Format</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_format">format</a>()
+        
+                                            <p>Get the format object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/http/response/Status.html"><abbr title="kanso\framework\http\response\Status">Status</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_status">status</a>()
+        
+                                            <p>Get the status object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/http/response/Headers.html"><abbr title="kanso\framework\http\response\Headers">Headers</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_headers">headers</a>()
+        
+                                            <p>Get the headers object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/http/response/Cache.html"><abbr title="kanso\framework\http\response\Cache">Cache</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_cache">cache</a>()
+        
+                                            <p>Get the cache object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/http/cookie/Cookie.html"><abbr title="kanso\framework\http\cookie\Cookie">Cookie</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_cookie">cookie</a>()
+        
+                                            <p>Get the cookie manager.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/http/session/Session.html"><abbr title="kanso\framework\http\session\Session">Session</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_session">session</a>()
+        
+                                            <p>Get the session manager.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/http/response/Cache.html"><abbr title="kanso\framework\http\response\Cache">Cache</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_CDN">CDN</a>()
+        
+                                            <p>Get the CDN object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/mvc/view/View.html"><abbr title="kanso\framework\mvc\view\View">View</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_view">view</a>()
+        
+                                            <p>Get the view object.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_finalize">finalize</a>()
+        
+                                            <p>Finalize all objects before sending the response.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_send">send</a>()
+        
+                                            <p>Send the HTTP response.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_redirect">redirect</a>(string $url, int $status = 302)
+        
+                                            <p>Immediately send a redirect response.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_notFound">notFound</a>()
+        
+                                            <p>Send a not found response.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_forbidden">forbidden</a>()
+        
+                                            <p>Send a forbidden response.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_invalidToken">invalidToken</a>()
+        
+                                            <p>Send a invalid token response.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_methodNotAllowed">methodNotAllowed</a>()
+        
+                                            <p>Send a invalid token response.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         line 118</div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../../kanso/framework/http/response/Protocol.html"><abbr title="kanso\framework\http\response\Protocol">Protocol</abbr></a> $protocol, <a href="../../../../kanso/framework/http/response/Format.html"><abbr title="kanso\framework\http\response\Format">Format</abbr></a> $format, <a href="../../../../kanso/framework/http/response/Body.html"><abbr title="kanso\framework\http\response\Body">Body</abbr></a> $body, <a href="../../../../kanso/framework/http/response/Status.html"><abbr title="kanso\framework\http\response\Status">Status</abbr></a> $status, <a href="../../../../kanso/framework/http/response/Headers.html"><abbr title="kanso\framework\http\response\Headers">Headers</abbr></a> $headers, <a href="../../../../kanso/framework/http/cookie/Cookie.html"><abbr title="kanso\framework\http\cookie\Cookie">Cookie</abbr></a> $cookie, <a href="../../../../kanso/framework/http/session/Session.html"><abbr title="kanso\framework\http\session\Session">Session</abbr></a> $session, <a href="../../../../kanso/framework/http/response/Cache.html"><abbr title="kanso\framework\http\response\Cache">Cache</abbr></a> $cache, <a href="../../../../kanso/framework/http/response/CDN.html"><abbr title="kanso\framework\http\response\CDN">CDN</abbr></a> $CDN, <a href="../../../../kanso/framework/mvc/view/View.html"><abbr title="kanso\framework\mvc\view\View">View</abbr></a> $view, string $requestMethod)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../kanso/framework/http/response/Protocol.html"><abbr title="kanso\framework\http\response\Protocol">Protocol</abbr></a></td>
+                <td>$protocol</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../kanso/framework/http/response/Format.html"><abbr title="kanso\framework\http\response\Format">Format</abbr></a></td>
+                <td>$format</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../kanso/framework/http/response/Body.html"><abbr title="kanso\framework\http\response\Body">Body</abbr></a></td>
+                <td>$body</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../kanso/framework/http/response/Status.html"><abbr title="kanso\framework\http\response\Status">Status</abbr></a></td>
+                <td>$status</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../kanso/framework/http/response/Headers.html"><abbr title="kanso\framework\http\response\Headers">Headers</abbr></a></td>
+                <td>$headers</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../kanso/framework/http/cookie/Cookie.html"><abbr title="kanso\framework\http\cookie\Cookie">Cookie</abbr></a></td>
+                <td>$cookie</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../kanso/framework/http/session/Session.html"><abbr title="kanso\framework\http\session\Session">Session</abbr></a></td>
+                <td>$session</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../kanso/framework/http/response/Cache.html"><abbr title="kanso\framework\http\response\Cache">Cache</abbr></a></td>
+                <td>$cache</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../kanso/framework/http/response/CDN.html"><abbr title="kanso\framework\http\response\CDN">CDN</abbr></a></td>
+                <td>$CDN</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../kanso/framework/mvc/view/View.html"><abbr title="kanso\framework\mvc\view\View">View</abbr></a></td>
+                <td>$view</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$requestMethod</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_protocol">
+        <div class="location">at         line 153</div>
+        <code>                    <a href="../../../../kanso/framework/http/response/Protocol.html"><abbr title="kanso\framework\http\response\Protocol">Protocol</abbr></a>
+    <strong>protocol</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the protocol object.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/http/response/Protocol.html"><abbr title="kanso\framework\http\response\Protocol">Protocol</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_body">
+        <div class="location">at         line 164</div>
+        <code>                    <a href="../../../../kanso/framework/http/response/Body.html"><abbr title="kanso\framework\http\response\Body">Body</abbr></a>
+    <strong>body</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the body object.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/http/response/Body.html"><abbr title="kanso\framework\http\response\Body">Body</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_format">
+        <div class="location">at         line 175</div>
+        <code>                    <a href="../../../../kanso/framework/http/response/Format.html"><abbr title="kanso\framework\http\response\Format">Format</abbr></a>
+    <strong>format</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the format object.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/http/response/Format.html"><abbr title="kanso\framework\http\response\Format">Format</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_status">
+        <div class="location">at         line 186</div>
+        <code>                    <a href="../../../../kanso/framework/http/response/Status.html"><abbr title="kanso\framework\http\response\Status">Status</abbr></a>
+    <strong>status</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the status object.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/http/response/Status.html"><abbr title="kanso\framework\http\response\Status">Status</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_headers">
+        <div class="location">at         line 197</div>
+        <code>                    <a href="../../../../kanso/framework/http/response/Headers.html"><abbr title="kanso\framework\http\response\Headers">Headers</abbr></a>
+    <strong>headers</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the headers object.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/http/response/Headers.html"><abbr title="kanso\framework\http\response\Headers">Headers</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cache">
+        <div class="location">at         line 208</div>
+        <code>                    <a href="../../../../kanso/framework/http/response/Cache.html"><abbr title="kanso\framework\http\response\Cache">Cache</abbr></a>
+    <strong>cache</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the cache object.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/http/response/Cache.html"><abbr title="kanso\framework\http\response\Cache">Cache</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cookie">
+        <div class="location">at         line 219</div>
+        <code>                    <a href="../../../../kanso/framework/http/cookie/Cookie.html"><abbr title="kanso\framework\http\cookie\Cookie">Cookie</abbr></a>
+    <strong>cookie</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the cookie manager.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/http/cookie/Cookie.html"><abbr title="kanso\framework\http\cookie\Cookie">Cookie</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_session">
+        <div class="location">at         line 230</div>
+        <code>                    <a href="../../../../kanso/framework/http/session/Session.html"><abbr title="kanso\framework\http\session\Session">Session</abbr></a>
+    <strong>session</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the session manager.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/http/session/Session.html"><abbr title="kanso\framework\http\session\Session">Session</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_CDN">
+        <div class="location">at         line 241</div>
+        <code>                    <a href="../../../../kanso/framework/http/response/Cache.html"><abbr title="kanso\framework\http\response\Cache">Cache</abbr></a>
+    <strong>CDN</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the CDN object.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/http/response/Cache.html"><abbr title="kanso\framework\http\response\Cache">Cache</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_view">
+        <div class="location">at         line 252</div>
+        <code>                    <a href="../../../../kanso/framework/mvc/view/View.html"><abbr title="kanso\framework\mvc\view\View">View</abbr></a>
+    <strong>view</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the view object.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/mvc/view/View.html"><abbr title="kanso\framework\mvc\view\View">View</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_finalize">
+        <div class="location">at         line 262</div>
+        <code>                    
+    <strong>finalize</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Finalize all objects before sending the response.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_send">
+        <div class="location">at         line 325</div>
+        <code>                    
+    <strong>send</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Send the HTTP response.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_redirect">
+        <div class="location">at         line 354</div>
+        <code>                    
+    <strong>redirect</strong>(string $url, int $status = 302)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Immediately send a redirect response.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td>The absolute URL to redirect to</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$status</td>
+                <td>The redirect status (optional) (default 302)</td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../kanso/framework/http/response/exceptions/Stop.html"><abbr title="kanso\framework\http\response\exceptions\Stop">Stop</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_notFound">
+        <div class="location">at         line 375</div>
+        <code>                    
+    <strong>notFound</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Send a not found response.</p>                                                </div>
+                <div class="tags">
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../kanso/framework/http/response/exceptions/NotFoundException.html"><abbr title="kanso\framework\http\response\exceptions\NotFoundException">NotFoundException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_forbidden">
+        <div class="location">at         line 386</div>
+        <code>                    
+    <strong>forbidden</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Send a forbidden response.</p>                                                </div>
+                <div class="tags">
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../kanso/framework/http/response/exceptions/ForbiddenException.html"><abbr title="kanso\framework\http\response\exceptions\ForbiddenException">ForbiddenException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_invalidToken">
+        <div class="location">at         line 397</div>
+        <code>                    
+    <strong>invalidToken</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Send a invalid token response.</p>                                                </div>
+                <div class="tags">
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../kanso/framework/http/response/exceptions/InvalidTokenException.html"><abbr title="kanso\framework\http\response\exceptions\InvalidTokenException">InvalidTokenException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_methodNotAllowed">
+        <div class="location">at         line 408</div>
+        <code>                    
+    <strong>methodNotAllowed</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Send a invalid token response.</p>                                                </div>
+                <div class="tags">
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../kanso/framework/http/response/exceptions/MethodNotAllowedException.html"><abbr title="kanso\framework\http\response\exceptions\MethodNotAllowedException">MethodNotAllowedException</abbr></a></td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
