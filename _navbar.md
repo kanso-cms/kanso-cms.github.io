@@ -1,6 +1,6 @@
 <!-- _navbar.md -->
 
-* [Documentation](/readme.md)
+* [Documentation](/)
 <li><a href="/api/2.0.0/inedx.html">API</a></li>
 * [Changelog](https://github.com/kanso-cms/cms/blob/master/CHANGELOG.md)
 * [Versions]()
