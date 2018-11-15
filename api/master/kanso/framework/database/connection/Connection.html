@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>kanso\framework\database\connection\Connection | Kanso API</title>
+    <title>kanso\framework\database\connection\Connection | Kanso CMS API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
@@ -26,6 +26,7 @@
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
                                             <option value="../../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
                                             <option value="../../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -54,7 +55,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../../../../index.html">Kanso API</a>
+                <a class="navbar-brand" href="../../../../index.html">Kanso CMS API</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
                 <ul class="nav navbar-nav">
@@ -85,7 +86,7 @@
     </div>
 
     <p>    class
-    <strong>Connection</strong>
+    <strong>Connection</strong>        (<a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/Connection.php">View source</a>)
 </p>
 
         
@@ -157,7 +158,7 @@
             </tr>
                     <tr>
                 <td class="type" id="property_pdo">
-                                        protected                                        <a target="_blank" href="http://php.net/PDO">PDO</a>
+                                        protected                                        <a target="_blank" href="http://php.net/PDO">PDO</a>|null
                 </td>
                 <td>$pdo</td>
                 <td class="last">PDO object.</td>
@@ -287,7 +288,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 93</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/Connection.php#L93">line 93</a></div>
         <code>                    
     <strong>__construct</strong>(array $config, string $type = &#039;mysql&#039;)
         </code>
@@ -332,7 +333,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_connect">
-        <div class="location">at         line 137</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/Connection.php#L137">line 137</a></div>
         <code>            protected        <a target="_blank" href="http://php.net/PDO">PDO</a>
     <strong>connect</strong>()
         </code>
@@ -362,7 +363,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isConnected">
-        <div class="location">at         line 156</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/Connection.php#L156">line 156</a></div>
         <code>                    
     <strong>isConnected</strong>()
         </code>
@@ -383,7 +384,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_reconnect">
-        <div class="location">at         line 166</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/Connection.php#L166">line 166</a></div>
         <code>                    
     <strong>reconnect</strong>()
         </code>
@@ -404,7 +405,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_pdo">
-        <div class="location">at         line 178</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/Connection.php#L178">line 178</a></div>
         <code>                    
     <strong>pdo</strong>()
         </code>
@@ -425,7 +426,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_tablePrefix">
-        <div class="location">at         line 193</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/Connection.php#L193">line 193</a></div>
         <code>                    
     <strong>tablePrefix</strong>()
         </code>
@@ -446,7 +447,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isAlive">
-        <div class="location">at         line 204</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/Connection.php#L204">line 204</a></div>
         <code>                    bool
     <strong>isAlive</strong>()
         </code>
@@ -476,7 +477,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_close">
-        <div class="location">at         line 223</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/Connection.php#L223">line 223</a></div>
         <code>                    
     <strong>close</strong>()
         </code>
@@ -497,7 +498,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_builder">
-        <div class="location">at         line 233</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/Connection.php#L233">line 233</a></div>
         <code>                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
     <strong>builder</strong>()
         </code>
@@ -527,7 +528,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_handler">
-        <div class="location">at         line 243</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/Connection.php#L243">line 243</a></div>
         <code>                    <a href="../../../../kanso/framework/database/connection/ConnectionHandler.html"><abbr title="kanso\framework\database\connection\ConnectionHandler">ConnectionHandler</abbr></a>
     <strong>handler</strong>()
         </code>
@@ -557,7 +558,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getConnectionOptions">
-        <div class="location">at         line 259</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/Connection.php#L259">line 259</a></div>
         <code>            protected        array
     <strong>getConnectionOptions</strong>()
         </code>

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>kanso\cms\admin\models\ErrorLogs | Kanso API</title>
+    <title>kanso\cms\admin\models\ErrorLogs | Kanso CMS API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
@@ -26,6 +26,7 @@
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
                                             <option value="../../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
                                             <option value="../../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -54,7 +55,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../../../../index.html">Kanso API</a>
+                <a class="navbar-brand" href="../../../../index.html">Kanso CMS API</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
                 <ul class="nav navbar-nav">
@@ -85,7 +86,7 @@
     </div>
 
     <p>    class
-    <strong>ErrorLogs</strong>        extends <a href="../../../../kanso/cms/admin/models/BaseModel.html"><abbr title="kanso\cms\admin\models\BaseModel">BaseModel</abbr></a>
+    <strong>ErrorLogs</strong>        extends <a href="../../../../kanso/cms/admin/models/BaseModel.html"><abbr title="kanso\cms\admin\models\BaseModel">BaseModel</abbr></a>        (<a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/admin/models/ErrorLogs.php">View source</a>)
 </p>
 
         
@@ -130,28 +131,12 @@
                 <td><small>from&nbsp;<a href="../../../../kanso/cms/admin/models/BaseModel.html#property_requestName"><abbr title="kanso\cms\admin\models\BaseModel">BaseModel</abbr></a></small></td>
             </tr>
                     <tr>
-                <td class="type" id="property_isLoggedIn">
-                                        protected                                        bool
-                </td>
-                <td>$isLoggedIn</td>
-                <td class="last">Identifying name of the requested page.</td>
-                <td><small>from&nbsp;<a href="../../../../kanso/cms/admin/models/BaseModel.html#property_isLoggedIn"><abbr title="kanso\cms\admin\models\BaseModel">BaseModel</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_SQL">
+                <td class="type" id="property_sql">
                                         protected                                        <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
                 </td>
-                <td>$SQL</td>
+                <td>$sql</td>
                 <td class="last">Identifying name of the requested page.</td>
-                <td><small>from&nbsp;<a href="../../../../kanso/cms/admin/models/BaseModel.html#property_SQL"><abbr title="kanso\cms\admin\models\BaseModel">BaseModel</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_validation">
-                                        protected                                        <abbr title="kanso\cms\admin\models\kanso\framework\utility\GUMP">GUMP</abbr>
-                </td>
-                <td>$validation</td>
-                <td class="last">Identifying name of the requested page.</td>
-                <td><small>from&nbsp;<a href="../../../../kanso/cms/admin/models/BaseModel.html#property_validation"><abbr title="kanso\cms\admin\models\BaseModel">BaseModel</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="../../../../kanso/cms/admin/models/BaseModel.html#property_sql"><abbr title="kanso\cms\admin\models\BaseModel">BaseModel</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type" id="property_post">
@@ -239,6 +224,16 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sql">sql</a>()
+        
+                                            <p>Returns query builder instance.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/cms/admin/models/BaseModel.html#method_sql"><abbr title="kanso\cms\admin\models\BaseModel">BaseModel</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     bool
                 </div>
                 <div class="col-md-8 type">
@@ -276,7 +271,7 @@ response message.</p>                </div>
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_container">
-        <div class="location">in <a href="../../../../kanso/framework/ioc/ContainerAwareTrait.html#method_container"><abbr title="kanso\framework\ioc\ContainerAwareTrait">ContainerAwareTrait</abbr></a> at         line 30</div>
+        <div class="location">in <a href="../../../../kanso/framework/ioc/ContainerAwareTrait.html#method_container"><abbr title="kanso\framework\ioc\ContainerAwareTrait">ContainerAwareTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/ioc/ContainerAwareTrait.php#L30">line 30</a></div>
         <code>                    <a href="../../../../kanso/framework/ioc/Container.html"><abbr title="kanso\framework\ioc\Container">Container</abbr></a>
     <strong>container</strong>()
         </code>
@@ -306,7 +301,7 @@ response message.</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method___get">
-        <div class="location">in <a href="../../../../kanso/framework/ioc/ContainerAwareTrait.html#method___get"><abbr title="kanso\framework\ioc\ContainerAwareTrait">ContainerAwareTrait</abbr></a> at         line 47</div>
+        <div class="location">in <a href="../../../../kanso/framework/ioc/ContainerAwareTrait.html#method___get"><abbr title="kanso\framework\ioc\ContainerAwareTrait">ContainerAwareTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/ioc/ContainerAwareTrait.php#L47">line 47</a></div>
         <code>                    mixed
     <strong>__get</strong>(string $key)
         </code>
@@ -346,7 +341,7 @@ response message.</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">in <a href="../../../../kanso/framework/mvc/model/Model.html#method___construct"><abbr title="kanso\framework\mvc\model\Model">Model</abbr></a> at         line 27</div>
+        <div class="location">in <a href="../../../../kanso/framework/mvc/model/Model.html#method___construct"><abbr title="kanso\framework\mvc\model\Model">Model</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/mvc/model/Model.php#L26">line 26</a></div>
         <code>                    
     <strong>__construct</strong>()
         </code>
@@ -367,7 +362,7 @@ response message.</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_onPOST">
-        <div class="location">at         line 39</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/admin/models/ErrorLogs.php#L39">line 39</a></div>
         <code>                    
     <strong>onPOST</strong>()
         </code>
@@ -388,7 +383,7 @@ response message.</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_onAJAX">
-        <div class="location">at         line 52</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/admin/models/ErrorLogs.php#L52">line 52</a></div>
         <code>                    
     <strong>onAJAX</strong>()
         </code>
@@ -409,7 +404,7 @@ response message.</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_onGET">
-        <div class="location">at         line 26</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/admin/models/ErrorLogs.php#L26">line 26</a></div>
         <code>                    
     <strong>onGET</strong>()
         </code>
@@ -430,7 +425,7 @@ response message.</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_init">
-        <div class="location">in <a href="../../../../kanso/cms/admin/models/BaseModel.html#method_init"><abbr title="kanso\cms\admin\models\BaseModel">BaseModel</abbr></a> at         line 75</div>
+        <div class="location">in <a href="../../../../kanso/cms/admin/models/BaseModel.html#method_init"><abbr title="kanso\cms\admin\models\BaseModel">BaseModel</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/admin/models/BaseModel.php#L62">line 62</a></div>
         <code>                    
     <strong>init</strong>(string $requestName)
         </code>
@@ -460,8 +455,38 @@ response message.</p>                </div>
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_sql">
+        <div class="location">in <a href="../../../../kanso/cms/admin/models/BaseModel.html#method_sql"><abbr title="kanso\cms\admin\models\BaseModel">BaseModel</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/admin/models/BaseModel.php#L75">line 75</a></div>
+        <code>            protected        <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+    <strong>sql</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns query builder instance.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_isLoggedIn">
-        <div class="location">in <a href="../../../../kanso/cms/admin/models/BaseModel.html#method_isLoggedIn"><abbr title="kanso\cms\admin\models\BaseModel">BaseModel</abbr></a> at         line 95</div>
+        <div class="location">in <a href="../../../../kanso/cms/admin/models/BaseModel.html#method_isLoggedIn"><abbr title="kanso\cms\admin\models\BaseModel">BaseModel</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/admin/models/BaseModel.php#L91">line 91</a></div>
         <code>            protected        bool
     <strong>isLoggedIn</strong>()
         </code>
@@ -491,7 +516,7 @@ response message.</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_postMessage">
-        <div class="location">in <a href="../../../../kanso/cms/admin/models/BaseModel.html#method_postMessage"><abbr title="kanso\cms\admin\models\BaseModel">BaseModel</abbr></a> at         line 109</div>
+        <div class="location">in <a href="../../../../kanso/cms/admin/models/BaseModel.html#method_postMessage"><abbr title="kanso\cms\admin\models\BaseModel">BaseModel</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/admin/models/BaseModel.php#L105">line 105</a></div>
         <code>            protected        array
     <strong>postMessage</strong>(string $class, string $msg)
         </code>
@@ -537,7 +562,7 @@ response message.</p>                                                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_parsePost">
-        <div class="location">at         line 69</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/admin/models/ErrorLogs.php#L69">line 69</a></div>
         <code>                    array|false
     <strong>parsePost</strong>()
         </code>

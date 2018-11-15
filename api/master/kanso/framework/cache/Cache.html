@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>kanso\framework\cache\Cache | Kanso API</title>
+    <title>kanso\framework\cache\Cache | Kanso CMS API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
@@ -26,6 +26,7 @@
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
                                             <option value="../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
                                             <option value="../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -54,7 +55,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../../../index.html">Kanso API</a>
+                <a class="navbar-brand" href="../../../index.html">Kanso CMS API</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
                 <ul class="nav navbar-nav">
@@ -85,7 +86,7 @@
     </div>
 
     <p>    class
-    <strong>Cache</strong>
+    <strong>Cache</strong>        (<a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/cache/Cache.php">View source</a>)
 </p>
 
         
@@ -105,7 +106,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(int $lifetime, mixed $store)
+                    <a href="#method___construct">__construct</a>(int $lifetime, <a href="../../../kanso/framework/cache/stores/StoreInterface.html"><abbr title="kanso\framework\cache\stores\StoreInterface">StoreInterface</abbr></a> $store)
         
                                             <p>Constructor.</p>                </div>
                 <div class="col-md-2"></div>
@@ -178,9 +179,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 38</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/cache/Cache.php#L40">line 40</a></div>
         <code>                    
-    <strong>__construct</strong>(int $lifetime, mixed $store)
+    <strong>__construct</strong>(int $lifetime, <a href="../../../kanso/framework/cache/stores/StoreInterface.html"><abbr title="kanso\framework\cache\stores\StoreInterface">StoreInterface</abbr></a> $store)
         </code>
     </h3>
     <div class="details">
@@ -199,7 +200,7 @@
                 <td>Date the cache will expire (unix timestamp)</td>
             </tr>
                     <tr>
-                <td>mixed</td>
+                <td><a href="../../../kanso/framework/cache/stores/StoreInterface.html"><abbr title="kanso\framework\cache\stores\StoreInterface">StoreInterface</abbr></a></td>
                 <td>$store</td>
                 <td>Storage impementation</td>
             </tr>
@@ -214,7 +215,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_get">
-        <div class="location">at         line 51</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/cache/Cache.php#L53">line 53</a></div>
         <code>                    string
     <strong>get</strong>(string $key)
         </code>
@@ -254,7 +255,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_put">
-        <div class="location">at         line 63</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/cache/Cache.php#L65">line 65</a></div>
         <code>                    
     <strong>put</strong>(string $key, string $data)
         </code>
@@ -290,7 +291,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_has">
-        <div class="location">at         line 74</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/cache/Cache.php#L76">line 76</a></div>
         <code>                    bool
     <strong>has</strong>(string $key)
         </code>
@@ -330,7 +331,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_delete">
-        <div class="location">at         line 85</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/cache/Cache.php#L87">line 87</a></div>
         <code>                    
     <strong>delete</strong>(string $key)
         </code>
@@ -361,7 +362,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_expired">
-        <div class="location">at         line 96</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/cache/Cache.php#L98">line 98</a></div>
         <code>                    bool
     <strong>expired</strong>(string $key)
         </code>
@@ -401,7 +402,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_clear">
-        <div class="location">at         line 106</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/cache/Cache.php#L108">line 108</a></div>
         <code>                    
     <strong>clear</strong>()
         </code>

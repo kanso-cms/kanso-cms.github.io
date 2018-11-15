@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>kanso\framework\utility\Humanizer | Kanso API</title>
+    <title>kanso\framework\utility\Humanizer | Kanso CMS API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
@@ -26,6 +26,7 @@
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
                                             <option value="../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
                                             <option value="../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -54,7 +55,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../../../index.html">Kanso API</a>
+                <a class="navbar-brand" href="../../../index.html">Kanso CMS API</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
                 <ul class="nav navbar-nav">
@@ -85,7 +86,7 @@
     </div>
 
     <p>    class
-    <strong>Humanizer</strong>
+    <strong>Humanizer</strong>        (<a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/utility/Humanizer.php">View source</a>)
 </p>
 
         
@@ -112,10 +113,10 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    static&nbsp;
+                    static&nbsp;string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_timeAgo">timeAgo</a>($time)
+                    <a href="#method_timeAgo">timeAgo</a>(mixed $time)
         
                                             <p>Returns a time ago from a timestamp or strtotime string.</p>                </div>
                 <div class="col-md-2"></div>
@@ -138,7 +139,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_fileSize">
-        <div class="location">at         line 25</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/utility/Humanizer.php#L25">line 25</a></div>
         <code>        static            string
     <strong>fileSize</strong>(int $size, bool $binary = false)
         </code>
@@ -183,9 +184,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_timeAgo">
-        <div class="location">at         line 59</div>
-        <code>        static            
-    <strong>timeAgo</strong>($time)
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/utility/Humanizer.php#L59">line 59</a></div>
+        <code>        static            string
+    <strong>timeAgo</strong>(mixed $time)
         </code>
     </h3>
     <div class="details">
@@ -199,13 +200,22 @@
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td>mixed</td>
                 <td>$time</td>
-                <td></td>
+                <td>A valid UNIX timestamp or PHP valid "strtotime" parameter</td>
             </tr>
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -214,7 +224,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_pluralize">
-        <div class="location">at         line 95</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/utility/Humanizer.php#L100">line 100</a></div>
         <code>        static            string
     <strong>pluralize</strong>(string $word, int $count = 2)
         </code>

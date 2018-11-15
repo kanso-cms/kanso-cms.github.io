@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>kanso\cms\email\Email | Kanso API</title>
+    <title>kanso\cms\email\Email | Kanso CMS API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
@@ -26,6 +26,7 @@
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
                                             <option value="../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
                                             <option value="../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -54,7 +55,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../../../index.html">Kanso API</a>
+                <a class="navbar-brand" href="../../../index.html">Kanso CMS API</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
                 <ul class="nav navbar-nav">
@@ -85,7 +86,7 @@
     </div>
 
     <p>    class
-    <strong>Email</strong>
+    <strong>Email</strong>        (<a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/cms/email/Email.php">View source</a>)
 </p>
 
         
@@ -168,7 +169,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 99</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/cms/email/Email.php#L99">line 99</a></div>
         <code>                    
     <strong>__construct</strong>(<a href="../../../kanso/framework/file/Filesystem.html"><abbr title="kanso\framework\file\Filesystem">Filesystem</abbr></a> $filesystem, <a href="../../../kanso/cms/email/phpmailer/PHPMailer.html"><abbr title="kanso\cms\email\phpmailer\PHPMailer">PHPMailer</abbr></a> $smtpMailer, <a href="../../../kanso/cms/email/Log.html"><abbr title="kanso\cms\email\Log">Log</abbr></a> $log, $theme = [], $useStmp = false, $smtpSettings = [])
         </code>
@@ -224,7 +225,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_preset">
-        <div class="location">at         line 122</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/cms/email/Email.php#L122">line 122</a></div>
         <code>                    string
     <strong>preset</strong>(string $template, array $vars = [])
         </code>
@@ -269,7 +270,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_send">
-        <div class="location">at         line 143</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/cms/email/Email.php#L143">line 143</a></div>
         <code>                    bool
     <strong>send</strong>(string $toEmail, string $senderName, string $senderEmail, string $subject, string $content, string $format = &#039;html&#039;)
         </code>
@@ -334,7 +335,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_html">
-        <div class="location">at         line 208</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/cms/email/Email.php#L208">line 208</a></div>
         <code>                    string
     <strong>html</strong>(string $subject, string $content)
         </code>
@@ -379,7 +380,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_theme">
-        <div class="location">at         line 231</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/cms/email/Email.php#L231">line 231</a></div>
         <code>                    array
     <strong>theme</strong>(array $theme = [])
         </code>
@@ -419,7 +420,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_button">
-        <div class="location">at         line 247</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/cms/email/Email.php#L247">line 247</a></div>
         <code>                    string
     <strong>button</strong>(string $href, string $text, string $size = &#039;md&#039;)
         </code>

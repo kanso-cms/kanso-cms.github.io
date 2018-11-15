@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>kanso\cms\email\phpmailer\SMTP | Kanso API</title>
+    <title>kanso\cms\email\phpmailer\SMTP | Kanso CMS API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
@@ -26,6 +26,7 @@
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
                                             <option value="../../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
                                             <option value="../../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -54,7 +55,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../../../../index.html">Kanso API</a>
+                <a class="navbar-brand" href="../../../../index.html">Kanso CMS API</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
                 <ul class="nav navbar-nav">
@@ -85,7 +86,7 @@
     </div>
 
     <p>    class
-    <strong>SMTP</strong>
+    <strong>SMTP</strong>        (<a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php">View source</a>)
 </p>
 
         
@@ -660,7 +661,7 @@ If no reply has been received yet, it will return null.</p>                </div
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_edebug">
-        <div class="location">at         line 229</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L229">line 229</a></div>
         <code>            protected        
     <strong>edebug</strong>(string $str, int $level = 0)
         </code>
@@ -713,7 +714,7 @@ If no reply has been received yet, it will return null.</p>                </div
             </div>
                     <div class="method-item">
                     <h3 id="method_connect">
-        <div class="location">at         line 288</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L288">line 288</a></div>
         <code>                    bool
     <strong>connect</strong>(string $host, int $port = null, int $timeout = 30, array $options = [])
         </code>
@@ -768,7 +769,7 @@ If no reply has been received yet, it will return null.</p>                </div
             </div>
                     <div class="method-item">
                     <h3 id="method_startTLS">
-        <div class="location">at         line 383</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L383">line 383</a></div>
         <code>                    bool
     <strong>startTLS</strong>()
         </code>
@@ -798,7 +799,7 @@ If no reply has been received yet, it will return null.</p>                </div
             </div>
                     <div class="method-item">
                     <h3 id="method_authenticate">
-        <div class="location">at         line 424</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L424">line 424</a></div>
         <code>                    bool
     <strong>authenticate</strong>(string $username, string $password, string $authtype = null, <a href="../../../../kanso/cms/email/phpmailer/OAuth.html"><abbr title="kanso\cms\email\phpmailer\OAuth">OAuth</abbr></a> $OAuth = null)
         </code>
@@ -864,7 +865,7 @@ If no reply has been received yet, it will return null.</p>                </div
             </div>
                     <div class="method-item">
                     <h3 id="method_hmac">
-        <div class="location">at         line 555</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L555">line 555</a></div>
         <code>            protected        string
     <strong>hmac</strong>(string $data, string $key)
         </code>
@@ -910,7 +911,7 @@ in case that function is not available.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_connected">
-        <div class="location">at         line 587</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L587">line 587</a></div>
         <code>                    bool
     <strong>connected</strong>()
         </code>
@@ -940,7 +941,7 @@ in case that function is not available.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_close">
-        <div class="location">at         line 614</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L614">line 614</a></div>
         <code>                    
     <strong>close</strong>()
         </code>
@@ -972,7 +973,7 @@ in case that function is not available.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_data">
-        <div class="location">at         line 640</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L640">line 640</a></div>
         <code>                    bool
     <strong>data</strong>(string $msg_data)
         </code>
@@ -1017,7 +1018,7 @@ Implements RFC 821: DATA <CRLF>.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_hello">
-        <div class="location">at         line 732</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L732">line 732</a></div>
         <code>                    bool
     <strong>hello</strong>(string $host = &#039;&#039;)
         </code>
@@ -1060,7 +1061,7 @@ and RFC 2821 EHLO.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_sendHello">
-        <div class="location">at         line 749</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L749">line 749</a></div>
         <code>            protected        bool
     <strong>sendHello</strong>(string $hello, string $host)
         </code>
@@ -1116,7 +1117,7 @@ and RFC 2821 EHLO.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_parseHelloFields">
-        <div class="location">at         line 768</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L768">line 768</a></div>
         <code>            protected        
     <strong>parseHelloFields</strong>(string $type)
         </code>
@@ -1147,7 +1148,7 @@ and RFC 2821 EHLO.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_mail">
-        <div class="location">at         line 816</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L816">line 816</a></div>
         <code>                    bool
     <strong>mail</strong>(string $from)
         </code>
@@ -1191,7 +1192,7 @@ Implements RFC 821: MAIL <SP> FROM:<reverse-path> <CRLF>.</p>                   
             </div>
                     <div class="method-item">
                     <h3 id="method_quit">
-        <div class="location">at         line 836</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L836">line 836</a></div>
         <code>                    bool
     <strong>quit</strong>(bool $close_on_error = true)
         </code>
@@ -1232,7 +1233,7 @@ Implements from RFC 821: QUIT <CRLF>.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_recipient">
-        <div class="location">at         line 858</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L858">line 858</a></div>
         <code>                    bool
     <strong>recipient</strong>(string $address)
         </code>
@@ -1274,7 +1275,7 @@ Implements from RFC 821: RCPT <SP> TO:<forward-path> <CRLF>.</p>                
             </div>
                     <div class="method-item">
                     <h3 id="method_reset">
-        <div class="location">at         line 874</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L874">line 874</a></div>
         <code>                    bool
     <strong>reset</strong>()
         </code>
@@ -1305,7 +1306,7 @@ Implements RFC 821: RSET <CRLF>.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_sendCommand">
-        <div class="location">at         line 888</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L888">line 888</a></div>
         <code>            protected        bool
     <strong>sendCommand</strong>(string $command, string $commandstring, int|array $expect)
         </code>
@@ -1355,7 +1356,7 @@ Implements RFC 821: RSET <CRLF>.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_sendAndMail">
-        <div class="location">at         line 959</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L959">line 959</a></div>
         <code>                    bool
     <strong>sendAndMail</strong>(string $from)
         </code>
@@ -1401,7 +1402,7 @@ Implements RFC 821: SAML <SP> FROM:<reverse-path> <CRLF>.</p>                   
             </div>
                     <div class="method-item">
                     <h3 id="method_verify">
-        <div class="location">at         line 971</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L971">line 971</a></div>
         <code>                    bool
     <strong>verify</strong>(string $name)
         </code>
@@ -1441,7 +1442,7 @@ Implements RFC 821: SAML <SP> FROM:<reverse-path> <CRLF>.</p>                   
             </div>
                     <div class="method-item">
                     <h3 id="method_noop">
-        <div class="location">at         line 982</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L982">line 982</a></div>
         <code>                    bool
     <strong>noop</strong>()
         </code>
@@ -1471,7 +1472,7 @@ Implements RFC 821: SAML <SP> FROM:<reverse-path> <CRLF>.</p>                   
             </div>
                     <div class="method-item">
                     <h3 id="method_turn">
-        <div class="location">at         line 996</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L996">line 996</a></div>
         <code>                    bool
     <strong>turn</strong>()
         </code>
@@ -1504,7 +1505,7 @@ Implements from RFC 821: TURN <CRLF>.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_client_send">
-        <div class="location">at         line 1012</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L1012">line 1012</a></div>
         <code>                    int|bool
     <strong>client_send</strong>(string $data, string $command = &#039;&#039;)
         </code>
@@ -1549,7 +1550,7 @@ Implements from RFC 821: TURN <CRLF>.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getError">
-        <div class="location">at         line 1034</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L1034">line 1034</a></div>
         <code>                    array
     <strong>getError</strong>()
         </code>
@@ -1579,7 +1580,7 @@ Implements from RFC 821: TURN <CRLF>.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getServerExtList">
-        <div class="location">at         line 1044</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L1044">line 1044</a></div>
         <code>                    array|null
     <strong>getServerExtList</strong>()
         </code>
@@ -1609,7 +1610,7 @@ Implements from RFC 821: TURN <CRLF>.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getServerExt">
-        <div class="location">at         line 1066</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L1066">line 1066</a></div>
         <code>                    mixed
     <strong>getServerExt</strong>(string $name)
         </code>
@@ -1658,7 +1659,7 @@ Implements from RFC 821: TURN <CRLF>.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getLastReply">
-        <div class="location">at         line 1094</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L1094">line 1094</a></div>
         <code>                    string
     <strong>getLastReply</strong>()
         </code>
@@ -1688,7 +1689,7 @@ Implements from RFC 821: TURN <CRLF>.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_get_lines">
-        <div class="location">at         line 1108</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L1108">line 1108</a></div>
         <code>            protected        string
     <strong>get_lines</strong>()
         </code>
@@ -1721,7 +1722,7 @@ need to read anything else.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_setVerp">
-        <div class="location">at         line 1169</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L1169">line 1169</a></div>
         <code>                    
     <strong>setVerp</strong>(bool $enabled = false)
         </code>
@@ -1752,7 +1753,7 @@ need to read anything else.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getVerp">
-        <div class="location">at         line 1179</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L1179">line 1179</a></div>
         <code>                    bool
     <strong>getVerp</strong>()
         </code>
@@ -1782,7 +1783,7 @@ need to read anything else.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_setError">
-        <div class="location">at         line 1192</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L1192">line 1192</a></div>
         <code>            protected        
     <strong>setError</strong>(string $message, string $detail = &#039;&#039;, string $smtp_code = &#039;&#039;, string $smtp_code_ex = &#039;&#039;)
         </code>
@@ -1828,7 +1829,7 @@ need to read anything else.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_setDebugOutput">
-        <div class="location">at         line 1207</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L1207">line 1207</a></div>
         <code>                    
     <strong>setDebugOutput</strong>(string|callable $method = &#039;echo&#039;)
         </code>
@@ -1859,7 +1860,7 @@ need to read anything else.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getDebugOutput">
-        <div class="location">at         line 1217</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L1217">line 1217</a></div>
         <code>                    string
     <strong>getDebugOutput</strong>()
         </code>
@@ -1889,7 +1890,7 @@ need to read anything else.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_setDebugLevel">
-        <div class="location">at         line 1227</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L1227">line 1227</a></div>
         <code>                    
     <strong>setDebugLevel</strong>(int $level = 0)
         </code>
@@ -1920,7 +1921,7 @@ need to read anything else.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getDebugLevel">
-        <div class="location">at         line 1237</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L1237">line 1237</a></div>
         <code>                    int
     <strong>getDebugLevel</strong>()
         </code>
@@ -1950,7 +1951,7 @@ need to read anything else.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_setTimeout">
-        <div class="location">at         line 1247</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L1247">line 1247</a></div>
         <code>                    
     <strong>setTimeout</strong>(int $timeout = 0)
         </code>
@@ -1981,7 +1982,7 @@ need to read anything else.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getTimeout">
-        <div class="location">at         line 1257</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L1257">line 1257</a></div>
         <code>                    int
     <strong>getTimeout</strong>()
         </code>
@@ -2011,7 +2012,7 @@ need to read anything else.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_errorHandler">
-        <div class="location">at         line 1270</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L1270">line 1270</a></div>
         <code>            protected        
     <strong>errorHandler</strong>(int $errno, string $errmsg, string $errfile = &#039;&#039;, int $errline = 0)
         </code>
@@ -2057,7 +2058,7 @@ need to read anything else.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_recordLastTransactionID">
-        <div class="location">at         line 1293</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L1293">line 1293</a></div>
         <code>            protected        bool|null|string
     <strong>recordLastTransactionID</strong>()
         </code>
@@ -2090,7 +2091,7 @@ If no pattern was matched, it will return false.</p>                            
             </div>
                     <div class="method-item">
                     <h3 id="method_getLastTransactionID">
-        <div class="location">at         line 1321</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/phpmailer/SMTP.php#L1321">line 1321</a></div>
         <code>                    bool|null|string
     <strong>getLastTransactionID</strong>()
         </code>

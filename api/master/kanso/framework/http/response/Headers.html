@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>kanso\framework\http\response\Headers | Kanso API</title>
+    <title>kanso\framework\http\response\Headers | Kanso CMS API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
@@ -26,6 +26,7 @@
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
                                             <option value="../../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
                                             <option value="../../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -54,7 +55,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../../../../index.html">Kanso API</a>
+                <a class="navbar-brand" href="../../../../index.html">Kanso CMS API</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
                 <ul class="nav navbar-nav">
@@ -86,7 +87,7 @@
 
     <p>    class
     <strong>Headers</strong>        implements
-        <a target="_blank" href="http://php.net/IteratorAggregate">IteratorAggregate</a>
+        <a target="_blank" href="http://php.net/IteratorAggregate">IteratorAggregate</a>        (<a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Headers.php">View source</a>)
 </p>
 
         
@@ -116,7 +117,7 @@
             <table class="table table-condensed">
                     <tr>
                 <td class="type" id="property_data">
-                                        protected                                        string
+                                        protected                                        array
                 </td>
                 <td>$data</td>
                 <td class="last">Array access.</td>
@@ -266,7 +267,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_set">
-        <div class="location">in <a href="../../../../kanso/framework/common/ArrayAccessTrait.html#method_set"><abbr title="kanso\framework\common\ArrayAccessTrait">ArrayAccessTrait</abbr></a> at         line 33</div>
+        <div class="location">in <a href="../../../../kanso/framework/common/ArrayAccessTrait.html#method_set"><abbr title="kanso\framework\common\ArrayAccessTrait">ArrayAccessTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/common/ArrayAccessTrait.php#L33">line 33</a></div>
         <code>                    
     <strong>set</strong>(string $key, mixed $value)
         </code>
@@ -302,7 +303,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_put">
-        <div class="location">in <a href="../../../../kanso/framework/common/ArrayAccessTrait.html#method_put"><abbr title="kanso\framework\common\ArrayAccessTrait">ArrayAccessTrait</abbr></a> at         line 47</div>
+        <div class="location">in <a href="../../../../kanso/framework/common/ArrayAccessTrait.html#method_put"><abbr title="kanso\framework\common\ArrayAccessTrait">ArrayAccessTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/common/ArrayAccessTrait.php#L47">line 47</a></div>
         <code>                    
     <strong>put</strong>(string $key, mixed $value)
         </code>
@@ -338,7 +339,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setMultiple">
-        <div class="location">in <a href="../../../../kanso/framework/common/ArrayAccessTrait.html#method_setMultiple"><abbr title="kanso\framework\common\ArrayAccessTrait">ArrayAccessTrait</abbr></a> at         line 58</div>
+        <div class="location">in <a href="../../../../kanso/framework/common/ArrayAccessTrait.html#method_setMultiple"><abbr title="kanso\framework\common\ArrayAccessTrait">ArrayAccessTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/common/ArrayAccessTrait.php#L58">line 58</a></div>
         <code>                    
     <strong>setMultiple</strong>(array $data)
         </code>
@@ -369,7 +370,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_has">
-        <div class="location">in <a href="../../../../kanso/framework/common/ArrayAccessTrait.html#method_has"><abbr title="kanso\framework\common\ArrayAccessTrait">ArrayAccessTrait</abbr></a> at         line 80</div>
+        <div class="location">in <a href="../../../../kanso/framework/common/ArrayAccessTrait.html#method_has"><abbr title="kanso\framework\common\ArrayAccessTrait">ArrayAccessTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/common/ArrayAccessTrait.php#L80">line 80</a></div>
         <code>                    bool
     <strong>has</strong>(string $key)
         </code>
@@ -409,7 +410,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_get">
-        <div class="location">in <a href="../../../../kanso/framework/common/ArrayAccessTrait.html#method_get"><abbr title="kanso\framework\common\ArrayAccessTrait">ArrayAccessTrait</abbr></a> at         line 92</div>
+        <div class="location">in <a href="../../../../kanso/framework/common/ArrayAccessTrait.html#method_get"><abbr title="kanso\framework\common\ArrayAccessTrait">ArrayAccessTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/common/ArrayAccessTrait.php#L92">line 92</a></div>
         <code>                    mixed
     <strong>get</strong>(string $key = null)
         </code>
@@ -427,7 +428,7 @@
                     <tr>
                 <td>string</td>
                 <td>$key</td>
-                <td>Key to use</td>
+                <td>Key to use (optional) (default null)</td>
             </tr>
             </table>
 
@@ -449,7 +450,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_remove">
-        <div class="location">in <a href="../../../../kanso/framework/common/ArrayAccessTrait.html#method_remove"><abbr title="kanso\framework\common\ArrayAccessTrait">ArrayAccessTrait</abbr></a> at         line 108</div>
+        <div class="location">in <a href="../../../../kanso/framework/common/ArrayAccessTrait.html#method_remove"><abbr title="kanso\framework\common\ArrayAccessTrait">ArrayAccessTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/common/ArrayAccessTrait.php#L108">line 108</a></div>
         <code>                    
     <strong>remove</strong>(string $key)
         </code>
@@ -480,7 +481,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_clear">
-        <div class="location">in <a href="../../../../kanso/framework/common/ArrayAccessTrait.html#method_clear"><abbr title="kanso\framework\common\ArrayAccessTrait">ArrayAccessTrait</abbr></a> at         line 118</div>
+        <div class="location">in <a href="../../../../kanso/framework/common/ArrayAccessTrait.html#method_clear"><abbr title="kanso\framework\common\ArrayAccessTrait">ArrayAccessTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/common/ArrayAccessTrait.php#L118">line 118</a></div>
         <code>                    
     <strong>clear</strong>()
         </code>
@@ -501,7 +502,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_overwrite">
-        <div class="location">in <a href="../../../../kanso/framework/common/ArrayAccessTrait.html#method_overwrite"><abbr title="kanso\framework\common\ArrayAccessTrait">ArrayAccessTrait</abbr></a> at         line 129</div>
+        <div class="location">in <a href="../../../../kanso/framework/common/ArrayAccessTrait.html#method_overwrite"><abbr title="kanso\framework\common\ArrayAccessTrait">ArrayAccessTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/common/ArrayAccessTrait.php#L129">line 129</a></div>
         <code>                    
     <strong>overwrite</strong>(array $data)
         </code>
@@ -532,7 +533,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_asArray">
-        <div class="location">in <a href="../../../../kanso/framework/common/ArrayAccessTrait.html#method_asArray"><abbr title="kanso\framework\common\ArrayAccessTrait">ArrayAccessTrait</abbr></a> at         line 142</div>
+        <div class="location">in <a href="../../../../kanso/framework/common/ArrayAccessTrait.html#method_asArray"><abbr title="kanso\framework\common\ArrayAccessTrait">ArrayAccessTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/common/ArrayAccessTrait.php#L142">line 142</a></div>
         <code>                    array
     <strong>asArray</strong>()
         </code>
@@ -562,7 +563,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 35</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Headers.php#L35">line 35</a></div>
         <code>                    
     <strong>__construct</strong>()
         </code>
@@ -583,7 +584,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getIterator">
-        <div class="location">at         line 42</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Headers.php#L42">line 42</a></div>
         <code>                    
     <strong>getIterator</strong>()
         </code>
@@ -604,7 +605,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_send">
-        <div class="location">at         line 52</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Headers.php#L52">line 52</a></div>
         <code>                    
     <strong>send</strong>()
         </code>
@@ -625,7 +626,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_sent">
-        <div class="location">at         line 79</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Headers.php#L79">line 79</a></div>
         <code>                    bool
     <strong>sent</strong>()
         </code>

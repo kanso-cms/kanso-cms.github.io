@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>kanso\framework\mvc\controller\Controller | Kanso API</title>
+    <title>kanso\framework\mvc\controller\Controller | Kanso CMS API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
@@ -26,6 +26,7 @@
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
                                             <option value="../../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
                                             <option value="../../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -54,7 +55,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../../../../index.html">Kanso API</a>
+                <a class="navbar-brand" href="../../../../index.html">Kanso CMS API</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
                 <ul class="nav navbar-nav">
@@ -85,7 +86,7 @@
     </div>
 
     <p>abstract     class
-    <strong>Controller</strong>
+    <strong>Controller</strong>        (<a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/framework/mvc/controller/Controller.php">View source</a>)
 </p>
 
         
@@ -240,7 +241,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_container">
-        <div class="location">in <a href="../../../../kanso/framework/ioc/ContainerAwareTrait.html#method_container"><abbr title="kanso\framework\ioc\ContainerAwareTrait">ContainerAwareTrait</abbr></a> at         line 30</div>
+        <div class="location">in <a href="../../../../kanso/framework/ioc/ContainerAwareTrait.html#method_container"><abbr title="kanso\framework\ioc\ContainerAwareTrait">ContainerAwareTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/framework/ioc/ContainerAwareTrait.php#L30">line 30</a></div>
         <code>                    <a href="../../../../kanso/framework/ioc/Container.html"><abbr title="kanso\framework\ioc\Container">Container</abbr></a>
     <strong>container</strong>()
         </code>
@@ -270,7 +271,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___get">
-        <div class="location">in <a href="../../../../kanso/framework/ioc/ContainerAwareTrait.html#method___get"><abbr title="kanso\framework\ioc\ContainerAwareTrait">ContainerAwareTrait</abbr></a> at         line 47</div>
+        <div class="location">in <a href="../../../../kanso/framework/ioc/ContainerAwareTrait.html#method___get"><abbr title="kanso\framework\ioc\ContainerAwareTrait">ContainerAwareTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/framework/ioc/ContainerAwareTrait.php#L47">line 47</a></div>
         <code>                    mixed
     <strong>__get</strong>(string $key)
         </code>
@@ -310,7 +311,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_nextMiddleware">
-        <div class="location">in <a href="../../../../kanso/framework/mvc/controller/ControllerHelperTrait.html#method_nextMiddleware"><abbr title="kanso\framework\mvc\controller\ControllerHelperTrait">ControllerHelperTrait</abbr></a> at         line 27</div>
+        <div class="location">in <a href="../../../../kanso/framework/mvc/controller/ControllerHelperTrait.html#method_nextMiddleware"><abbr title="kanso\framework\mvc\controller\ControllerHelperTrait">ControllerHelperTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/framework/mvc/controller/ControllerHelperTrait.php#L27">line 27</a></div>
         <code>            protected        mixed
     <strong>nextMiddleware</strong>()
         </code>
@@ -340,7 +341,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_fileResponse">
-        <div class="location">in <a href="../../../../kanso/framework/mvc/controller/ControllerHelperTrait.html#method_fileResponse"><abbr title="kanso\framework\mvc\controller\ControllerHelperTrait">ControllerHelperTrait</abbr></a> at         line 43</div>
+        <div class="location">in <a href="../../../../kanso/framework/mvc/controller/ControllerHelperTrait.html#method_fileResponse"><abbr title="kanso\framework\mvc\controller\ControllerHelperTrait">ControllerHelperTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/framework/mvc/controller/ControllerHelperTrait.php#L43">line 43</a></div>
         <code>            protected        
     <strong>fileResponse</strong>(string $file, array $data = [], string $format = &#039;text/html&#039;, string $encoding = &#039;utf-8&#039;)
         </code>
@@ -386,7 +387,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_jsonResponse">
-        <div class="location">in <a href="../../../../kanso/framework/mvc/controller/ControllerHelperTrait.html#method_jsonResponse"><abbr title="kanso\framework\mvc\controller\ControllerHelperTrait">ControllerHelperTrait</abbr></a> at         line 58</div>
+        <div class="location">in <a href="../../../../kanso/framework/mvc/controller/ControllerHelperTrait.html#method_jsonResponse"><abbr title="kanso\framework\mvc\controller\ControllerHelperTrait">ControllerHelperTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/framework/mvc/controller/ControllerHelperTrait.php#L58">line 58</a></div>
         <code>            protected        
     <strong>jsonResponse</strong>(array $data)
         </code>
@@ -417,7 +418,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_redirectResponse">
-        <div class="location">in <a href="../../../../kanso/framework/mvc/controller/ControllerHelperTrait.html#method_redirectResponse"><abbr title="kanso\framework\mvc\controller\ControllerHelperTrait">ControllerHelperTrait</abbr></a> at         line 71</div>
+        <div class="location">in <a href="../../../../kanso/framework/mvc/controller/ControllerHelperTrait.html#method_redirectResponse"><abbr title="kanso\framework\mvc\controller\ControllerHelperTrait">ControllerHelperTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/framework/mvc/controller/ControllerHelperTrait.php#L71">line 71</a></div>
         <code>            protected        
     <strong>redirectResponse</strong>(string $location)
         </code>
@@ -448,7 +449,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_notFoundResponse">
-        <div class="location">in <a href="../../../../kanso/framework/mvc/controller/ControllerHelperTrait.html#method_notFoundResponse"><abbr title="kanso\framework\mvc\controller\ControllerHelperTrait">ControllerHelperTrait</abbr></a> at         line 81</div>
+        <div class="location">in <a href="../../../../kanso/framework/mvc/controller/ControllerHelperTrait.html#method_notFoundResponse"><abbr title="kanso\framework\mvc\controller\ControllerHelperTrait">ControllerHelperTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/framework/mvc/controller/ControllerHelperTrait.php#L81">line 81</a></div>
         <code>            protected        
     <strong>notFoundResponse</strong>()
         </code>
@@ -469,7 +470,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 48</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/framework/mvc/controller/Controller.php#L48">line 48</a></div>
         <code>                    
     <strong>__construct</strong>(<a href="../../../../kanso/framework/http/request/Request.html"><abbr title="kanso\framework\http\request\Request">Request</abbr></a> $request, <a href="../../../../kanso/framework/http/response/Response.html"><abbr title="kanso\framework\http\response\Response">Response</abbr></a> $response, <a target="_blank" href="http://php.net/Closure">Closure</a> $next, string $modelClass)
         </code>

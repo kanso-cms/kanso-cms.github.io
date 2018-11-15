@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>kanso\framework\shell\Shell | Kanso API</title>
+    <title>kanso\framework\shell\Shell | Kanso CMS API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
@@ -26,6 +26,7 @@
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
                                             <option value="../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
                                             <option value="../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -54,7 +55,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../../../index.html">Kanso API</a>
+                <a class="navbar-brand" href="../../../index.html">Kanso CMS API</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
                 <ul class="nav navbar-nav">
@@ -85,7 +86,7 @@
     </div>
 
     <p>    class
-    <strong>Shell</strong>
+    <strong>Shell</strong>        (<a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/shell/Shell.php">View source</a>)
 </p>
 
         
@@ -112,7 +113,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="kanso\framework\shell\this">this</abbr>
+                    <a href="../../../kanso/framework/shell/Shell.html"><abbr title="kanso\framework\shell\Shell">Shell</abbr></a>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_cd">cd</a>(string $dir)
@@ -122,7 +123,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="kanso\framework\shell\this">this</abbr>
+                    <a href="../../../kanso/framework/shell/Shell.html"><abbr title="kanso\framework\shell\Shell">Shell</abbr></a>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_cmd">cmd</a>(string $cmd, string $subCmd = null)
@@ -132,7 +133,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="kanso\framework\shell\this">this</abbr>
+                    <a href="../../../kanso/framework/shell/Shell.html"><abbr title="kanso\framework\shell\Shell">Shell</abbr></a>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_option">option</a>(string $flag, string $value = null)
@@ -142,7 +143,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="kanso\framework\shell\this">this</abbr>
+                    <a href="../../../kanso/framework/shell/Shell.html"><abbr title="kanso\framework\shell\Shell">Shell</abbr></a>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_options">options</a>(array $options)
@@ -152,7 +153,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="kanso\framework\shell\this">this</abbr>
+                    <a href="../../../kanso/framework/shell/Shell.html"><abbr title="kanso\framework\shell\Shell">Shell</abbr></a>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_param">param</a>(string $param = null)
@@ -162,7 +163,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="kanso\framework\shell\this">this</abbr>
+                    <a href="../../../kanso/framework/shell/Shell.html"><abbr title="kanso\framework\shell\Shell">Shell</abbr></a>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_params">params</a>(array $params)
@@ -172,7 +173,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="kanso\framework\shell\this">this</abbr>
+                    <a href="../../../kanso/framework/shell/Shell.html"><abbr title="kanso\framework\shell\Shell">Shell</abbr></a>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_input">input</a>(string $path)
@@ -182,7 +183,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="kanso\framework\shell\this">this</abbr>
+                    <a href="../../../kanso/framework/shell/Shell.html"><abbr title="kanso\framework\shell\Shell">Shell</abbr></a>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_output">output</a>(string $path)
@@ -192,7 +193,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="kanso\framework\shell\this">this</abbr>
+                    mixed
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_run">run</a>(bool $showErrors = false)
@@ -202,13 +203,12 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    bool
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_is_successful">is_successful</a>()
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Was the command successful?</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -216,10 +216,9 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_reset">reset</a>($hard_reset = false)
+                    <a href="#method_reset">reset</a>(bool $hard_reset = false)
         
-                                            <p class="no-description">No description</p>
-                                    </div>
+                                            <p>Reset the shell.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -230,7 +229,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 109</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/shell/Shell.php#L109">line 109</a></div>
         <code>                    
     <strong>__construct</strong>(string $dir = null)
         </code>
@@ -248,7 +247,7 @@
                     <tr>
                 <td>string</td>
                 <td>$dir</td>
-                <td></td>
+                <td>Directory to run command on (optional) (default null)</td>
             </tr>
             </table>
 
@@ -261,8 +260,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_cd">
-        <div class="location">at         line 128</div>
-        <code>                    <abbr title="kanso\framework\shell\this">this</abbr>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/shell/Shell.php#L128">line 128</a></div>
+        <code>                    <a href="../../../kanso/framework/shell/Shell.html"><abbr title="kanso\framework\shell\Shell">Shell</abbr></a>
     <strong>cd</strong>(string $dir)
         </code>
     </h3>
@@ -279,7 +278,7 @@
                     <tr>
                 <td>string</td>
                 <td>$dir</td>
-                <td></td>
+                <td>Directory to move to</td>
             </tr>
             </table>
 
@@ -288,7 +287,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="kanso\framework\shell\this">this</abbr></td>
+            <td><a href="../../../kanso/framework/shell/Shell.html"><abbr title="kanso\framework\shell\Shell">Shell</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -301,8 +300,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_cmd">
-        <div class="location">at         line 143</div>
-        <code>                    <abbr title="kanso\framework\shell\this">this</abbr>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/shell/Shell.php#L143">line 143</a></div>
+        <code>                    <a href="../../../kanso/framework/shell/Shell.html"><abbr title="kanso\framework\shell\Shell">Shell</abbr></a>
     <strong>cmd</strong>(string $cmd, string $subCmd = null)
         </code>
     </h3>
@@ -333,7 +332,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="kanso\framework\shell\this">this</abbr></td>
+            <td><a href="../../../kanso/framework/shell/Shell.html"><abbr title="kanso\framework\shell\Shell">Shell</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -346,8 +345,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_option">
-        <div class="location">at         line 163</div>
-        <code>                    <abbr title="kanso\framework\shell\this">this</abbr>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/shell/Shell.php#L163">line 163</a></div>
+        <code>                    <a href="../../../kanso/framework/shell/Shell.html"><abbr title="kanso\framework\shell\Shell">Shell</abbr></a>
     <strong>option</strong>(string $flag, string $value = null)
         </code>
     </h3>
@@ -378,7 +377,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="kanso\framework\shell\this">this</abbr></td>
+            <td><a href="../../../kanso/framework/shell/Shell.html"><abbr title="kanso\framework\shell\Shell">Shell</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -391,8 +390,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_options">
-        <div class="location">at         line 195</div>
-        <code>                    <abbr title="kanso\framework\shell\this">this</abbr>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/shell/Shell.php#L195">line 195</a></div>
+        <code>                    <a href="../../../kanso/framework/shell/Shell.html"><abbr title="kanso\framework\shell\Shell">Shell</abbr></a>
     <strong>options</strong>(array $options)
         </code>
     </h3>
@@ -418,7 +417,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="kanso\framework\shell\this">this</abbr></td>
+            <td><a href="../../../kanso/framework/shell/Shell.html"><abbr title="kanso\framework\shell\Shell">Shell</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -431,8 +430,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_param">
-        <div class="location">at         line 219</div>
-        <code>                    <abbr title="kanso\framework\shell\this">this</abbr>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/shell/Shell.php#L219">line 219</a></div>
+        <code>                    <a href="../../../kanso/framework/shell/Shell.html"><abbr title="kanso\framework\shell\Shell">Shell</abbr></a>
     <strong>param</strong>(string $param = null)
         </code>
     </h3>
@@ -458,7 +457,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="kanso\framework\shell\this">this</abbr></td>
+            <td><a href="../../../kanso/framework/shell/Shell.html"><abbr title="kanso\framework\shell\Shell">Shell</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -471,8 +470,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_params">
-        <div class="location">at         line 238</div>
-        <code>                    <abbr title="kanso\framework\shell\this">this</abbr>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/shell/Shell.php#L238">line 238</a></div>
+        <code>                    <a href="../../../kanso/framework/shell/Shell.html"><abbr title="kanso\framework\shell\Shell">Shell</abbr></a>
     <strong>params</strong>(array $params)
         </code>
     </h3>
@@ -498,7 +497,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="kanso\framework\shell\this">this</abbr></td>
+            <td><a href="../../../kanso/framework/shell/Shell.html"><abbr title="kanso\framework\shell\Shell">Shell</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -511,8 +510,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_input">
-        <div class="location">at         line 254</div>
-        <code>                    <abbr title="kanso\framework\shell\this">this</abbr>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/shell/Shell.php#L255">line 255</a></div>
+        <code>                    <a href="../../../kanso/framework/shell/Shell.html"><abbr title="kanso\framework\shell\Shell">Shell</abbr></a>
     <strong>input</strong>(string $path)
         </code>
     </h3>
@@ -538,7 +537,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="kanso\framework\shell\this">this</abbr></td>
+            <td><a href="../../../kanso/framework/shell/Shell.html"><abbr title="kanso\framework\shell\Shell">Shell</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -551,8 +550,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_output">
-        <div class="location">at         line 268</div>
-        <code>                    <abbr title="kanso\framework\shell\this">this</abbr>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/shell/Shell.php#L269">line 269</a></div>
+        <code>                    <a href="../../../kanso/framework/shell/Shell.html"><abbr title="kanso\framework\shell\Shell">Shell</abbr></a>
     <strong>output</strong>(string $path)
         </code>
     </h3>
@@ -578,7 +577,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="kanso\framework\shell\this">this</abbr></td>
+            <td><a href="../../../kanso/framework/shell/Shell.html"><abbr title="kanso\framework\shell\Shell">Shell</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -591,8 +590,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_run">
-        <div class="location">at         line 282</div>
-        <code>                    <abbr title="kanso\framework\shell\this">this</abbr>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/shell/Shell.php#L283">line 283</a></div>
+        <code>                    mixed
     <strong>run</strong>(bool $showErrors = false)
         </code>
     </h3>
@@ -618,7 +617,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="kanso\framework\shell\this">this</abbr></td>
+            <td>mixed</td>
             <td></td>
         </tr>
     </table>
@@ -631,8 +630,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_is_successful">
-        <div class="location">at         line 369</div>
-        <code>                    
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/shell/Shell.php#L376">line 376</a></div>
+        <code>                    bool
     <strong>is_successful</strong>()
         </code>
     </h3>
@@ -640,8 +639,19 @@
             
     
 
+                    <div class="method-description">
+                                    <p>Was the command successful?</p>                                                </div>
                 <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -650,23 +660,25 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_reset">
-        <div class="location">at         line 374</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/shell/Shell.php#L387">line 387</a></div>
         <code>                    
-    <strong>reset</strong>($hard_reset = false)
+    <strong>reset</strong>(bool $hard_reset = false)
         </code>
     </h3>
     <div class="details">
             
     
 
+                    <div class="method-description">
+                                    <p>Reset the shell.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td></td>
+                <td>bool</td>
                 <td>$hard_reset</td>
-                <td></td>
+                <td>If set to true the working directory, output and result are reset (optional) (default false)</td>
             </tr>
             </table>
 

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>kanso\cms\wrappers\providers\PostProvider | Kanso API</title>
+    <title>kanso\cms\wrappers\providers\PostProvider | Kanso CMS API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
@@ -26,6 +26,7 @@
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
                                             <option value="../../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
                                             <option value="../../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -54,7 +55,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../../../../index.html">Kanso API</a>
+                <a class="navbar-brand" href="../../../../index.html">Kanso CMS API</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
                 <ul class="nav navbar-nav">
@@ -85,7 +86,7 @@
     </div>
 
     <p>    class
-    <strong>PostProvider</strong>        extends <a href="../../../../kanso/cms/wrappers/providers/Provider.html"><abbr title="kanso\cms\wrappers\providers\Provider">Provider</abbr></a>
+    <strong>PostProvider</strong>        extends <a href="../../../../kanso/cms/wrappers/providers/Provider.html"><abbr title="kanso\cms\wrappers\providers\Provider">Provider</abbr></a>        (<a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/providers/PostProvider.php">View source</a>)
 </p>
 
         
@@ -171,7 +172,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 36</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/providers/PostProvider.php#L74">line 74</a></div>
         <code>                    
     <strong>__construct</strong>(<a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a> $SQL, <a href="../../../../kanso/framework/config/Config.html"><abbr title="kanso\framework\config\Config">Config</abbr></a> $config, <a href="../../../../kanso/cms/wrappers/providers/TagProvider.html"><abbr title="kanso\cms\wrappers\providers\TagProvider">TagProvider</abbr></a> $tagProvider, <a href="../../../../kanso/cms/wrappers/providers/CategoryProvider.html"><abbr title="kanso\cms\wrappers\providers\CategoryProvider">CategoryProvider</abbr></a> $categoryProvider, <a href="../../../../kanso/cms/wrappers/providers/MediaProvider.html"><abbr title="kanso\cms\wrappers\providers\MediaProvider">MediaProvider</abbr></a> $mediaProvider, <a href="../../../../kanso/cms/wrappers/providers/CommentProvider.html"><abbr title="kanso\cms\wrappers\providers\CommentProvider">CommentProvider</abbr></a> $commentProvider, <a href="../../../../kanso/cms/wrappers/providers/UserProvider.html"><abbr title="kanso\cms\wrappers\providers\UserProvider">UserProvider</abbr></a> $userProvider)
         </code>
@@ -232,7 +233,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_create">
-        <div class="location">at         line 68</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/providers/PostProvider.php#L106">line 106</a></div>
         <code>                    mixed
     <strong>create</strong>(array $row)
         </code>
@@ -272,7 +273,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_byId">
-        <div class="location">at         line 83</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/providers/PostProvider.php#L121">line 121</a></div>
         <code>                    mixed
     <strong>byId</strong>(int $id)
         </code>
@@ -312,7 +313,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_byKey">
-        <div class="location">at         line 91</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/providers/PostProvider.php#L129">line 129</a></div>
         <code>                    mixed
     <strong>byKey</strong>(string $index, $value, bool $single = false, bool $published = true)
         </code>
@@ -367,7 +368,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_newPost">
-        <div class="location">at         line 60</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/providers/PostProvider.php#L98">line 98</a></div>
         <code>                    <a href="../../../../kanso/cms/wrappers/Post.html"><abbr title="kanso\cms\wrappers\Post">Post</abbr></a>
     <strong>newPost</strong>(array $row)
         </code>

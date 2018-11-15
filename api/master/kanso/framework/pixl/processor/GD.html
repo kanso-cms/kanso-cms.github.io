@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>kanso\framework\pixl\processor\GD | Kanso API</title>
+    <title>kanso\framework\pixl\processor\GD | Kanso CMS API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
@@ -26,6 +26,7 @@
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
                                             <option value="../../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
                                             <option value="../../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -54,7 +55,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../../../../index.html">Kanso API</a>
+                <a class="navbar-brand" href="../../../../index.html">Kanso CMS API</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
                 <ul class="nav navbar-nav">
@@ -86,7 +87,7 @@
 
     <p>    class
     <strong>GD</strong>        implements
-        <a href="../../../../kanso/framework/pixl/processor/ProcessorInterface.html"><abbr title="kanso\framework\pixl\processor\ProcessorInterface">ProcessorInterface</abbr></a>
+        <a href="../../../../kanso/framework/pixl/processor/ProcessorInterface.html"><abbr title="kanso\framework\pixl\processor\ProcessorInterface">ProcessorInterface</abbr></a>        (<a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/pixl/processor/GD.php">View source</a>)
 </p>
 
         
@@ -106,14 +107,14 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(string $filename = null)
+                    <a href="#method___construct">__construct</a>(string $filename = null, int $imageQuality = null)
         
                                             <p>Constructor.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="kanso\framework\pixl\processor\Exception">Exception</abbr>|null
+                    
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_load">load</a>(string $filename)
@@ -153,7 +154,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="kanso\framework\utility\Image">Image</abbr>
+                    <a href="../../../../kanso/framework/pixl/processor/ProcessorInterface.html"><abbr title="kanso\framework\pixl\processor\ProcessorInterface">ProcessorInterface</abbr></a>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_resizeToHeight">resizeToHeight</a>(int $height, bool $allow_enlarge = false)
@@ -163,7 +164,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="kanso\framework\utility\Image">Image</abbr>
+                    <a href="../../../../kanso/framework/pixl/processor/ProcessorInterface.html"><abbr title="kanso\framework\pixl\processor\ProcessorInterface">ProcessorInterface</abbr></a>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_resizeToWidth">resizeToWidth</a>(int $width, bool $allow_enlarge = false)
@@ -173,7 +174,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="kanso\framework\utility\Image">Image</abbr>
+                    <a href="../../../../kanso/framework/pixl/processor/ProcessorInterface.html"><abbr title="kanso\framework\pixl\processor\ProcessorInterface">ProcessorInterface</abbr></a>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_scale">scale</a>(int $scale)
@@ -183,7 +184,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="kanso\framework\utility\Image">Image</abbr>
+                    <a href="../../../../kanso/framework/pixl/processor/ProcessorInterface.html"><abbr title="kanso\framework\pixl\processor\ProcessorInterface">ProcessorInterface</abbr></a>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_resize">resize</a>(int $width, int $height, bool $allow_enlarge = false)
@@ -193,7 +194,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <abbr title="kanso\framework\utility\Image">Image</abbr>
+                    <a href="../../../../kanso/framework/pixl/processor/ProcessorInterface.html"><abbr title="kanso\framework\pixl\processor\ProcessorInterface">ProcessorInterface</abbr></a>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_crop">crop</a>(int $width, int $height, bool $allow_enlarge = false)
@@ -209,9 +210,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 109</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/pixl/processor/GD.php#L110">line 110</a></div>
         <code>                    
-    <strong>__construct</strong>(string $filename = null)
+    <strong>__construct</strong>(string $filename = null, int $imageQuality = null)
         </code>
     </h3>
     <div class="details">
@@ -227,7 +228,12 @@
                     <tr>
                 <td>string</td>
                 <td>$filename</td>
-                <td>Absolute path to file</td>
+                <td>Absolute path to file (optional) (default null)</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$imageQuality</td>
+                <td>Default image quality to use (optional) (default null)</td>
             </tr>
             </table>
 
@@ -240,8 +246,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_load">
-        <div class="location">at         line 120</div>
-        <code>                    <abbr title="kanso\framework\pixl\processor\Exception">Exception</abbr>|null
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/pixl/processor/GD.php#L128">line 128</a></div>
+        <code>                    
     <strong>load</strong>(string $filename)
         </code>
     </h3>
@@ -263,21 +269,12 @@
             </table>
 
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><abbr title="kanso\framework\pixl\processor\Exception">Exception</abbr>|null</td>
-            <td></td>
-        </tr>
-    </table>
-
             
                             <h4>Exceptions</h4>
 
                     <table class="table table-condensed">
                     <tr>
-                <td><abbr title="kanso\framework\pixl\processor\Exception">Exception</abbr></td>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
                 <td>If file is not an image</td>
             </tr>
             </table>
@@ -289,7 +286,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_width">
-        <div class="location">at         line 158</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/pixl/processor/GD.php#L166">line 166</a></div>
         <code>                    int
     <strong>width</strong>()
         </code>
@@ -319,7 +316,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_height">
-        <div class="location">at         line 171</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/pixl/processor/GD.php#L179">line 179</a></div>
         <code>                    int
     <strong>height</strong>()
         </code>
@@ -349,7 +346,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_save">
-        <div class="location">at         line 184</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/pixl/processor/GD.php#L192">line 192</a></div>
         <code>                    mixed
     <strong>save</strong>(string $filename, int $image_type = null, int $quality = null, int $permissions = null)
         </code>
@@ -404,8 +401,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_resizeToHeight">
-        <div class="location">at         line 257</div>
-        <code>                    <abbr title="kanso\framework\utility\Image">Image</abbr>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/pixl/processor/GD.php#L267">line 267</a></div>
+        <code>                    <a href="../../../../kanso/framework/pixl/processor/ProcessorInterface.html"><abbr title="kanso\framework\pixl\processor\ProcessorInterface">ProcessorInterface</abbr></a>
     <strong>resizeToHeight</strong>(int $height, bool $allow_enlarge = false)
         </code>
     </h3>
@@ -436,7 +433,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="kanso\framework\utility\Image">Image</abbr></td>
+            <td><a href="../../../../kanso/framework/pixl/processor/ProcessorInterface.html"><abbr title="kanso\framework\pixl\processor\ProcessorInterface">ProcessorInterface</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -449,8 +446,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_resizeToWidth">
-        <div class="location">at         line 271</div>
-        <code>                    <abbr title="kanso\framework\utility\Image">Image</abbr>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/pixl/processor/GD.php#L281">line 281</a></div>
+        <code>                    <a href="../../../../kanso/framework/pixl/processor/ProcessorInterface.html"><abbr title="kanso\framework\pixl\processor\ProcessorInterface">ProcessorInterface</abbr></a>
     <strong>resizeToWidth</strong>(int $width, bool $allow_enlarge = false)
         </code>
     </h3>
@@ -481,7 +478,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="kanso\framework\utility\Image">Image</abbr></td>
+            <td><a href="../../../../kanso/framework/pixl/processor/ProcessorInterface.html"><abbr title="kanso\framework\pixl\processor\ProcessorInterface">ProcessorInterface</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -494,8 +491,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_scale">
-        <div class="location">at         line 285</div>
-        <code>                    <abbr title="kanso\framework\utility\Image">Image</abbr>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/pixl/processor/GD.php#L295">line 295</a></div>
+        <code>                    <a href="../../../../kanso/framework/pixl/processor/ProcessorInterface.html"><abbr title="kanso\framework\pixl\processor\ProcessorInterface">ProcessorInterface</abbr></a>
     <strong>scale</strong>(int $scale)
         </code>
     </h3>
@@ -512,7 +509,7 @@
                     <tr>
                 <td>int</td>
                 <td>$scale</td>
-                <td></td>
+                <td>Scale percentage</td>
             </tr>
             </table>
 
@@ -521,7 +518,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="kanso\framework\utility\Image">Image</abbr></td>
+            <td><a href="../../../../kanso/framework/pixl/processor/ProcessorInterface.html"><abbr title="kanso\framework\pixl\processor\ProcessorInterface">ProcessorInterface</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -534,8 +531,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_resize">
-        <div class="location">at         line 299</div>
-        <code>                    <abbr title="kanso\framework\utility\Image">Image</abbr>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/pixl/processor/GD.php#L309">line 309</a></div>
+        <code>                    <a href="../../../../kanso/framework/pixl/processor/ProcessorInterface.html"><abbr title="kanso\framework\pixl\processor\ProcessorInterface">ProcessorInterface</abbr></a>
     <strong>resize</strong>(int $width, int $height, bool $allow_enlarge = false)
         </code>
     </h3>
@@ -571,7 +568,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="kanso\framework\utility\Image">Image</abbr></td>
+            <td><a href="../../../../kanso/framework/pixl/processor/ProcessorInterface.html"><abbr title="kanso\framework\pixl\processor\ProcessorInterface">ProcessorInterface</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -584,8 +581,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_crop">
-        <div class="location">at         line 328</div>
-        <code>                    <abbr title="kanso\framework\utility\Image">Image</abbr>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/pixl/processor/GD.php#L339">line 339</a></div>
+        <code>                    <a href="../../../../kanso/framework/pixl/processor/ProcessorInterface.html"><abbr title="kanso\framework\pixl\processor\ProcessorInterface">ProcessorInterface</abbr></a>
     <strong>crop</strong>(int $width, int $height, bool $allow_enlarge = false)
         </code>
     </h3>
@@ -621,7 +618,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><abbr title="kanso\framework\utility\Image">Image</abbr></td>
+            <td><a href="../../../../kanso/framework/pixl/processor/ProcessorInterface.html"><abbr title="kanso\framework\pixl\processor\ProcessorInterface">ProcessorInterface</abbr></a></td>
             <td></td>
         </tr>
     </table>

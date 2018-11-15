@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>kanso\framework\cache\stores\FileStore | Kanso API</title>
+    <title>kanso\framework\cache\stores\FileStore | Kanso CMS API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
@@ -26,6 +26,7 @@
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
                                             <option value="../../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
                                             <option value="../../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -54,7 +55,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../../../../index.html">Kanso API</a>
+                <a class="navbar-brand" href="../../../../index.html">Kanso CMS API</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
                 <ul class="nav navbar-nav">
@@ -86,7 +87,7 @@
 
     <p>    class
     <strong>FileStore</strong>        implements
-        <a href="../../../../kanso/framework/cache/stores/StoreInterface.html"><abbr title="kanso\framework\cache\stores\StoreInterface">StoreInterface</abbr></a>
+        <a href="../../../../kanso/framework/cache/stores/StoreInterface.html"><abbr title="kanso\framework\cache\stores\StoreInterface">StoreInterface</abbr></a>        (<a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/framework/cache/stores/FileStore.php">View source</a>)
 </p>
 
         
@@ -179,7 +180,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 37</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/framework/cache/stores/FileStore.php#L37">line 37</a></div>
         <code>                    
     <strong>__construct</strong>(<a href="../../../../kanso/framework/file/Filesystem.html"><abbr title="kanso\framework\file\Filesystem">Filesystem</abbr></a> $filesystem, string $path)
         </code>
@@ -215,7 +216,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_get">
-        <div class="location">at         line 47</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/framework/cache/stores/FileStore.php#L47">line 47</a></div>
         <code>                    
     <strong>get</strong>(string $key)
         </code>
@@ -246,7 +247,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_put">
-        <div class="location">at         line 58</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/framework/cache/stores/FileStore.php#L58">line 58</a></div>
         <code>                    
     <strong>put</strong>(string $key, string $data)
         </code>
@@ -282,7 +283,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_has">
-        <div class="location">at         line 66</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/framework/cache/stores/FileStore.php#L66">line 66</a></div>
         <code>                    bool
     <strong>has</strong>(string $key)
         </code>
@@ -322,7 +323,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_delete">
-        <div class="location">at         line 74</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/framework/cache/stores/FileStore.php#L74">line 74</a></div>
         <code>                    
     <strong>delete</strong>(string $key)
         </code>
@@ -353,7 +354,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_expired">
-        <div class="location">at         line 85</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/framework/cache/stores/FileStore.php#L85">line 85</a></div>
         <code>                    bool
     <strong>expired</strong>(string $key, int $maxAge)
         </code>
@@ -398,7 +399,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_clear">
-        <div class="location">at         line 101</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/framework/cache/stores/FileStore.php#L101">line 101</a></div>
         <code>                    
     <strong>clear</strong>()
         </code>

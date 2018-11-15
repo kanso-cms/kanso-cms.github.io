@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>kanso\cms\wrappers\managers\UserManager | Kanso API</title>
+    <title>kanso\cms\wrappers\managers\UserManager | Kanso CMS API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
@@ -26,6 +26,7 @@
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
                                             <option value="../../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
                                             <option value="../../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -54,7 +55,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../../../../index.html">Kanso API</a>
+                <a class="navbar-brand" href="../../../../index.html">Kanso CMS API</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
                 <ul class="nav navbar-nav">
@@ -85,7 +86,7 @@
     </div>
 
     <p>    class
-    <strong>UserManager</strong>        extends <a href="../../../../kanso/cms/wrappers/managers/Manager.html"><abbr title="kanso\cms\wrappers\managers\Manager">Manager</abbr></a>
+    <strong>UserManager</strong>        extends <a href="../../../../kanso/cms/wrappers/managers/Manager.html"><abbr title="kanso\cms\wrappers\managers\Manager">Manager</abbr></a>        (<a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/cms/wrappers/managers/UserManager.php">View source</a>)
 </p>
 
         
@@ -265,7 +266,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 105</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/cms/wrappers/managers/UserManager.php#L105">line 105</a></div>
         <code>                    
     <strong>__construct</strong>(<a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a> $SQL, mixed $provider, <a href="../../../../kanso/framework/security/Crypto.html"><abbr title="kanso\framework\security\Crypto">Crypto</abbr></a> $crypto, <a href="../../../../kanso/framework/http/cookie/Cookie.html"><abbr title="kanso\framework\http\cookie\Cookie">Cookie</abbr></a> $cookie, <a href="../../../../kanso/framework/http/session/Session.html"><abbr title="kanso\framework\http\session\Session">Session</abbr></a> $session, <a href="../../../../kanso/framework/config/Config.html"><abbr title="kanso\framework\config\Config">Config</abbr></a> $config, <a href="../../../../kanso/framework/http/request/Environment.html"><abbr title="kanso\framework\http\request\Environment">Environment</abbr></a> $environment, <a href="../../../../kanso/cms/email/Email.html"><abbr title="kanso\cms\email\Email">Email</abbr></a> $email)
         </code>
@@ -331,7 +332,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_provider">
-        <div class="location">at         line 360</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/cms/wrappers/managers/UserManager.php#L360">line 360</a></div>
         <code>                    mixed
     <strong>provider</strong>()
         </code>
@@ -361,7 +362,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_create">
-        <div class="location">at         line 135</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/cms/wrappers/managers/UserManager.php#L135">line 135</a></div>
         <code>                    mixed
     <strong>create</strong>(string $email, string $username, string $password, string $role = &#039;guest&#039;, bool $activate = false)
         </code>
@@ -421,7 +422,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_createAdmin">
-        <div class="location">at         line 186</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/cms/wrappers/managers/UserManager.php#L186">line 186</a></div>
         <code>                    mixed
     <strong>createAdmin</strong>(string $email, string $role = &#039;administrator&#039;, bool $sendEamil = true)
         </code>
@@ -471,7 +472,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_createUser">
-        <div class="location">at         line 242</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/cms/wrappers/managers/UserManager.php#L242">line 242</a></div>
         <code>                    mixed
     <strong>createUser</strong>(string $email, string $username = &#039;&#039;, string $password = &#039;&#039;, string $name = &#039;&#039;, string $role = &#039;guest&#039;, bool $activate = false, bool $sendEamil = true)
         </code>
@@ -541,7 +542,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_activate">
-        <div class="location">at         line 305</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/cms/wrappers/managers/UserManager.php#L305">line 305</a></div>
         <code>                    bool
     <strong>activate</strong>(string $token)
         </code>
@@ -581,7 +582,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_delete">
-        <div class="location">at         line 332</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/cms/wrappers/managers/UserManager.php#L332">line 332</a></div>
         <code>                    bool
     <strong>delete</strong>(mixed $usernameIdorEmail)
         </code>
@@ -621,7 +622,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_byId">
-        <div class="location">at         line 372</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/cms/wrappers/managers/UserManager.php#L372">line 372</a></div>
         <code>                    mixed
     <strong>byId</strong>(int $id)
         </code>
@@ -661,7 +662,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_byEmail">
-        <div class="location">at         line 384</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/cms/wrappers/managers/UserManager.php#L384">line 384</a></div>
         <code>                    mixed
     <strong>byEmail</strong>(string $email)
         </code>
@@ -701,7 +702,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_byUsername">
-        <div class="location">at         line 396</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/cms/wrappers/managers/UserManager.php#L396">line 396</a></div>
         <code>                    mixed
     <strong>byUsername</strong>(string $username)
         </code>
@@ -741,7 +742,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_byToken">
-        <div class="location">at         line 408</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/cms/wrappers/managers/UserManager.php#L408">line 408</a></div>
         <code>                    mixed
     <strong>byToken</strong>(string $token)
         </code>

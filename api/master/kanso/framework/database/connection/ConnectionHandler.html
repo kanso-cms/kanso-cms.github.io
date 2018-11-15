@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>kanso\framework\database\connection\ConnectionHandler | Kanso API</title>
+    <title>kanso\framework\database\connection\ConnectionHandler | Kanso CMS API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
@@ -26,6 +26,7 @@
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
                                             <option value="../../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
                                             <option value="../../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -54,7 +55,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../../../../index.html">Kanso API</a>
+                <a class="navbar-brand" href="../../../../index.html">Kanso CMS API</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
                 <ul class="nav navbar-nav">
@@ -85,7 +86,7 @@
     </div>
 
     <p>    class
-    <strong>ConnectionHandler</strong>
+    <strong>ConnectionHandler</strong>        (<a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/ConnectionHandler.php">View source</a>)
 </p>
 
         
@@ -290,7 +291,7 @@ returns an array containing all of the result set row.</p>                </div>
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 61</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/ConnectionHandler.php#L61">line 61</a></div>
         <code>                    
     <strong>__construct</strong>(<a href="../../../../kanso/framework/database/connection/Connection.html"><abbr title="kanso\framework\database\connection\Connection">Connection</abbr></a> $connection, <a href="../../../../kanso/framework/database/connection/Cache.html"><abbr title="kanso\framework\database\connection\Cache">Cache</abbr></a> $cache)
         </code>
@@ -326,7 +327,7 @@ returns an array containing all of the result set row.</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_cache">
-        <div class="location">at         line 74</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/ConnectionHandler.php#L74">line 74</a></div>
         <code>                    <a href="../../../../kanso/framework/database/connection/Cache.html"><abbr title="kanso\framework\database\connection\Cache">Cache</abbr></a>
     <strong>cache</strong>()
         </code>
@@ -356,7 +357,7 @@ returns an array containing all of the result set row.</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_bind">
-        <div class="location">at         line 123</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/ConnectionHandler.php#L123">line 123</a></div>
         <code>                    
     <strong>bind</strong>(string $column, string $value)
         </code>
@@ -392,7 +393,7 @@ returns an array containing all of the result set row.</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_bindMore">
-        <div class="location">at         line 134</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/ConnectionHandler.php#L134">line 134</a></div>
         <code>                    
     <strong>bindMore</strong>(array $parray = [])
         </code>
@@ -423,7 +424,7 @@ returns an array containing all of the result set row.</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_query">
-        <div class="location">at         line 159</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/ConnectionHandler.php#L159">line 159</a></div>
         <code>                    mixed
     <strong>query</strong>(string $query, array $params = [], int $fetchmode = PDO::FETCH_ASSOC)
         </code>
@@ -475,7 +476,7 @@ it returns the number of affected rows.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_column">
-        <div class="location">at         line 246</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/ConnectionHandler.php#L246">line 246</a></div>
         <code>                    array
     <strong>column</strong>(string $query, array $params = [])
         </code>
@@ -520,7 +521,7 @@ it returns the number of affected rows.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_tablePrefix">
-        <div class="location">at         line 268</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/ConnectionHandler.php#L268">line 268</a></div>
         <code>                    string
     <strong>tablePrefix</strong>()
         </code>
@@ -550,7 +551,7 @@ it returns the number of affected rows.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_row">
-        <div class="location">at         line 282</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/ConnectionHandler.php#L282">line 282</a></div>
         <code>                    array
     <strong>row</strong>(string $query, array $params = [], int $fetchmode = PDO::FETCH_ASSOC)
         </code>
@@ -600,7 +601,7 @@ it returns the number of affected rows.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_single">
-        <div class="location">at         line 297</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/ConnectionHandler.php#L297">line 297</a></div>
         <code>                    string
     <strong>single</strong>(string $query, array $params = [])
         </code>
@@ -645,7 +646,7 @@ it returns the number of affected rows.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_lastInsertId">
-        <div class="location">at         line 310</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/ConnectionHandler.php#L310">line 310</a></div>
         <code>                    mixed
     <strong>lastInsertId</strong>()
         </code>
@@ -675,7 +676,7 @@ it returns the number of affected rows.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getLog">
-        <div class="location">at         line 321</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/ConnectionHandler.php#L321">line 321</a></div>
         <code>                    array
     <strong>getLog</strong>()
         </code>
@@ -705,7 +706,7 @@ it returns the number of affected rows.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_cleanQuery">
-        <div class="location">at         line 333</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/ConnectionHandler.php#L333">line 333</a></div>
         <code>                    string
     <strong>cleanQuery</strong>(string $sql)
         </code>
@@ -745,7 +746,7 @@ it returns the number of affected rows.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_prepareQueryForLog">
-        <div class="location">at         line 346</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/ConnectionHandler.php#L346">line 346</a></div>
         <code>            protected        string
     <strong>prepareQueryForLog</strong>(string $query, array $params)
         </code>
@@ -790,7 +791,7 @@ it returns the number of affected rows.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_log">
-        <div class="location">at         line 373</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/ConnectionHandler.php#L373">line 373</a></div>
         <code>            protected        
     <strong>log</strong>(string $query, array $params, float $start)
         </code>
@@ -831,7 +832,7 @@ it returns the number of affected rows.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getQueryType">
-        <div class="location">at         line 389</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/ConnectionHandler.php#L389">line 389</a></div>
         <code>            protected        string
     <strong>getQueryType</strong>(string $query)
         </code>
@@ -871,7 +872,7 @@ it returns the number of affected rows.</p>                            </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_sanitizeValue">
-        <div class="location">at         line 401</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/ConnectionHandler.php#L401">line 401</a></div>
         <code>            protected        mixed
     <strong>sanitizeValue</strong>(mixed $value)
         </code>

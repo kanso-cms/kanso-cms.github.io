@@ -1,7 +1,6 @@
 <!-- _navbar.md -->
 
 * [Documentation](/)
-<li><a href="/api/2.0.0/index.html">API</a></li>
+<li><a href="/api/3.0.0/index.html">API</a></li>
 * [Changelog](https://github.com/kanso-cms/cms/blob/master/CHANGELOG.md)
-* [Versions]()
 * [Github](https://github.com/kanso-cms/cms)

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>kanso\cms\auth\Gatekeeper | Kanso API</title>
+    <title>kanso\cms\auth\Gatekeeper | Kanso CMS API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
@@ -26,6 +26,7 @@
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
                                             <option value="../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
                                             <option value="../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -54,7 +55,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../../../index.html">Kanso API</a>
+                <a class="navbar-brand" href="../../../index.html">Kanso CMS API</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
                 <ul class="nav navbar-nav">
@@ -85,7 +86,7 @@
     </div>
 
     <p>    class
-    <strong>Gatekeeper</strong>
+    <strong>Gatekeeper</strong>        (<a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/cms/auth/Gatekeeper.php">View source</a>)
 </p>
 
         
@@ -273,7 +274,7 @@ cookie as well as the DB.</p>                </div>
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 113</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/cms/auth/Gatekeeper.php#L113">line 113</a></div>
         <code>                    
     <strong>__construct</strong>(<a href="../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a> $SQL, <a href="../../../kanso/cms/wrappers/providers/UserProvider.html"><abbr title="kanso\cms\wrappers\providers\UserProvider">UserProvider</abbr></a> $provider, <a href="../../../kanso/framework/security/Crypto.html"><abbr title="kanso\framework\security\Crypto">Crypto</abbr></a> $crypto, <a href="../../../kanso/framework/http/cookie/Cookie.html"><abbr title="kanso\framework\http\cookie\Cookie">Cookie</abbr></a> $cookie, <a href="../../../kanso/framework/http/session/Session.html"><abbr title="kanso\framework\http\session\Session">Session</abbr></a> $session, <a href="../../../kanso/cms/auth/adapters/EmailAdapter.html"><abbr title="kanso\cms\auth\adapters\EmailAdapter">EmailAdapter</abbr></a> $emailAdapter)
         </code>
@@ -329,7 +330,7 @@ cookie as well as the DB.</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_getUser">
-        <div class="location">at         line 136</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/cms/auth/Gatekeeper.php#L136">line 136</a></div>
         <code>                    mixed
     <strong>getUser</strong>()
         </code>
@@ -359,7 +360,7 @@ cookie as well as the DB.</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_refreshUser">
-        <div class="location">at         line 162</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/cms/auth/Gatekeeper.php#L162">line 162</a></div>
         <code>                    
     <strong>refreshUser</strong>()
         </code>
@@ -380,7 +381,7 @@ cookie as well as the DB.</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_token">
-        <div class="location">at         line 176</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/cms/auth/Gatekeeper.php#L176">line 176</a></div>
         <code>                    string
     <strong>token</strong>()
         </code>
@@ -410,7 +411,7 @@ cookie as well as the DB.</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_isLoggedIn">
-        <div class="location">at         line 195</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/cms/auth/Gatekeeper.php#L195">line 195</a></div>
         <code>                    bool
     <strong>isLoggedIn</strong>(bool $runFresh = false)
         </code>
@@ -450,7 +451,7 @@ cookie as well as the DB.</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_isGuest">
-        <div class="location">at         line 233</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/cms/auth/Gatekeeper.php#L233">line 233</a></div>
         <code>                    bool
     <strong>isGuest</strong>()
         </code>
@@ -480,7 +481,7 @@ cookie as well as the DB.</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_isAdmin">
-        <div class="location">at         line 250</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/cms/auth/Gatekeeper.php#L250">line 250</a></div>
         <code>                    bool
     <strong>isAdmin</strong>()
         </code>
@@ -510,7 +511,7 @@ cookie as well as the DB.</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_verifyToken">
-        <div class="location">at         line 270</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/cms/auth/Gatekeeper.php#L270">line 270</a></div>
         <code>                    bool
     <strong>verifyToken</strong>(string $token)
         </code>
@@ -552,7 +553,7 @@ cookie as well as the DB.</p>                                                </d
             </div>
                     <div class="method-item">
                     <h3 id="method_login">
-        <div class="location">at         line 294</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/cms/auth/Gatekeeper.php#L294">line 294</a></div>
         <code>                    true|<abbr title="kanso\cms\auth\self::LOGIN_INCORRECT">self::LOGIN_INCORRECT</abbr>|<abbr title="kanso\cms\auth\self::LOGIN_ACTIVATING">self::LOGIN_ACTIVATING</abbr>|<abbr title="kanso\cms\auth\self::LOGIN_LOCKED">self::LOGIN_LOCKED</abbr>|<abbr title="kanso\cms\auth\self::LOGIN_BANNED">self::LOGIN_BANNED</abbr>
     <strong>login</strong>(string $username, string $password, bool $force = false)
         </code>
@@ -602,7 +603,7 @@ cookie as well as the DB.</p>                                                </d
             </div>
                     <div class="method-item">
                     <h3 id="method_logout">
-        <div class="location">at         line 357</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/cms/auth/Gatekeeper.php#L357">line 357</a></div>
         <code>                    
     <strong>logout</strong>()
         </code>
@@ -623,7 +624,7 @@ cookie as well as the DB.</p>                                                </d
             </div>
                     <div class="method-item">
                     <h3 id="method_forgotPassword">
-        <div class="location">at         line 374</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/cms/auth/Gatekeeper.php#L374">line 374</a></div>
         <code>                    bool
     <strong>forgotPassword</strong>(string $username, bool $sendEamil = true)
         </code>
@@ -668,7 +669,7 @@ cookie as well as the DB.</p>                                                </d
             </div>
                     <div class="method-item">
                     <h3 id="method_resetPassword">
-        <div class="location">at         line 412</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/cms/auth/Gatekeeper.php#L412">line 412</a></div>
         <code>                    bool
     <strong>resetPassword</strong>(string $password, string $token, bool $sendEamil = true)
         </code>
@@ -718,7 +719,7 @@ cookie as well as the DB.</p>                                                </d
             </div>
                     <div class="method-item">
                     <h3 id="method_forgotUsername">
-        <div class="location">at         line 441</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/cms/auth/Gatekeeper.php#L441">line 441</a></div>
         <code>                    bool
     <strong>forgotUsername</strong>(string $email)
         </code>

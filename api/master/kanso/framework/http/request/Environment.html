@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>kanso\framework\http\request\Environment | Kanso API</title>
+    <title>kanso\framework\http\request\Environment | Kanso CMS API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
@@ -26,6 +26,7 @@
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
                                             <option value="../../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
                                             <option value="../../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -54,7 +55,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../../../../index.html">Kanso API</a>
+                <a class="navbar-brand" href="../../../../index.html">Kanso CMS API</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
                 <ul class="nav navbar-nav">
@@ -85,7 +86,7 @@
     </div>
 
     <p>    class
-    <strong>Environment</strong>
+    <strong>Environment</strong>        (<a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/request/Environment.php">View source</a>)
 </p>
 
         
@@ -115,7 +116,7 @@
             <table class="table table-condensed">
                     <tr>
                 <td class="type" id="property_data">
-                                        protected                                        string
+                                        protected                                        array
                 </td>
                 <td>$data</td>
                 <td class="last">Array access.</td>
@@ -139,7 +140,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string|null
+                    mixed
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method___get">__get</a>(string $key)
@@ -205,7 +206,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_asArray">
-        <div class="location">in <a href="../../../../kanso/framework/common/MagicArrayAccessTrait.html#method_asArray"><abbr title="kanso\framework\common\MagicArrayAccessTrait">MagicArrayAccessTrait</abbr></a> at         line 30</div>
+        <div class="location">in <a href="../../../../kanso/framework/common/MagicArrayAccessTrait.html#method_asArray"><abbr title="kanso\framework\common\MagicArrayAccessTrait">MagicArrayAccessTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/common/MagicArrayAccessTrait.php#L30">line 30</a></div>
         <code>                    array
     <strong>asArray</strong>()
         </code>
@@ -235,8 +236,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___get">
-        <div class="location">in <a href="../../../../kanso/framework/common/MagicArrayAccessTrait.html#method___get"><abbr title="kanso\framework\common\MagicArrayAccessTrait">MagicArrayAccessTrait</abbr></a> at         line 41</div>
-        <code>                    string|null
+        <div class="location">in <a href="../../../../kanso/framework/common/MagicArrayAccessTrait.html#method___get"><abbr title="kanso\framework\common\MagicArrayAccessTrait">MagicArrayAccessTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/common/MagicArrayAccessTrait.php#L41">line 41</a></div>
+        <code>                    mixed
     <strong>__get</strong>(string $key)
         </code>
     </h3>
@@ -262,7 +263,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td>string|null</td>
+            <td>mixed</td>
             <td></td>
         </tr>
     </table>
@@ -275,7 +276,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___set">
-        <div class="location">in <a href="../../../../kanso/framework/common/MagicArrayAccessTrait.html#method___set"><abbr title="kanso\framework\common\MagicArrayAccessTrait">MagicArrayAccessTrait</abbr></a> at         line 56</div>
+        <div class="location">in <a href="../../../../kanso/framework/common/MagicArrayAccessTrait.html#method___set"><abbr title="kanso\framework\common\MagicArrayAccessTrait">MagicArrayAccessTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/common/MagicArrayAccessTrait.php#L56">line 56</a></div>
         <code>                    
     <strong>__set</strong>(string $key, $value)
         </code>
@@ -311,7 +312,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___isset">
-        <div class="location">in <a href="../../../../kanso/framework/common/MagicArrayAccessTrait.html#method___isset"><abbr title="kanso\framework\common\MagicArrayAccessTrait">MagicArrayAccessTrait</abbr></a> at         line 67</div>
+        <div class="location">in <a href="../../../../kanso/framework/common/MagicArrayAccessTrait.html#method___isset"><abbr title="kanso\framework\common\MagicArrayAccessTrait">MagicArrayAccessTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/common/MagicArrayAccessTrait.php#L67">line 67</a></div>
         <code>                    bool
     <strong>__isset</strong>(string $key)
         </code>
@@ -351,7 +352,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___unset">
-        <div class="location">in <a href="../../../../kanso/framework/common/MagicArrayAccessTrait.html#method___unset"><abbr title="kanso\framework\common\MagicArrayAccessTrait">MagicArrayAccessTrait</abbr></a> at         line 77</div>
+        <div class="location">in <a href="../../../../kanso/framework/common/MagicArrayAccessTrait.html#method___unset"><abbr title="kanso\framework\common\MagicArrayAccessTrait">MagicArrayAccessTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/common/MagicArrayAccessTrait.php#L77">line 77</a></div>
         <code>                    
     <strong>__unset</strong>(string $key)
         </code>
@@ -382,7 +383,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 27</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/request/Environment.php#L27">line 27</a></div>
         <code>                    
     <strong>__construct</strong>(array $server = [])
         </code>
@@ -413,7 +414,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_reload">
-        <div class="location">at         line 38</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/request/Environment.php#L38">line 38</a></div>
         <code>                    
     <strong>reload</strong>(array $server = [])
         </code>

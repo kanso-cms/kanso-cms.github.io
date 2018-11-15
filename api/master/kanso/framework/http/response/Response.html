@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>kanso\framework\http\response\Response | Kanso API</title>
+    <title>kanso\framework\http\response\Response | Kanso CMS API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
@@ -26,6 +26,7 @@
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
                                             <option value="../../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
                                             <option value="../../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -54,7 +55,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../../../../index.html">Kanso API</a>
+                <a class="navbar-brand" href="../../../../index.html">Kanso CMS API</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
                 <ul class="nav navbar-nav">
@@ -85,7 +86,7 @@
     </div>
 
     <p>    class
-    <strong>Response</strong>
+    <strong>Response</strong>        (<a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Response.php">View source</a>)
 </p>
 
         
@@ -192,7 +193,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../../../kanso/framework/http/response/Cache.html"><abbr title="kanso\framework\http\response\Cache">Cache</abbr></a>
+                    <a href="../../../../kanso/framework/http/response/CDN.html"><abbr title="kanso\framework\http\response\CDN">CDN</abbr></a>
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_CDN">CDN</a>()
@@ -288,7 +289,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 118</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Response.php#L125">line 125</a></div>
         <code>                    
     <strong>__construct</strong>(<a href="../../../../kanso/framework/http/response/Protocol.html"><abbr title="kanso\framework\http\response\Protocol">Protocol</abbr></a> $protocol, <a href="../../../../kanso/framework/http/response/Format.html"><abbr title="kanso\framework\http\response\Format">Format</abbr></a> $format, <a href="../../../../kanso/framework/http/response/Body.html"><abbr title="kanso\framework\http\response\Body">Body</abbr></a> $body, <a href="../../../../kanso/framework/http/response/Status.html"><abbr title="kanso\framework\http\response\Status">Status</abbr></a> $status, <a href="../../../../kanso/framework/http/response/Headers.html"><abbr title="kanso\framework\http\response\Headers">Headers</abbr></a> $headers, <a href="../../../../kanso/framework/http/cookie/Cookie.html"><abbr title="kanso\framework\http\cookie\Cookie">Cookie</abbr></a> $cookie, <a href="../../../../kanso/framework/http/session/Session.html"><abbr title="kanso\framework\http\session\Session">Session</abbr></a> $session, <a href="../../../../kanso/framework/http/response/Cache.html"><abbr title="kanso\framework\http\response\Cache">Cache</abbr></a> $cache, <a href="../../../../kanso/framework/http/response/CDN.html"><abbr title="kanso\framework\http\response\CDN">CDN</abbr></a> $CDN, <a href="../../../../kanso/framework/mvc/view/View.html"><abbr title="kanso\framework\mvc\view\View">View</abbr></a> $view, string $requestMethod)
         </code>
@@ -369,7 +370,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_protocol">
-        <div class="location">at         line 153</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Response.php#L160">line 160</a></div>
         <code>                    <a href="../../../../kanso/framework/http/response/Protocol.html"><abbr title="kanso\framework\http\response\Protocol">Protocol</abbr></a>
     <strong>protocol</strong>()
         </code>
@@ -399,7 +400,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_body">
-        <div class="location">at         line 164</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Response.php#L171">line 171</a></div>
         <code>                    <a href="../../../../kanso/framework/http/response/Body.html"><abbr title="kanso\framework\http\response\Body">Body</abbr></a>
     <strong>body</strong>()
         </code>
@@ -429,7 +430,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_format">
-        <div class="location">at         line 175</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Response.php#L182">line 182</a></div>
         <code>                    <a href="../../../../kanso/framework/http/response/Format.html"><abbr title="kanso\framework\http\response\Format">Format</abbr></a>
     <strong>format</strong>()
         </code>
@@ -459,7 +460,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_status">
-        <div class="location">at         line 186</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Response.php#L193">line 193</a></div>
         <code>                    <a href="../../../../kanso/framework/http/response/Status.html"><abbr title="kanso\framework\http\response\Status">Status</abbr></a>
     <strong>status</strong>()
         </code>
@@ -489,7 +490,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_headers">
-        <div class="location">at         line 197</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Response.php#L204">line 204</a></div>
         <code>                    <a href="../../../../kanso/framework/http/response/Headers.html"><abbr title="kanso\framework\http\response\Headers">Headers</abbr></a>
     <strong>headers</strong>()
         </code>
@@ -519,7 +520,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_cache">
-        <div class="location">at         line 208</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Response.php#L215">line 215</a></div>
         <code>                    <a href="../../../../kanso/framework/http/response/Cache.html"><abbr title="kanso\framework\http\response\Cache">Cache</abbr></a>
     <strong>cache</strong>()
         </code>
@@ -549,7 +550,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_cookie">
-        <div class="location">at         line 219</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Response.php#L226">line 226</a></div>
         <code>                    <a href="../../../../kanso/framework/http/cookie/Cookie.html"><abbr title="kanso\framework\http\cookie\Cookie">Cookie</abbr></a>
     <strong>cookie</strong>()
         </code>
@@ -579,7 +580,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_session">
-        <div class="location">at         line 230</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Response.php#L237">line 237</a></div>
         <code>                    <a href="../../../../kanso/framework/http/session/Session.html"><abbr title="kanso\framework\http\session\Session">Session</abbr></a>
     <strong>session</strong>()
         </code>
@@ -609,8 +610,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_CDN">
-        <div class="location">at         line 241</div>
-        <code>                    <a href="../../../../kanso/framework/http/response/Cache.html"><abbr title="kanso\framework\http\response\Cache">Cache</abbr></a>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Response.php#L248">line 248</a></div>
+        <code>                    <a href="../../../../kanso/framework/http/response/CDN.html"><abbr title="kanso\framework\http\response\CDN">CDN</abbr></a>
     <strong>CDN</strong>()
         </code>
     </h3>
@@ -626,7 +627,7 @@
 
                     <table class="table table-condensed">
         <tr>
-            <td><a href="../../../../kanso/framework/http/response/Cache.html"><abbr title="kanso\framework\http\response\Cache">Cache</abbr></a></td>
+            <td><a href="../../../../kanso/framework/http/response/CDN.html"><abbr title="kanso\framework\http\response\CDN">CDN</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -639,7 +640,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_view">
-        <div class="location">at         line 252</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Response.php#L259">line 259</a></div>
         <code>                    <a href="../../../../kanso/framework/mvc/view/View.html"><abbr title="kanso\framework\mvc\view\View">View</abbr></a>
     <strong>view</strong>()
         </code>
@@ -669,7 +670,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_finalize">
-        <div class="location">at         line 262</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Response.php#L269">line 269</a></div>
         <code>                    
     <strong>finalize</strong>()
         </code>
@@ -690,7 +691,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_send">
-        <div class="location">at         line 325</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Response.php#L332">line 332</a></div>
         <code>                    
     <strong>send</strong>()
         </code>
@@ -711,7 +712,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_redirect">
-        <div class="location">at         line 354</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Response.php#L361">line 361</a></div>
         <code>                    
     <strong>redirect</strong>(string $url, int $status = 302)
         </code>
@@ -756,7 +757,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_notFound">
-        <div class="location">at         line 375</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Response.php#L382">line 382</a></div>
         <code>                    
     <strong>notFound</strong>()
         </code>
@@ -786,7 +787,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_forbidden">
-        <div class="location">at         line 386</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Response.php#L393">line 393</a></div>
         <code>                    
     <strong>forbidden</strong>()
         </code>
@@ -816,7 +817,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_invalidToken">
-        <div class="location">at         line 397</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Response.php#L404">line 404</a></div>
         <code>                    
     <strong>invalidToken</strong>()
         </code>
@@ -846,7 +847,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_methodNotAllowed">
-        <div class="location">at         line 408</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Response.php#L415">line 415</a></div>
         <code>                    
     <strong>methodNotAllowed</strong>()
         </code>

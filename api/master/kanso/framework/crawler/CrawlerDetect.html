@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>kanso\framework\crawler\CrawlerDetect | Kanso API</title>
+    <title>kanso\framework\crawler\CrawlerDetect | Kanso CMS API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
@@ -26,6 +26,7 @@
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
                                             <option value="../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
                                             <option value="../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -54,7 +55,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../../../index.html">Kanso API</a>
+                <a class="navbar-brand" href="../../../index.html">Kanso CMS API</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
                 <ul class="nav navbar-nav">
@@ -85,7 +86,7 @@
     </div>
 
     <p>    class
-    <strong>CrawlerDetect</strong>
+    <strong>CrawlerDetect</strong>        (<a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/crawler/CrawlerDetect.php">View source</a>)
 </p>
 
         
@@ -146,7 +147,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 72</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/crawler/CrawlerDetect.php#L72">line 72</a></div>
         <code>                    
     <strong>__construct</strong>(<a href="../../../kanso/framework/http/request/Headers.html"><abbr title="kanso\framework\http\request\Headers">Headers</abbr></a> $headers, <a href="../../../kanso/framework/crawler/fixtures/Inclusions.html"><abbr title="kanso\framework\crawler\fixtures\Inclusions">Inclusions</abbr></a> $inclusions, <a href="../../../kanso/framework/crawler/fixtures/Exclusions.html"><abbr title="kanso\framework\crawler\fixtures\Exclusions">Exclusions</abbr></a> $exclusions)
         </code>
@@ -187,7 +188,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_compileRegex">
-        <div class="location">at         line 94</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/crawler/CrawlerDetect.php#L93">line 93</a></div>
         <code>                    string
     <strong>compileRegex</strong>(array $patterns)
         </code>
@@ -205,7 +206,7 @@
                     <tr>
                 <td>array</td>
                 <td>$patterns</td>
-                <td></td>
+                <td>Definition patterns</td>
             </tr>
             </table>
 
@@ -227,7 +228,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isCrawler">
-        <div class="location">at         line 106</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/crawler/CrawlerDetect.php#L105">line 105</a></div>
         <code>                    bool
     <strong>isCrawler</strong>(string|null $userAgent = null)
         </code>
@@ -267,7 +268,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_getMatches">
-        <div class="location">at         line 132</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/crawler/CrawlerDetect.php#L131">line 131</a></div>
         <code>                    string|null
     <strong>getMatches</strong>()
         </code>

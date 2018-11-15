@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>kanso\cms\query\helpers\Urls | Kanso CMS API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:kanso_cms_query_helpers_Urls" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
+                                            <option value="../../../../../master/index.html" data-version="master">master branch</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Kanso CMS API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../kanso.html">kanso</a></li><li class="backslash">\</li><li><a href="../../../../kanso/cms.html">cms</a></li><li class="backslash">\</li><li><a href="../../../../kanso/cms/query.html">query</a></li><li class="backslash">\</li><li><a href="../../../../kanso/cms/query/helpers.html">helpers</a></li><li class="backslash">\</li><li>Urls</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Urls
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Urls</strong>        extends <a href="../../../../kanso/cms/query/helpers/Helper.html"><abbr title="kanso\cms\query\helpers\Helper">Helper</abbr></a>        (<a href="https://github.com/kanso-cms/cms/blob/3.0.0/kanso/cms/query/helpers/Urls.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>CMS Query URL methods.</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_sql">
+                                        protected                                        <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                </td>
+                <td>$sql</td>
+                <td class="last">SQL query builder instance.</td>
+                <td><small>from&nbsp;<a href="../../../../kanso/cms/query/helpers/Helper.html#property_sql"><abbr title="kanso\cms\query\helpers\Helper">Helper</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_container">
+                                        protected                                        <a href="../../../../kanso/framework/ioc/Container.html"><abbr title="kanso\framework\ioc\Container">Container</abbr></a>
+                </td>
+                <td>$container</td>
+                <td class="last">IoC container instance.</td>
+                <td><small>from&nbsp;<a href="../../../../kanso/cms/query/helpers/Helper.html#property_container"><abbr title="kanso\cms\query\helpers\Helper">Helper</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_parent">
+                                        protected                                        <a href="../../../../kanso/cms/query/Query.html"><abbr title="kanso\cms\query\Query">Query</abbr></a>
+                </td>
+                <td>$parent</td>
+                <td class="last">Query instance.</td>
+                <td><small>from&nbsp;<a href="../../../../kanso/cms/query/helpers/Helper.html#property_parent"><abbr title="kanso\cms\query\helpers\Helper">Helper</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../../kanso/framework/ioc/Container.html"><abbr title="kanso\framework\ioc\Container">Container</abbr></a> $container)
+        
+                                            <p>Constructor.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/cms/query/helpers/Helper.html#method___construct"><abbr title="kanso\cms\query\helpers\Helper">Helper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setParent">setParent</a>(<a href="../../../../kanso/cms/query/Query.html"><abbr title="kanso\cms\query\Query">Query</abbr></a> $query)
+        
+                                            <p>Returns query builder instance.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/cms/query/helpers/Helper.html#method_setParent"><abbr title="kanso\cms\query\helpers\Helper">Helper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sql">sql</a>()
+        
+                                            <p>Returns query builder instance.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/cms/query/helpers/Helper.html#method_sql"><abbr title="kanso\cms\query\helpers\Helper">Helper</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_themes_directory">themes_directory</a>()
+        
+                                            <p>Get the path to the theme directory that holds all the themes.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_theme_name">theme_name</a>()
+        
+                                            <p>Get the path to the theme directory that holds all the theme folders.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_theme_directory">theme_directory</a>()
+        
+                                            <p>Get the path to the theme directory that holds the currently active theme.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_theme_url">theme_url</a>()
+        
+                                            <p>Get the URL to the theme directory that holds the currently active theme.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_home_url">home_url</a>()
+        
+                                            <p>Get the homepage URL.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blog_url">blog_url</a>()
+        
+                                            <p>Get the homepage URL for the blog.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blog_location">blog_location</a>()
+        
+                                            <p>Returns the "blog_location" value.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_attachments_url">the_attachments_url</a>()
+        
+                                            <p>Returns the configured attachments upload directory.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_base_url">base_url</a>()
+        
+                                            <p>Returns the base url.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../../../kanso/cms/query/helpers/Helper.html#method___construct"><abbr title="kanso\cms\query\helpers\Helper">Helper</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/3.0.0/kanso/cms/query/helpers/Helper.php#L48">line 48</a></div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../../kanso/framework/ioc/Container.html"><abbr title="kanso\framework\ioc\Container">Container</abbr></a> $container)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../kanso/framework/ioc/Container.html"><abbr title="kanso\framework\ioc\Container">Container</abbr></a></td>
+                <td>$container</td>
+                <td>IoC container</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setParent">
+        <div class="location">in <a href="../../../../kanso/cms/query/helpers/Helper.html#method_setParent"><abbr title="kanso\cms\query\helpers\Helper">Helper</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/3.0.0/kanso/cms/query/helpers/Helper.php#L59">line 59</a></div>
+        <code>                    
+    <strong>setParent</strong>(<a href="../../../../kanso/cms/query/Query.html"><abbr title="kanso\cms\query\Query">Query</abbr></a> $query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns query builder instance.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../kanso/cms/query/Query.html"><abbr title="kanso\cms\query\Query">Query</abbr></a></td>
+                <td>$query</td>
+                <td>Query instance</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sql">
+        <div class="location">in <a href="../../../../kanso/cms/query/helpers/Helper.html#method_sql"><abbr title="kanso\cms\query\helpers\Helper">Helper</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/3.0.0/kanso/cms/query/helpers/Helper.php#L70">line 70</a></div>
+        <code>            protected        <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+    <strong>sql</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns query builder instance.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_themes_directory">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/3.0.0/kanso/cms/query/helpers/Urls.php#L23">line 23</a></div>
+        <code>                    string
+    <strong>themes_directory</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the path to the theme directory that holds all the themes.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_theme_name">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/3.0.0/kanso/cms/query/helpers/Urls.php#L34">line 34</a></div>
+        <code>                    string
+    <strong>theme_name</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the path to the theme directory that holds all the theme folders.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_theme_directory">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/3.0.0/kanso/cms/query/helpers/Urls.php#L45">line 45</a></div>
+        <code>                    string
+    <strong>theme_directory</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the path to the theme directory that holds the currently active theme.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_theme_url">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/3.0.0/kanso/cms/query/helpers/Urls.php#L56">line 56</a></div>
+        <code>                    string
+    <strong>theme_url</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the URL to the theme directory that holds the currently active theme.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_home_url">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/3.0.0/kanso/cms/query/helpers/Urls.php#L67">line 67</a></div>
+        <code>                    string
+    <strong>home_url</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the homepage URL.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blog_url">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/3.0.0/kanso/cms/query/helpers/Urls.php#L78">line 78</a></div>
+        <code>                    string
+    <strong>blog_url</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the homepage URL for the blog.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blog_location">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/3.0.0/kanso/cms/query/helpers/Urls.php#L89">line 89</a></div>
+        <code>                    string|null
+    <strong>blog_location</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the "blog_location" value.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_attachments_url">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/3.0.0/kanso/cms/query/helpers/Urls.php#L100">line 100</a></div>
+        <code>                    string
+    <strong>the_attachments_url</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the configured attachments upload directory.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_base_url">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/3.0.0/kanso/cms/query/helpers/Urls.php#L111">line 111</a></div>
+        <code>                    string
+    <strong>base_url</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the base url.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

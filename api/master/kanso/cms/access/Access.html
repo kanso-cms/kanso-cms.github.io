@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>kanso\cms\access\Access | Kanso API</title>
+    <title>kanso\cms\access\Access | Kanso CMS API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
@@ -26,6 +26,7 @@
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
                                             <option value="../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
                                             <option value="../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -54,7 +55,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../../../index.html">Kanso API</a>
+                <a class="navbar-brand" href="../../../index.html">Kanso CMS API</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
                 <ul class="nav navbar-nav">
@@ -85,7 +86,7 @@
     </div>
 
     <p>    class
-    <strong>Access</strong>
+    <strong>Access</strong>        (<a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/access/Access.php">View source</a>)
 </p>
 
         
@@ -188,7 +189,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 74</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/access/Access.php#L74">line 74</a></div>
         <code>                    
     <strong>__construct</strong>(<a href="../../../kanso/framework/http/request/Request.html"><abbr title="kanso\framework\http\request\Request">Request</abbr></a> $request, <a href="../../../kanso/framework/http/response/Response.html"><abbr title="kanso\framework\http\response\Response">Response</abbr></a> $response, <a href="../../../kanso/framework/file/Filesystem.html"><abbr title="kanso\framework\file\Filesystem">Filesystem</abbr></a> $filesystem, bool $blockIps = false, array $ipWhitelist = [])
         </code>
@@ -239,7 +240,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_ipBlockEnabled">
-        <div class="location">at         line 95</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/access/Access.php#L95">line 95</a></div>
         <code>                    bool
     <strong>ipBlockEnabled</strong>()
         </code>
@@ -269,7 +270,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isIpAllowed">
-        <div class="location">at         line 106</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/access/Access.php#L106">line 106</a></div>
         <code>                    bool
     <strong>isIpAllowed</strong>()
         </code>
@@ -299,7 +300,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_block">
-        <div class="location">at         line 128</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/access/Access.php#L128">line 128</a></div>
         <code>                    
     <strong>block</strong>()
         </code>
@@ -320,7 +321,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_defaultRobotsText">
-        <div class="location">at         line 139</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/access/Access.php#L139">line 139</a></div>
         <code>                    string
     <strong>defaultRobotsText</strong>()
         </code>
@@ -350,7 +351,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_blockAllRobotsText">
-        <div class="location">at         line 150</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/access/Access.php#L150">line 150</a></div>
         <code>                    string
     <strong>blockAllRobotsText</strong>()
         </code>
@@ -380,7 +381,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_saveRobots">
-        <div class="location">at         line 161</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/access/Access.php#L161">line 161</a></div>
         <code>                    
     <strong>saveRobots</strong>(string $content = &#039;&#039;)
         </code>
@@ -411,7 +412,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_deleteRobots">
-        <div class="location">at         line 171</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/access/Access.php#L171">line 171</a></div>
         <code>                    
     <strong>deleteRobots</strong>()
         </code>

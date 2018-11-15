@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>kanso\framework\security\spam\SpamProtector | Kanso API</title>
+    <title>kanso\framework\security\spam\SpamProtector | Kanso CMS API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
@@ -26,6 +26,7 @@
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
                                             <option value="../../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
                                             <option value="../../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -54,7 +55,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../../../../index.html">Kanso API</a>
+                <a class="navbar-brand" href="../../../../index.html">Kanso CMS API</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
                 <ul class="nav navbar-nav">
@@ -85,7 +86,7 @@
     </div>
 
     <p>    class
-    <strong>SpamProtector</strong>
+    <strong>SpamProtector</strong>        (<a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/framework/security/spam/SpamProtector.php">View source</a>)
 </p>
 
         
@@ -198,7 +199,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 42</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/framework/security/spam/SpamProtector.php#L42">line 42</a></div>
         <code>                    
     <strong>__construct</strong>(<a href="../../../../kanso/framework/security/spam/gibberish/Gibberish.html"><abbr title="kanso\framework\security\spam\gibberish\Gibberish">Gibberish</abbr></a> $gibberish, <a href="../../../../kanso/framework/config/Config.html"><abbr title="kanso\framework\config\Config">Config</abbr></a> $config)
         </code>
@@ -234,7 +235,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isSpam">
-        <div class="location">at         line 56</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/framework/security/spam/SpamProtector.php#L56">line 56</a></div>
         <code>                    bool
     <strong>isSpam</strong>(string $text)
         </code>
@@ -274,7 +275,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_rating">
-        <div class="location">at         line 89</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/framework/security/spam/SpamProtector.php#L89">line 89</a></div>
         <code>                    int
     <strong>rating</strong>(string $text)
         </code>
@@ -314,7 +315,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isIpWhiteListed">
-        <div class="location">at         line 117</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/framework/security/spam/SpamProtector.php#L117">line 117</a></div>
         <code>                    bool
     <strong>isIpWhiteListed</strong>(string $ipAddresses)
         </code>
@@ -354,7 +355,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isIpBlacklisted">
-        <div class="location">at         line 129</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/framework/security/spam/SpamProtector.php#L129">line 129</a></div>
         <code>                    bool
     <strong>isIpBlacklisted</strong>(string $ipAddresses)
         </code>
@@ -394,7 +395,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_blacklistIpAddress">
-        <div class="location">at         line 140</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/framework/security/spam/SpamProtector.php#L140">line 140</a></div>
         <code>                    
     <strong>blacklistIpAddress</strong>(string $ipAddresses)
         </code>
@@ -425,7 +426,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_unBlacklistIpAddress">
-        <div class="location">at         line 153</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/framework/security/spam/SpamProtector.php#L153">line 153</a></div>
         <code>                    
     <strong>unBlacklistIpAddress</strong>(string $ipAddresses)
         </code>
@@ -456,7 +457,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_whitelistIpAddress">
-        <div class="location">at         line 166</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/framework/security/spam/SpamProtector.php#L166">line 166</a></div>
         <code>                    
     <strong>whitelistIpAddress</strong>(string $ipAddresses)
         </code>
@@ -487,7 +488,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_unWhitelistIpAddress">
-        <div class="location">at         line 179</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/2.0.0/kanso/framework/security/spam/SpamProtector.php#L179">line 179</a></div>
         <code>                    
     <strong>unWhitelistIpAddress</strong>(string $ipAddresses)
         </code>

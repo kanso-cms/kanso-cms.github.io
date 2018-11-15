@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>kanso\cms\admin\Admin | Kanso API</title>
+    <title>kanso\cms\admin\Admin | Kanso CMS API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
@@ -26,6 +26,7 @@
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
                                             <option value="../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
                                             <option value="../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -54,7 +55,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../../../index.html">Kanso API</a>
+                <a class="navbar-brand" href="../../../index.html">Kanso CMS API</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
                 <ul class="nav navbar-nav">
@@ -85,7 +86,7 @@
     </div>
 
     <p>    class
-    <strong>Admin</strong>
+    <strong>Admin</strong>        (<a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/admin/Admin.php">View source</a>)
 </p>
 
         
@@ -152,16 +153,6 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>()
-        
-                                            <p>Constructor.</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-8 type">
                     <a href="#method_registerPostType">registerPostType</a>(string $title, string $type, string $icon, string $route)
         
                                             <p>Register a custom post type.</p>                </div>
@@ -185,7 +176,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method_container">
-        <div class="location">in <a href="../../../kanso/framework/ioc/ContainerAwareTrait.html#method_container"><abbr title="kanso\framework\ioc\ContainerAwareTrait">ContainerAwareTrait</abbr></a> at         line 30</div>
+        <div class="location">in <a href="../../../kanso/framework/ioc/ContainerAwareTrait.html#method_container"><abbr title="kanso\framework\ioc\ContainerAwareTrait">ContainerAwareTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/ioc/ContainerAwareTrait.php#L30">line 30</a></div>
         <code>                    <a href="../../../kanso/framework/ioc/Container.html"><abbr title="kanso\framework\ioc\Container">Container</abbr></a>
     <strong>container</strong>()
         </code>
@@ -215,7 +206,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method___get">
-        <div class="location">in <a href="../../../kanso/framework/ioc/ContainerAwareTrait.html#method___get"><abbr title="kanso\framework\ioc\ContainerAwareTrait">ContainerAwareTrait</abbr></a> at         line 47</div>
+        <div class="location">in <a href="../../../kanso/framework/ioc/ContainerAwareTrait.html#method___get"><abbr title="kanso\framework\ioc\ContainerAwareTrait">ContainerAwareTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/ioc/ContainerAwareTrait.php#L47">line 47</a></div>
         <code>                    mixed
     <strong>__get</strong>(string $key)
         </code>
@@ -254,29 +245,8 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method___construct">
-        <div class="location">at         line 30</div>
-        <code>                    
-    <strong>__construct</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Constructor.</p>                                                </div>
-                <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
                     <h3 id="method_registerPostType">
-        <div class="location">at         line 43</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/admin/Admin.php#L33">line 33</a></div>
         <code>                    
     <strong>registerPostType</strong>(string $title, string $type, string $icon, string $route)
         </code>
@@ -322,7 +292,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_addPage">
-        <div class="location">at         line 142</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/admin/Admin.php#L132">line 132</a></div>
         <code>                    
     <strong>addPage</strong>(string $title, string $slug, string $icon, string $model, string $view, string $parent = null, bool $adminOnly = false, array $styles = null, array $scripts = null)
         </code>

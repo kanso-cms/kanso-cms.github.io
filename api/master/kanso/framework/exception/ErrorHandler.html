@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>kanso\framework\exception\ErrorHandler | Kanso API</title>
+    <title>kanso\framework\exception\ErrorHandler | Kanso CMS API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
@@ -26,6 +26,7 @@
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
                                             <option value="../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
                                             <option value="../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -54,7 +55,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../../../index.html">Kanso API</a>
+                <a class="navbar-brand" href="../../../index.html">Kanso CMS API</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
                 <ul class="nav navbar-nav">
@@ -85,7 +86,7 @@
     </div>
 
     <p>    class
-    <strong>ErrorHandler</strong>
+    <strong>ErrorHandler</strong>        (<a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/exception/ErrorHandler.php">View source</a>)
 </p>
 
         
@@ -277,7 +278,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 68</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/exception/ErrorHandler.php#L68">line 68</a></div>
         <code>                    
     <strong>__construct</strong>(bool $displayErrors, int $errorReporting)
         </code>
@@ -313,7 +314,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_register">
-        <div class="location">at         line 100</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/exception/ErrorHandler.php#L100">line 100</a></div>
         <code>            protected        
     <strong>register</strong>()
         </code>
@@ -334,7 +335,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setLogger">
-        <div class="location">at         line 124</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/exception/ErrorHandler.php#L125">line 125</a></div>
         <code>                    
     <strong>setLogger</strong>(<a href="../../../kanso/framework/exception/ErrorLogger.html"><abbr title="kanso\framework\exception\ErrorLogger">ErrorLogger</abbr></a> $logger)
         </code>
@@ -352,7 +353,7 @@
                     <tr>
                 <td><a href="../../../kanso/framework/exception/ErrorLogger.html"><abbr title="kanso\framework\exception\ErrorLogger">ErrorLogger</abbr></a></td>
                 <td>$logger</td>
-                <td></td>
+                <td>Error logger</td>
             </tr>
             </table>
 
@@ -365,7 +366,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_disableLoggingFor">
-        <div class="location">at         line 135</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/exception/ErrorHandler.php#L136">line 136</a></div>
         <code>                    
     <strong>disableLoggingFor</strong>(string|array $exceptionType)
         </code>
@@ -396,7 +397,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_disableShutdownHandler">
-        <div class="location">at         line 145</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/exception/ErrorHandler.php#L146">line 146</a></div>
         <code>                    
     <strong>disableShutdownHandler</strong>()
         </code>
@@ -417,7 +418,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_handle">
-        <div class="location">at         line 157</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/exception/ErrorHandler.php#L158">line 158</a></div>
         <code>                    
     <strong>handle</strong>(string $exceptionType, <a target="_blank" href="http://php.net/Closure">Closure</a> $handler)
         </code>
@@ -453,7 +454,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_clearHandlers">
-        <div class="location">at         line 168</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/exception/ErrorHandler.php#L169">line 169</a></div>
         <code>                    
     <strong>clearHandlers</strong>(string $exceptionType)
         </code>
@@ -484,7 +485,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_replaceHandlers">
-        <div class="location">at         line 186</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/exception/ErrorHandler.php#L187">line 187</a></div>
         <code>                    
     <strong>replaceHandlers</strong>(string $exceptionType, <a target="_blank" href="http://php.net/Closure">Closure</a> $handler)
         </code>
@@ -520,7 +521,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_restore">
-        <div class="location">at         line 198</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/exception/ErrorHandler.php#L199">line 199</a></div>
         <code>                    
     <strong>restore</strong>()
         </code>
@@ -541,7 +542,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_clearOutputBuffers">
-        <div class="location">at         line 214</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/exception/ErrorHandler.php#L215">line 215</a></div>
         <code>            protected        
     <strong>clearOutputBuffers</strong>()
         </code>
@@ -562,7 +563,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_shouldExceptionBeLogged">
-        <div class="location">at         line 226</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/exception/ErrorHandler.php#L227">line 227</a></div>
         <code>            protected        bool
     <strong>shouldExceptionBeLogged</strong>(<a target="_blank" href="http://php.net/Throwable">Throwable</a> $exception)
         </code>
@@ -602,7 +603,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_handler">
-        <div class="location">at         line 260</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/exception/ErrorHandler.php#L261">line 261</a></div>
         <code>                    
     <strong>handler</strong>(<a target="_blank" href="http://php.net/Throwable">Throwable</a> $exception)
         </code>
@@ -633,7 +634,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_error_reporting">
-        <div class="location">at         line 308</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/exception/ErrorHandler.php#L309">line 309</a></div>
         <code>                    int
     <strong>error_reporting</strong>(int $errorReporting = null)
         </code>
@@ -651,7 +652,7 @@
                     <tr>
                 <td>int</td>
                 <td>$errorReporting</td>
-                <td></td>
+                <td>(optional) (default NULL)</td>
             </tr>
             </table>
 
@@ -673,7 +674,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_display_errors">
-        <div class="location">at         line 327</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/exception/ErrorHandler.php#L328">line 328</a></div>
         <code>                    bool
     <strong>display_errors</strong>(bool $display_errors = null)
         </code>
@@ -691,7 +692,7 @@
                     <tr>
                 <td>bool</td>
                 <td>$display_errors</td>
-                <td></td>
+                <td>(optional) (default NULL)</td>
             </tr>
             </table>
 

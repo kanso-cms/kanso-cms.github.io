@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="robots" content="index, follow, all" />
-    <title>kanso\framework\http\cookie\storage\NativeCookieStorage | Kanso API</title>
+    <title>kanso\framework\http\cookie\storage\NativeCookieStorage | Kanso CMS API</title>
 
             <link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap-theme.min.css">
@@ -26,6 +26,7 @@
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
                                             <option value="../../../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
                                             <option value="../../../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -54,7 +55,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="../../../../../index.html">Kanso API</a>
+                <a class="navbar-brand" href="../../../../../index.html">Kanso CMS API</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-elements">
                 <ul class="nav navbar-nav">
@@ -86,7 +87,7 @@
 
     <p>    class
     <strong>NativeCookieStorage</strong>        implements
-        <a href="../../../../../kanso/framework/http/cookie/storage/StoreInterface.html"><abbr title="kanso\framework\http\cookie\storage\StoreInterface">StoreInterface</abbr></a>
+        <a href="../../../../../kanso/framework/http/cookie/storage/StoreInterface.html"><abbr title="kanso\framework\http\cookie\storage\StoreInterface">StoreInterface</abbr></a>        (<a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/cookie/storage/NativeCookieStorage.php">View source</a>)
 </p>
 
         
@@ -139,7 +140,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         line 40</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/cookie/storage/NativeCookieStorage.php#L40">line 40</a></div>
         <code>                    
     <strong>__construct</strong>(<a href="../../../../../kanso/framework/security/Crypto.html"><abbr title="kanso\framework\security\Crypto">Crypto</abbr></a> $crypto, array $configuration)
         </code>
@@ -157,12 +158,12 @@
                     <tr>
                 <td><a href="../../../../../kanso/framework/security/Crypto.html"><abbr title="kanso\framework\security\Crypto">Crypto</abbr></a></td>
                 <td>$crypto</td>
-                <td></td>
+                <td>Encryption service</td>
             </tr>
                     <tr>
                 <td>array</td>
                 <td>$configuration</td>
-                <td></td>
+                <td>Assoc array of cookie configurations</td>
             </tr>
             </table>
 
@@ -175,7 +176,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_read">
-        <div class="location">at         line 50</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/cookie/storage/NativeCookieStorage.php#L50">line 50</a></div>
         <code>                    mixed
     <strong>read</strong>(string $name)
         </code>
@@ -215,7 +216,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_write">
-        <div class="location">at         line 63</div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/cookie/storage/NativeCookieStorage.php#L63">line 63</a></div>
         <code>                    
     <strong>write</strong>(string $name, $data)
         </code>
