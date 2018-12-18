@@ -16,10 +16,6 @@ The Kanso validator provides a simple and consistent way of validating user inpu
 
 You can access a new Validator directly via the IoC container:
 ```php
-$fields = $kanso->Request->fetch(); 
-
-$rules = ['email'  => ['required', 'email'] ];
-
 $validator = $kanso->Validator->create($fields, $rules);
 ```
 
@@ -121,6 +117,8 @@ else
 	// Display errors
 }
 ```
+
+> Note that all field keys do NOT need to be set. If a filter is set to a field that does not exist it will simply be skipped over. Similarly, if a filter is NOT defined for a field, the field value will be left untouched. 
 
 The following filter rules are included with Kanso:
 
