@@ -45,6 +45,14 @@
 	- [Template Methods](/themes/template-methods.md)
 	- [The Loop](/themes/loop.md)
 	- [The Query](/themes/query.md)
+- Ecommerce
+	- [Service](/ecommerce/introduction.md)
+	- [Products](/ecommerce/products.md)
+	- [Reviews](/ecommerce/reviews.md)
+	- [Coupons](/ecommerce/coupons.md)
+	- [Rewards](/ecommerce/rewards.md)
+	- [Cart](/ecommerce/cart.md)
+	- [Checkout](/ecommerce/checkout.md)
 - [Admin Panel](/admin.md)
 - [Deployment](/deployment.md)
 - Learn More
