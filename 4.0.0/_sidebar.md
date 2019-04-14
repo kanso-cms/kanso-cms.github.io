@@ -66,6 +66,7 @@ select{-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;appearan
 - [Admin Panel](/admin.md)
 - [Deployment](/deployment.md)
 - Learn More
+    - [Analytics](/learn-more/analytics.md)
 	- [Array Helper](/learn-more/array.md)
 	- [String Helper](/learn-more/string.md)
 	- [Humanizer](/learn-more/humanizer.md)

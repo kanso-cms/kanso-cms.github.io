@@ -1,5 +1,3 @@
-[Documentation Menu](#)
-
 # CDN Support
 
 - [Configuration](#configuration)
