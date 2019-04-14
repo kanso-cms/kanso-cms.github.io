@@ -27,6 +27,7 @@
                 <select id="version-switcher" name="version">
                                             <option value="../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
                                             <option value="../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
+                                            <option value="../../../../4.0.0/index.html" data-version="4.0.0">4.0.0</option>
                                             <option value="../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -116,9 +117,9 @@
                     string
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_preset">preset</a>(string $template, array $vars = [])
+                    <a href="#method_preset">preset</a>(string $template, array $vars = [], bool $includeKanso = false)
         
-                                            <p>Load a present template.</p>                </div>
+                                            <p>Load a preset template.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -169,7 +170,7 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/Email.php#L99">line 99</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/Email.php#L100">line 100</a></div>
         <code>                    
     <strong>__construct</strong>(<a href="../../../kanso/framework/file/Filesystem.html"><abbr title="kanso\framework\file\Filesystem">Filesystem</abbr></a> $filesystem, <a href="../../../kanso/cms/email/phpmailer/PHPMailer.html"><abbr title="kanso\cms\email\phpmailer\PHPMailer">PHPMailer</abbr></a> $smtpMailer, <a href="../../../kanso/cms/email/Log.html"><abbr title="kanso\cms\email\Log">Log</abbr></a> $log, array $theme = [], bool $useStmp = false, array $smtpSettings = [])
         </code>
@@ -225,9 +226,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_preset">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/Email.php#L122">line 122</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/Email.php#L123">line 123</a></div>
         <code>                    string
-    <strong>preset</strong>(string $template, array $vars = [])
+    <strong>preset</strong>(string $template, array $vars = [], bool $includeKanso = false)
         </code>
     </h3>
     <div class="details">
@@ -235,7 +236,7 @@
     
 
                     <div class="method-description">
-                                    <p>Load a present template.</p>                                                </div>
+                                    <p>Load a preset template.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -243,12 +244,17 @@
                     <tr>
                 <td>string</td>
                 <td>$template</td>
-                <td>Template name</td>
+                <td></td>
             </tr>
                     <tr>
                 <td>array</td>
                 <td>$vars</td>
-                <td>Vars to send to the template</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$includeKanso</td>
+                <td></td>
             </tr>
             </table>
 
@@ -270,7 +276,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_send">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/Email.php#L143">line 143</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/Email.php#L149">line 149</a></div>
         <code>                    bool
     <strong>send</strong>(string $toEmail, string $senderName, string $senderEmail, string $subject, string $content, string $format = &#039;html&#039;)
         </code>
@@ -335,7 +341,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_html">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/Email.php#L208">line 208</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/Email.php#L214">line 214</a></div>
         <code>                    string
     <strong>html</strong>(string $subject, string $content)
         </code>
@@ -380,7 +386,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_theme">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/Email.php#L231">line 231</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/Email.php#L237">line 237</a></div>
         <code>                    array
     <strong>theme</strong>(array $theme = [])
         </code>
@@ -420,7 +426,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_button">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/Email.php#L247">line 247</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/Email.php#L253">line 253</a></div>
         <code>                    string
     <strong>button</strong>(string $href, string $text, string $size = &#039;md&#039;)
         </code>

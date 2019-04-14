@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>kanso\cms\access\Access | Kanso CMS API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:kanso_cms_access_Access" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
+                                            <option value="../../../../4.0.0/index.html" data-version="4.0.0">4.0.0</option>
+                                            <option value="../../../../master/index.html" data-version="master">master branch</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Kanso CMS API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../kanso.html">kanso</a></li><li class="backslash">\</li><li><a href="../../../kanso/cms.html">cms</a></li><li class="backslash">\</li><li><a href="../../../kanso/cms/access.html">access</a></li><li class="backslash">\</li><li>Access</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Access
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Access</strong>        (<a href="https://github.com/kanso-cms/cms/blob/4.0.0/kanso/cms/access/Access.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Access/Security.</p>                                </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../kanso/framework/http/request/Request.html"><abbr title="kanso\framework\http\request\Request">Request</abbr></a> $request, <a href="../../../kanso/framework/http/response/Response.html"><abbr title="kanso\framework\http\response\Response">Response</abbr></a> $response, <a href="../../../kanso/framework/file/Filesystem.html"><abbr title="kanso\framework\file\Filesystem">Filesystem</abbr></a> $filesystem, bool $blockIps = false, array $ipWhitelist = [])
+        
+                                            <p>Constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ipBlockEnabled">ipBlockEnabled</a>()
+        
+                                            <p>Is ip blocking enabled ?</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isIpAllowed">isIpAllowed</a>()
+        
+                                            <p>Is ip address allowed.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_block">block</a>()
+        
+                                            <p>Block the current request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_defaultRobotsText">defaultRobotsText</a>()
+        
+                                            <p>Returns the default robots.txt file contents.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blockAllRobotsText">blockAllRobotsText</a>()
+        
+                                            <p>Returns the block all robots.txt file contents.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_saveRobots">saveRobots</a>(string $content = &#039;&#039;)
+        
+                                            <p>Save the robots.txt file.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_deleteRobots">deleteRobots</a>()
+        
+                                            <p>Save the robots.txt file.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.0.0/kanso/cms/access/Access.php#L74">line 74</a></div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../kanso/framework/http/request/Request.html"><abbr title="kanso\framework\http\request\Request">Request</abbr></a> $request, <a href="../../../kanso/framework/http/response/Response.html"><abbr title="kanso\framework\http\response\Response">Response</abbr></a> $response, <a href="../../../kanso/framework/file/Filesystem.html"><abbr title="kanso\framework\file\Filesystem">Filesystem</abbr></a> $filesystem, bool $blockIps = false, array $ipWhitelist = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../kanso/framework/http/request/Request.html"><abbr title="kanso\framework\http\request\Request">Request</abbr></a></td>
+                <td>$request</td>
+                <td>Request object</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../kanso/framework/http/response/Response.html"><abbr title="kanso\framework\http\response\Response">Response</abbr></a></td>
+                <td>$response</td>
+                <td>Response object</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../kanso/framework/file/Filesystem.html"><abbr title="kanso\framework\file\Filesystem">Filesystem</abbr></a></td>
+                <td>$filesystem</td>
+                <td>Filesystem instancea</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$blockIps</td>
+                <td>Should we block all IP address except the whitelist (optional) (default false)</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$ipWhitelist</td>
+                <td>Array of whitelisted ip addresses (optional) (default [])</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ipBlockEnabled">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.0.0/kanso/cms/access/Access.php#L95">line 95</a></div>
+        <code>                    bool
+    <strong>ipBlockEnabled</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Is ip blocking enabled ?</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isIpAllowed">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.0.0/kanso/cms/access/Access.php#L106">line 106</a></div>
+        <code>                    bool
+    <strong>isIpAllowed</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Is ip address allowed.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_block">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.0.0/kanso/cms/access/Access.php#L128">line 128</a></div>
+        <code>                    
+    <strong>block</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Block the current request.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_defaultRobotsText">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.0.0/kanso/cms/access/Access.php#L139">line 139</a></div>
+        <code>                    string
+    <strong>defaultRobotsText</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the default robots.txt file contents.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blockAllRobotsText">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.0.0/kanso/cms/access/Access.php#L150">line 150</a></div>
+        <code>                    string
+    <strong>blockAllRobotsText</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the block all robots.txt file contents.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_saveRobots">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.0.0/kanso/cms/access/Access.php#L161">line 161</a></div>
+        <code>                    
+    <strong>saveRobots</strong>(string $content = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Save the robots.txt file.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$content</td>
+                <td>Content to put into the file</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_deleteRobots">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.0.0/kanso/cms/access/Access.php#L171">line 171</a></div>
+        <code>                    
+    <strong>deleteRobots</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Save the robots.txt file.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

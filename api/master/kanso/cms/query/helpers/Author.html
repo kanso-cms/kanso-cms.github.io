@@ -27,6 +27,7 @@
                 <select id="version-switcher" name="version">
                                             <option value="../../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
                                             <option value="../../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
+                                            <option value="../../../../../4.0.0/index.html" data-version="4.0.0">4.0.0</option>
                                             <option value="../../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -175,7 +176,7 @@
                     bool
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_author_exists">author_exists</a>(string|int $author_name)
+                    <a href="#method_author_exists">author_exists</a>(string|int $usernameOrId)
         
                                             <p>Checks whether a given author exists by name or id.</p>                </div>
                 <div class="col-md-2"></div>
@@ -432,7 +433,7 @@
                     <h3 id="method_author_exists">
         <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/query/helpers/Author.php#L55">line 55</a></div>
         <code>                    bool
-    <strong>author_exists</strong>(string|int $author_name)
+    <strong>author_exists</strong>(string|int $usernameOrId)
         </code>
     </h3>
     <div class="details">
@@ -447,8 +448,8 @@
                     <table class="table table-condensed">
                     <tr>
                 <td>string|int</td>
-                <td>$author_name</td>
-                <td>Author name or id</td>
+                <td>$usernameOrId</td>
+                <td>Username or id</td>
             </tr>
             </table>
 

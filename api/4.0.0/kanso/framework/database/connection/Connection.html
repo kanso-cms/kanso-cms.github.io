@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>kanso\framework\database\connection\Connection | Kanso CMS API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:kanso_framework_database_connection_Connection" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
+                                            <option value="../../../../../4.0.0/index.html" data-version="4.0.0">4.0.0</option>
+                                            <option value="../../../../../master/index.html" data-version="master">master branch</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Kanso CMS API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../kanso.html">kanso</a></li><li class="backslash">\</li><li><a href="../../../../kanso/framework.html">framework</a></li><li class="backslash">\</li><li><a href="../../../../kanso/framework/database.html">database</a></li><li class="backslash">\</li><li><a href="../../../../kanso/framework/database/connection.html">connection</a></li><li class="backslash">\</li><li>Connection</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Connection
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Connection</strong>        (<a href="https://github.com/kanso-cms/cms/blob/4.0.0/kanso/framework/database/connection/Connection.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Database connection.</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_name">
+                                        protected                                        string
+                </td>
+                <td>$name</td>
+                <td class="last">Database name.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_host">
+                                        protected                                        <abbr title="kanso\framework\database\connection\string.">string.</abbr>
+                </td>
+                <td>$host</td>
+                <td class="last">Database host.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_username">
+                                        protected                                        string
+                </td>
+                <td>$username</td>
+                <td class="last">Database username.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_password">
+                                        protected                                        string
+                </td>
+                <td>$password</td>
+                <td class="last">Database username password.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_tablePrefix">
+                                        protected                                        string
+                </td>
+                <td>$tablePrefix</td>
+                <td class="last">Table prefix.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_dsn">
+                                        protected                                        string
+                </td>
+                <td>$dsn</td>
+                <td class="last">Connection DSN.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_options">
+                                        protected                                        array
+                </td>
+                <td>$options</td>
+                <td class="last">PDO options.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_pdo">
+                                        protected                                        <a target="_blank" href="http://php.net/PDO">PDO</a>|null
+                </td>
+                <td>$pdo</td>
+                <td class="last">PDO object.</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(array $config, string $type = &#039;mysql&#039;)
+        
+                                            <p>Constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a target="_blank" href="http://php.net/PDO">PDO</a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_connect">connect</a>()
+        
+                                            <p>Creates a PDO instance.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isConnected">isConnected</a>()
+        
+                                            <p>Creates a new PDO instance.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_reconnect">reconnect</a>()
+        
+                                            <p>Creates a new PDO instance.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pdo">pdo</a>()
+        
+                                            <p>Creates a new PDO instance.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_tablePrefix">tablePrefix</a>()
+        
+                                            <p>Get the table prefix.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isAlive">isAlive</a>()
+        
+                                            <p>Checks if the connection is alive.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_close">close</a>()
+        
+                                            <p>Close the current connection.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_builder">builder</a>()
+        
+                                            <p>Return a new Query builder instance.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/database/connection/ConnectionHandler.html"><abbr title="kanso\framework\database\connection\ConnectionHandler">ConnectionHandler</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_handler">handler</a>()
+        
+                                            <p>Return a new Query builder instance.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getConnectionOptions">getConnectionOptions</a>()
+        
+                                            <p>Returns the connection options.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.0.0/kanso/framework/database/connection/Connection.php#L93">line 93</a></div>
+        <code>                    
+    <strong>__construct</strong>(array $config, string $type = &#039;mysql&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$config</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td>If connection type is not supported</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_connect">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.0.0/kanso/framework/database/connection/Connection.php#L137">line 137</a></div>
+        <code>            protected        <a target="_blank" href="http://php.net/PDO">PDO</a>
+    <strong>connect</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a PDO instance.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a target="_blank" href="http://php.net/PDO">PDO</a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isConnected">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.0.0/kanso/framework/database/connection/Connection.php#L156">line 156</a></div>
+        <code>                    
+    <strong>isConnected</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a new PDO instance.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reconnect">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.0.0/kanso/framework/database/connection/Connection.php#L166">line 166</a></div>
+        <code>                    
+    <strong>reconnect</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a new PDO instance.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pdo">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.0.0/kanso/framework/database/connection/Connection.php#L178">line 178</a></div>
+        <code>                    
+    <strong>pdo</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a new PDO instance.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_tablePrefix">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.0.0/kanso/framework/database/connection/Connection.php#L193">line 193</a></div>
+        <code>                    
+    <strong>tablePrefix</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the table prefix.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isAlive">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.0.0/kanso/framework/database/connection/Connection.php#L204">line 204</a></div>
+        <code>                    bool
+    <strong>isAlive</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Checks if the connection is alive.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_close">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.0.0/kanso/framework/database/connection/Connection.php#L223">line 223</a></div>
+        <code>                    
+    <strong>close</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Close the current connection.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_builder">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.0.0/kanso/framework/database/connection/Connection.php#L233">line 233</a></div>
+        <code>                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+    <strong>builder</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return a new Query builder instance.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_handler">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.0.0/kanso/framework/database/connection/Connection.php#L243">line 243</a></div>
+        <code>                    <a href="../../../../kanso/framework/database/connection/ConnectionHandler.html"><abbr title="kanso\framework\database\connection\ConnectionHandler">ConnectionHandler</abbr></a>
+    <strong>handler</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return a new Query builder instance.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/database/connection/ConnectionHandler.html"><abbr title="kanso\framework\database\connection\ConnectionHandler">ConnectionHandler</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getConnectionOptions">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.0.0/kanso/framework/database/connection/Connection.php#L259">line 259</a></div>
+        <code>            protected        array
+    <strong>getConnectionOptions</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the connection options.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
