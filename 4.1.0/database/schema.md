@@ -42,31 +42,6 @@ When the kanso CMS is installed, the following database structure will exist
 | `register_key`        | varchar(255)     |
 | `password_key`        | varchar(255)     |
 
-`crm_visitors`
-
-| Column        | Type             |
-|---------------|------------------|
-| `id`          | int(10) unsigned |
-| `visitor_id`  | varchar(255)     |
-| `ip_address`  | varchar(255)     |
-| `name`        | varchar(255)     |
-| `email`       | varchar(255)     |
-| `last_active` | int(10) unsigned |
-
-`crm_visits`
-
-| Column       | Type             |
-|--------------|------------------|
-| `id`         | int(10) unsigned |
-| `visitor_id` | varchar(255)     |
-| `ip_address` | varchar(255)     |
-| `page`       | varchar(255)     |
-| `date`       | int(10) unsigned |
-| `medium`     | varchar(255)     |
-| `channel`    | varchar(255)     |
-| `campaign`   | varchar(255)     |
-| `keyword`    | varchar(255)     |
-| `creative`   | varchar(255)     |
 
 --------------------------------------------------------
 
