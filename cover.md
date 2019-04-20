@@ -2,7 +2,7 @@
 
 <img src="logo.svg" data-origin="logo.svg" alt="logo" width="100">
 
-# Kanso CMS <small>4.0.0</small>
+# Kanso CMS <small>4.1.0</small>
 
 > An simple PHP based CMS
 
@@ -11,4 +11,4 @@
 - Fully featured admin panel
 
 [GitHub](https://github.com/kanso-cms/cms)
-<a href="/4.0.0/">Get Started</a>
+<a href="/4.1.0/">Get Started</a>
