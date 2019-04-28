@@ -34,30 +34,37 @@ All Kanso core decencies are registered as services, however there are additiona
 | HttpService         | `kanso\http\Response\Response`                | `Response`      | HTTP response object     |
 | HttpService         | `kanso\http\cookie\Cookie`                    | `Cookie`        | HTTP cookie manager      |
 | HttpService         | `kanso\http\session\Session`                  | `Session`       | HTTP session manager     |
-| ViewService         | `kanso\framework\mvc\view\View`               | `View`          | View                     |
+| MVCService          | `kanso\framework\mvc\view\View`               | `View`          | View                     |
 | OnionService        | `kanso\framework\onion\Onion`                 | `Onion`         | Onion middleware manager |
-| UtilityService      | `kanso\framework\utility\GUMP`                | `Validation`    | Validation service       |
+| PixlService         | `kanso\framework\pixl\Image`                  | `Pixl`          | Pixl image processor     |
+| CrawlerService      | `kanso\framework\crawler\CrawlerDetect`       | `UserAgent`     | UserAgent manager        |
+| DeploymentService   | `kanso\framework\deployment\Deployment`       | `Deployment`    | Deployment manager       |
+
 
 --------------------------------------------------------
 
 ### CMS Services
 
-| Service           | Namespace                                     | Key               | Description          |
-|:------------------|:----------------------------------------------|:------------------|:---------------------|
-| BootService       | `kanso\cms\application\Application`           | `CMS`             | CMS application core |
-| InstallerService  | `kanso\cms\install\Installer`                 | `Installer`       | CMS installer        |
-| EmailService      | `kanso\cms\email\Email`                       | `Email`           | Email utility        |
-| EventService      | `kanso\cms\event\Events`                      | `Events`          | Events manager       |
-| EventService      | `kanso\cms\event\Filters`                     | `Filters`         | Filters manager      |
-| GatekeeperService | `kanso\cms\auth\Gatekeeper`                   | `Gatekeeper`      | CMS Gatekeeper       |
-| QueryService      | `kanso\cms\query\Query`                       | `Query`           | CMS Query            |
-| AdminService      | `kanso\cms\admin\Admin`                       | `Admin`           | Admin panel access   |
-| WrapperService    | `kanso\cms\wrappers\managers\UserManager`     | `UserManager`     | User manager         |
-| WrapperService    | `kanso\cms\wrappers\managers\CategoryManager` | `CategoryManager` | Category manager     |
-| WrapperService    | `kanso\cms\wrappers\managers\TagManager`      | `TagManager`      | Tag manager          |
-| WrapperService    | `kanso\cms\wrappers\managers\PostManager`     | `PostManager`     | Post manager         |
-| WrapperService    | `kanso\cms\wrappers\managers\CommentManager`  | `CommentManager`  | Comment manager      |
-| WrapperService    | `kanso\cms\wrappers\managers\MediaManager`    | `MediaManager`    | Media manager        |
+| Service           | Namespace                                     | Key               | Description           |
+|:------------------|:----------------------------------------------|:------------------|:----------------------|
+| BootService       | `kanso\cms\application\Application`           | `CMS`             | CMS application core  |
+| InstallerService  | `kanso\cms\install\Installer`                 | `Installer`       | CMS installer         |
+| CrmService        | `kanso\cms\crm\Crm`                           | `Crm`             | Crm manager           |
+| AnalyticsService  | `kanso\cms\analytics\Analytics`               | `analytics`       | Analytics integration |
+| EmailService      | `kanso\cms\email\Email`                       | `Email`           | Email utility         |
+| EventService      | `kanso\cms\event\Events`                      | `Events`          | Events manager        |
+| EventService      | `kanso\cms\event\Filters`                     | `Filters`         | Filters manager       |
+| GatekeeperService | `kanso\cms\auth\Gatekeeper`                   | `Gatekeeper`      | CMS Gatekeeper        |
+| QueryService      | `kanso\cms\query\Query`                       | `Query`           | CMS Query             |
+| AdminService      | `kanso\cms\admin\Admin`                       | `Admin`           | Admin panel access    |
+| WrapperService    | `kanso\cms\wrappers\managers\UserManager`     | `UserManager`     | User manager          |
+| WrapperService    | `kanso\cms\wrappers\managers\CategoryManager` | `CategoryManager` | Category manager      |
+| WrapperService    | `kanso\cms\wrappers\managers\TagManager`      | `TagManager`      | Tag manager           |
+| WrapperService    | `kanso\cms\wrappers\managers\PostManager`     | `PostManager`     | Post manager          |
+| WrapperService    | `kanso\cms\wrappers\managers\CommentManager`  | `CommentManager`  | Comment manager       |
+| WrapperService    | `kanso\cms\wrappers\managers\MediaManager`    | `MediaManager`    | Media manager         |
+| WrapperService    | `kanso\cms\wrappers\managers\LeadManager`     | `LeadManager`     | Lead manager          |
+| Ecommerce         | `kanso\cms\ecommerce\Ecommerce`               | `Ecommerce`       | E-commerce manager    |
 
 --------------------------------------------------------
 
