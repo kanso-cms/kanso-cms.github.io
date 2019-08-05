@@ -24,7 +24,7 @@ Basically, Template Methods are just pre-made helper functions to aid faster the
 
 A reference to the Kanso object instance is also available in all template files by simply accessing the `$kanso` variable.
 
-The following list describes all the available Template Methods made available within the template file scope. They have been grouped into their respective context. For further documentation, please read through the source code in the `kanso/cms/query/methods` directory or the [API](/api/4.0.0/index.html).
+The following list describes all the available Template Methods made available within the template file scope. They have been grouped into their respective context. For further documentation, please read through the source code in the `kanso/cms/query/methods` directory or the [API](/api/5.0.0/index.html).
 
 --------------------------------------------------------
 

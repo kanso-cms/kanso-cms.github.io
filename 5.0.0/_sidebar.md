@@ -5,7 +5,8 @@ select{-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;appearan
 	<select onchange="window.location = window.location.protocol + '//' + window.location.host + '/' + this.value">
 		<option value="3.0.0">3.0.0</option>
 	  	<option value="4.0.0">4.0.0</option>
-	  	<option value="4.1.0" selected>4.1.0</option>
+	  	<option value="4.1.0">4.1.0</option>
+	  	<option value="5.0.0" selected>5.0.0</option>
 	</select>
 </div>
 
