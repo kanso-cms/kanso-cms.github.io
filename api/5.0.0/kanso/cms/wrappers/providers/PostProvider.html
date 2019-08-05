@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>kanso\cms\wrappers\providers\PostProvider | Kanso CMS API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:kanso_cms_wrappers_providers_PostProvider" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
+                                            <option value="../../../../../4.0.0/index.html" data-version="4.0.0">4.0.0</option>
+                                            <option value="../../../../../5.0.0/index.html" data-version="5.0.0">5.0.0</option>
+                                            <option value="../../../../../master/index.html" data-version="master">master branch</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Kanso CMS API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../kanso.html">kanso</a></li><li class="backslash">\</li><li><a href="../../../../kanso/cms.html">cms</a></li><li class="backslash">\</li><li><a href="../../../../kanso/cms/wrappers.html">wrappers</a></li><li class="backslash">\</li><li><a href="../../../../kanso/cms/wrappers/providers.html">providers</a></li><li class="backslash">\</li><li>PostProvider</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            PostProvider
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>PostProvider</strong>        extends <a href="../../../../kanso/cms/wrappers/providers/Provider.html"><abbr title="kanso\cms\wrappers\providers\Provider">Provider</abbr></a>        (<a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/wrappers/providers/PostProvider.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Post provider.</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_SQL">
+                                        protected                                        <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                </td>
+                <td>$SQL</td>
+                <td class="last">SQL query builder.</td>
+                <td><small>from&nbsp;<a href="../../../../kanso/cms/wrappers/providers/Provider.html#property_SQL"><abbr title="kanso\cms\wrappers\providers\Provider">Provider</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a> $SQL, <a href="../../../../kanso/framework/config/Config.html"><abbr title="kanso\framework\config\Config">Config</abbr></a> $config, <a href="../../../../kanso/cms/wrappers/providers/TagProvider.html"><abbr title="kanso\cms\wrappers\providers\TagProvider">TagProvider</abbr></a> $tagProvider, <a href="../../../../kanso/cms/wrappers/providers/CategoryProvider.html"><abbr title="kanso\cms\wrappers\providers\CategoryProvider">CategoryProvider</abbr></a> $categoryProvider, <a href="../../../../kanso/cms/wrappers/providers/MediaProvider.html"><abbr title="kanso\cms\wrappers\providers\MediaProvider">MediaProvider</abbr></a> $mediaProvider, <a href="../../../../kanso/cms/wrappers/providers/CommentProvider.html"><abbr title="kanso\cms\wrappers\providers\CommentProvider">CommentProvider</abbr></a> $commentProvider, <a href="../../../../kanso/cms/wrappers/providers/UserProvider.html"><abbr title="kanso\cms\wrappers\providers\UserProvider">UserProvider</abbr></a> $userProvider)
+        
+                                            <p>Override inherited constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>(array $row)
+        
+                                            <p>Create an item.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_byId">byId</a>(int $id)
+        
+                                            <p>Return an item by id.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_byKey">byKey</a>(string $index, $value, bool $single = false, bool $published = true)
+        
+                                            <p>Deletes the row item.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/cms/wrappers/Post.html"><abbr title="kanso\cms\wrappers\Post">Post</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_newPost">newPost</a>(array $row)
+        
+                                            <p>Create and return new post wrapper around a database entry.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/wrappers/providers/PostProvider.php#L74">line 74</a></div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a> $SQL, <a href="../../../../kanso/framework/config/Config.html"><abbr title="kanso\framework\config\Config">Config</abbr></a> $config, <a href="../../../../kanso/cms/wrappers/providers/TagProvider.html"><abbr title="kanso\cms\wrappers\providers\TagProvider">TagProvider</abbr></a> $tagProvider, <a href="../../../../kanso/cms/wrappers/providers/CategoryProvider.html"><abbr title="kanso\cms\wrappers\providers\CategoryProvider">CategoryProvider</abbr></a> $categoryProvider, <a href="../../../../kanso/cms/wrappers/providers/MediaProvider.html"><abbr title="kanso\cms\wrappers\providers\MediaProvider">MediaProvider</abbr></a> $mediaProvider, <a href="../../../../kanso/cms/wrappers/providers/CommentProvider.html"><abbr title="kanso\cms\wrappers\providers\CommentProvider">CommentProvider</abbr></a> $commentProvider, <a href="../../../../kanso/cms/wrappers/providers/UserProvider.html"><abbr title="kanso\cms\wrappers\providers\UserProvider">UserProvider</abbr></a> $userProvider)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Override inherited constructor.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
+                <td>$SQL</td>
+                <td>SQL query builder</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../kanso/framework/config/Config.html"><abbr title="kanso\framework\config\Config">Config</abbr></a></td>
+                <td>$config</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../kanso/cms/wrappers/providers/TagProvider.html"><abbr title="kanso\cms\wrappers\providers\TagProvider">TagProvider</abbr></a></td>
+                <td>$tagProvider</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../kanso/cms/wrappers/providers/CategoryProvider.html"><abbr title="kanso\cms\wrappers\providers\CategoryProvider">CategoryProvider</abbr></a></td>
+                <td>$categoryProvider</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../kanso/cms/wrappers/providers/MediaProvider.html"><abbr title="kanso\cms\wrappers\providers\MediaProvider">MediaProvider</abbr></a></td>
+                <td>$mediaProvider</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../kanso/cms/wrappers/providers/CommentProvider.html"><abbr title="kanso\cms\wrappers\providers\CommentProvider">CommentProvider</abbr></a></td>
+                <td>$commentProvider</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../kanso/cms/wrappers/providers/UserProvider.html"><abbr title="kanso\cms\wrappers\providers\UserProvider">UserProvider</abbr></a></td>
+                <td>$userProvider</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/wrappers/providers/PostProvider.php#L106">line 106</a></div>
+        <code>                    mixed
+    <strong>create</strong>(array $row)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create an item.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$row</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_byId">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/wrappers/providers/PostProvider.php#L121">line 121</a></div>
+        <code>                    mixed
+    <strong>byId</strong>(int $id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Return an item by id.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$id</td>
+                <td>Row id</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_byKey">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/wrappers/providers/PostProvider.php#L129">line 129</a></div>
+        <code>                    mixed
+    <strong>byKey</strong>(string $index, $value, bool $single = false, bool $published = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Deletes the row item.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$index</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$value</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$single</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$published</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_newPost">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/wrappers/providers/PostProvider.php#L98">line 98</a></div>
+        <code>                    <a href="../../../../kanso/cms/wrappers/Post.html"><abbr title="kanso\cms\wrappers\Post">Post</abbr></a>
+    <strong>newPost</strong>(array $row)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create and return new post wrapper around a database entry.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$row</td>
+                <td>Row from the database</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/cms/wrappers/Post.html"><abbr title="kanso\cms\wrappers\Post">Post</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

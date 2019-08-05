@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>kanso\cms\wrappers\managers\UserManager | Kanso CMS API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:kanso_cms_wrappers_managers_UserManager" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
+                                            <option value="../../../../../4.0.0/index.html" data-version="4.0.0">4.0.0</option>
+                                            <option value="../../../../../4.1.0/index.html" data-version="4.1.0">4.1.0</option>
+                                            <option value="../../../../../4.2.0/index.html" data-version="4.2.0">4.2.0</option>
+                                            <option value="../../../../../4.3.0/index.html" data-version="4.3.0">4.3.0</option>
+                                            <option value="../../../../../4.4.0/index.html" data-version="4.4.0">4.4.0</option>
+                                            <option value="../../../../../5.0.0/index.html" data-version="5.0.0">5.0.0</option>
+                                            <option value="../../../../../master/index.html" data-version="master">master branch</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Kanso CMS API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../kanso.html">kanso</a></li><li class="backslash">\</li><li><a href="../../../../kanso/cms.html">cms</a></li><li class="backslash">\</li><li><a href="../../../../kanso/cms/wrappers.html">wrappers</a></li><li class="backslash">\</li><li><a href="../../../../kanso/cms/wrappers/managers.html">managers</a></li><li class="backslash">\</li><li>UserManager</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            UserManager
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>UserManager</strong>        extends <a href="../../../../kanso/cms/wrappers/managers/Manager.html"><abbr title="kanso\cms\wrappers\managers\Manager">Manager</abbr></a>        (<a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/wrappers/managers/UserManager.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>User manager.</p>                                </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>EMAIL_EXISTS</td>
+                <td class="last">
+                    <p><em>Status code for users that already exists by email.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>USERNAME_EXISTS</td>
+                <td class="last">
+                    <p><em>Status code for users that already exists by username.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SLUG_EXISTS</td>
+                <td class="last">
+                    <p><em>Status code for users that already exists by username.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_SQL">
+                                        protected                                        <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                </td>
+                <td>$SQL</td>
+                <td class="last">SQL query builder.</td>
+                <td><small>from&nbsp;<a href="../../../../kanso/cms/wrappers/managers/Manager.html#property_SQL"><abbr title="kanso\cms\wrappers\managers\Manager">Manager</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_provider">
+                                        protected                                        mixed
+                </td>
+                <td>$provider</td>
+                <td class="last">Provider.</td>
+                <td><small>from&nbsp;<a href="../../../../kanso/cms/wrappers/managers/Manager.html#property_provider"><abbr title="kanso\cms\wrappers\managers\Manager">Manager</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a> $SQL, mixed $provider, <a href="../../../../kanso/framework/security/Crypto.html"><abbr title="kanso\framework\security\Crypto">Crypto</abbr></a> $crypto, <a href="../../../../kanso/framework/http/cookie/Cookie.html"><abbr title="kanso\framework\http\cookie\Cookie">Cookie</abbr></a> $cookie, <a href="../../../../kanso/framework/http/session/Session.html"><abbr title="kanso\framework\http\session\Session">Session</abbr></a> $session, <a href="../../../../kanso/framework/config/Config.html"><abbr title="kanso\framework\config\Config">Config</abbr></a> $config, <a href="../../../../kanso/framework/http/request/Environment.html"><abbr title="kanso\framework\http\request\Environment">Environment</abbr></a> $environment, <a href="../../../../kanso/cms/email/Email.html"><abbr title="kanso\cms\email\Email">Email</abbr></a> $email)
+        
+                                            <p>Override inherited constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_provider">provider</a>()
+        
+                                            <p>Get the provider.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>(string $email, string $username, string $password, string $role = &#039;guest&#039;, bool $activate = false)
+        
+                                            <p>Creates a new user.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createAdmin">createAdmin</a>(string $email, string $role = &#039;administrator&#039;, bool $sendEamil = true)
+        
+                                            <p>Registers a new admin user for the CMS.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createUser">createUser</a>(string $email, string $password = &#039;&#039;, string $name = &#039;&#039;, string $username = &#039;&#039;, string $role = &#039;guest&#039;, bool $activate = false, bool $sendEamil = true)
+        
+                                            <p>Create a new regular user.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_activate">activate</a>(string $token)
+        
+                                            <p>Activate an existing user.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_delete">delete</a>(mixed $usernameIdorEmail)
+        
+                                            <p>Deletes an existing user.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_byId">byId</a>(int $id)
+        
+                                            <p>Gets a user by id.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_byEmail">byEmail</a>(string $email)
+        
+                                            <p>Gets a user by email.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_byUsername">byUsername</a>(string $username)
+        
+                                            <p>Gets a user by username.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_byToken">byToken</a>(string $token)
+        
+                                            <p>Gets a user by access token.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/wrappers/managers/UserManager.php#L105">line 105</a></div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a> $SQL, mixed $provider, <a href="../../../../kanso/framework/security/Crypto.html"><abbr title="kanso\framework\security\Crypto">Crypto</abbr></a> $crypto, <a href="../../../../kanso/framework/http/cookie/Cookie.html"><abbr title="kanso\framework\http\cookie\Cookie">Cookie</abbr></a> $cookie, <a href="../../../../kanso/framework/http/session/Session.html"><abbr title="kanso\framework\http\session\Session">Session</abbr></a> $session, <a href="../../../../kanso/framework/config/Config.html"><abbr title="kanso\framework\config\Config">Config</abbr></a> $config, <a href="../../../../kanso/framework/http/request/Environment.html"><abbr title="kanso\framework\http\request\Environment">Environment</abbr></a> $environment, <a href="../../../../kanso/cms/email/Email.html"><abbr title="kanso\cms\email\Email">Email</abbr></a> $email)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Override inherited constructor.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
+                <td>$SQL</td>
+                <td>SQL query builder</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$provider</td>
+                <td>Provider manager</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../kanso/framework/security/Crypto.html"><abbr title="kanso\framework\security\Crypto">Crypto</abbr></a></td>
+                <td>$crypto</td>
+                <td>Encryption manager</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../kanso/framework/http/cookie/Cookie.html"><abbr title="kanso\framework\http\cookie\Cookie">Cookie</abbr></a></td>
+                <td>$cookie</td>
+                <td>Cookie manager</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../kanso/framework/http/session/Session.html"><abbr title="kanso\framework\http\session\Session">Session</abbr></a></td>
+                <td>$session</td>
+                <td>Session manager</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../kanso/framework/config/Config.html"><abbr title="kanso\framework\config\Config">Config</abbr></a></td>
+                <td>$config</td>
+                <td>Config</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../kanso/framework/http/request/Environment.html"><abbr title="kanso\framework\http\request\Environment">Environment</abbr></a></td>
+                <td>$environment</td>
+                <td>Request environment</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../kanso/cms/email/Email.html"><abbr title="kanso\cms\email\Email">Email</abbr></a></td>
+                <td>$email</td>
+                <td>Mailer utility</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_provider">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/wrappers/managers/UserManager.php#L360">line 360</a></div>
+        <code>                    mixed
+    <strong>provider</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the provider.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/wrappers/managers/UserManager.php#L135">line 135</a></div>
+        <code>                    mixed
+    <strong>create</strong>(string $email, string $username, string $password, string $role = &#039;guest&#039;, bool $activate = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a new user.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$email</td>
+                <td>User email address</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$username</td>
+                <td>User username</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$password</td>
+                <td>User password</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$role</td>
+                <td>User role</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$activate</td>
+                <td>Activate the user immediately</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createAdmin">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/wrappers/managers/UserManager.php#L186">line 186</a></div>
+        <code>                    mixed
+    <strong>createAdmin</strong>(string $email, string $role = &#039;administrator&#039;, bool $sendEamil = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Registers a new admin user for the CMS.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$email</td>
+                <td>Valid email address</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$role</td>
+                <td>'administrator' or 'writer'</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$sendEamil</td>
+                <td>Should we send the user an email with username and password ? (optional) (default true)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createUser">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/wrappers/managers/UserManager.php#L242">line 242</a></div>
+        <code>                    mixed
+    <strong>createUser</strong>(string $email, string $password = &#039;&#039;, string $name = &#039;&#039;, string $username = &#039;&#039;, string $role = &#039;guest&#039;, bool $activate = false, bool $sendEamil = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a new regular user.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$email</td>
+                <td>Valid email address</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$password</td>
+                <td>Password string (optional) (default '')</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Users name  (optional) (default '')</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$username</td>
+                <td>Username (optional) (default '')</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$role</td>
+                <td>User role  (optional) (default 'guest')</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$activate</td>
+                <td>Activate the user straight away (optional) (default false)</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$sendEamil</td>
+                <td>Should we send the user an email with username and password ? (optional) (default true)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_activate">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/wrappers/managers/UserManager.php#L305">line 305</a></div>
+        <code>                    bool
+    <strong>activate</strong>(string $token)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Activate an existing user.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$token</td>
+                <td>Verification token from DB</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_delete">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/wrappers/managers/UserManager.php#L332">line 332</a></div>
+        <code>                    bool
+    <strong>delete</strong>(mixed $usernameIdorEmail)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Deletes an existing user.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$usernameIdorEmail</td>
+                <td>Username, id or email</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_byId">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/wrappers/managers/UserManager.php#L372">line 372</a></div>
+        <code>                    mixed
+    <strong>byId</strong>(int $id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets a user by id.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$id</td>
+                <td>Tag id</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_byEmail">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/wrappers/managers/UserManager.php#L384">line 384</a></div>
+        <code>                    mixed
+    <strong>byEmail</strong>(string $email)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets a user by email.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$email</td>
+                <td>User email</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_byUsername">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/wrappers/managers/UserManager.php#L396">line 396</a></div>
+        <code>                    mixed
+    <strong>byUsername</strong>(string $username)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets a user by username.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$username</td>
+                <td>Username</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_byToken">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/wrappers/managers/UserManager.php#L408">line 408</a></div>
+        <code>                    mixed
+    <strong>byToken</strong>(string $token)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets a user by access token.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$token</td>
+                <td>User access token</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

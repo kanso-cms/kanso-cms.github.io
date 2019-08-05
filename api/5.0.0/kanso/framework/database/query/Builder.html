@@ -1,0 +1,1607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>kanso\framework\database\query\Builder | Kanso CMS API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:kanso_framework_database_query_Builder" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
+                                            <option value="../../../../../4.0.0/index.html" data-version="4.0.0">4.0.0</option>
+                                            <option value="../../../../../5.0.0/index.html" data-version="5.0.0">5.0.0</option>
+                                            <option value="../../../../../master/index.html" data-version="master">master branch</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Kanso CMS API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../kanso.html">kanso</a></li><li class="backslash">\</li><li><a href="../../../../kanso/framework.html">framework</a></li><li class="backslash">\</li><li><a href="../../../../kanso/framework/database.html">database</a></li><li class="backslash">\</li><li><a href="../../../../kanso/framework/database/query.html">query</a></li><li class="backslash">\</li><li>Builder</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Builder
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Builder</strong>        (<a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/framework/database/query/Builder.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Database SQL builder.</p>                                </div>
+    
+    
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../../kanso/framework/database/connection/ConnectionHandler.html"><abbr title="kanso\framework\database\connection\ConnectionHandler">ConnectionHandler</abbr></a> $connectionHandler, <a href="../../../../kanso/framework/database/query/Query.html"><abbr title="kanso\framework\database\query\Query">Query</abbr></a> $query)
+        
+                                            <p>Constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/database/connection/ConnectionHandler.html"><abbr title="kanso\framework\database\connection\ConnectionHandler">ConnectionHandler</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_connectionHandler">connectionHandler</a>()
+        
+                                            <p>Get the database connection.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_CREATE_TABLE">CREATE_TABLE</a>(string $tableName, array $params)
+        
+                                            <p>Create a new table with given columns and paramters.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_DROP_TABLE">DROP_TABLE</a>(string $tableName)
+        
+                                            <p>Drop an existing table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_TRUNCATE_TABLE">TRUNCATE_TABLE</a>(string $tableName)
+        
+                                            <p>Truncate an existing table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/database/query/Alter.html"><abbr title="kanso\framework\database\query\Alter">Alter</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ALTER_TABLE">ALTER_TABLE</a>(string $tableName)
+        
+                                            <p>Initialize an alter statement.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_FROM">FROM</a>(string $tableName)
+        
+                                            <p>Set the query to query a given table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_UPDATE">UPDATE</a>(string $tableName)
+        
+                                            <p>Set the query to UPDATE a given table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_INSERT_INTO">INSERT_INTO</a>(string $tableName)
+        
+                                            <p>Set the query to INSERT INTO a given table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_VALUES">VALUES</a>(array $values)
+        
+                                            <p>Add the values to set.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_SET">SET</a>(array $values)
+        
+                                            <p>Set the query to SET and load values.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_DELETE_FROM">DELETE_FROM</a>(string $tableName)
+        
+                                            <p>Set the query to DELETE and load table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_QUERY">QUERY</a>()
+        
+                                            <p>Execute an INSERT, DELETE, UPDATE, SET statement.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_SELECT">SELECT</a>(string $columnNames)
+        
+                                            <p>Select values from a table.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_WHERE">WHERE</a>(string $column, string $op, mixed $value)
+        
+                                            <p>Set a where clause.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_AND_WHERE">AND_WHERE</a>(string $column, string $op, mixed $value)
+        
+                                            <p>Set an and_where clause.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_OR_WHERE">OR_WHERE</a>(string $column, string $op, mixed $value)
+        
+                                            <p>Set an or_where clause.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_JOIN_ON">JOIN_ON</a>(string $tableName, string $query)
+        
+                                            <p>Set an join clause.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_INNER_JOIN_ON">INNER_JOIN_ON</a>(string $tableName, string $query)
+        
+                                            <p>Set an inner join clause.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_LEFT_JOIN_ON">LEFT_JOIN_ON</a>(string $tableName, string $query)
+        
+                                            <p>Set a left join clause.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_RIGHT_JOIN_ON">RIGHT_JOIN_ON</a>(string $tableName, string $query)
+        
+                                            <p>Set a right join clause.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_OUTER_JOIN_ON">OUTER_JOIN_ON</a>(string $table, string $query)
+        
+                                            <p>Set an outer join clause.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ORDER_BY">ORDER_BY</a>(string $key, string $direction = &#039;DESC&#039;)
+        
+                                            <p>Set the orderby.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_GROUP_BY">GROUP_BY</a>(string $key)
+        
+                                            <p>Set group by.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_GROUP_CONCAT">GROUP_CONCAT</a>(string $keys, string $as)
+        
+                                            <p>Add group concat.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_LIMIT">LIMIT</a>(int $offset, int $limit = null)
+        
+                                            <p>Set the limit/offset.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_ROW">ROW</a>()
+        
+                                            <p>Execute a query and limit to single row.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_FIND">FIND</a>(int $id = null)
+        
+                                            <p>Execute a query and limit to single row
+and/or find a single row by id.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_FIND_ALL">FIND_ALL</a>()
+        
+                                            <p>Execute a query and find all rows.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/framework/database/query/Builder.php#L40">line 40</a></div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../../kanso/framework/database/connection/ConnectionHandler.html"><abbr title="kanso\framework\database\connection\ConnectionHandler">ConnectionHandler</abbr></a> $connectionHandler, <a href="../../../../kanso/framework/database/query/Query.html"><abbr title="kanso\framework\database\query\Query">Query</abbr></a> $query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../kanso/framework/database/connection/ConnectionHandler.html"><abbr title="kanso\framework\database\connection\ConnectionHandler">ConnectionHandler</abbr></a></td>
+                <td>$connectionHandler</td>
+                <td>Database connection handler</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../kanso/framework/database/query/Query.html"><abbr title="kanso\framework\database\query\Query">Query</abbr></a></td>
+                <td>$query</td>
+                <td>Builder Query</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_connectionHandler">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/framework/database/query/Builder.php#L55">line 55</a></div>
+        <code>                    <a href="../../../../kanso/framework/database/connection/ConnectionHandler.html"><abbr title="kanso\framework\database\connection\ConnectionHandler">ConnectionHandler</abbr></a>
+    <strong>connectionHandler</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the database connection.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/database/connection/ConnectionHandler.html"><abbr title="kanso\framework\database\connection\ConnectionHandler">ConnectionHandler</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_CREATE_TABLE">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/framework/database/query/Builder.php#L72">line 72</a></div>
+        <code>                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+    <strong>CREATE_TABLE</strong>(string $tableName, array $params)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a new table with given columns and paramters.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td>Table name to create</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$params</td>
+                <td>Table parameters</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_DROP_TABLE">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/framework/database/query/Builder.php#L110">line 110</a></div>
+        <code>                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+    <strong>DROP_TABLE</strong>(string $tableName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Drop an existing table.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td>Table name to use</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_TRUNCATE_TABLE">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/framework/database/query/Builder.php#L128">line 128</a></div>
+        <code>                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+    <strong>TRUNCATE_TABLE</strong>(string $tableName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Truncate an existing table.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td>Table name to use</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ALTER_TABLE">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/framework/database/query/Builder.php#L146">line 146</a></div>
+        <code>                    <a href="../../../../kanso/framework/database/query/Alter.html"><abbr title="kanso\framework\database\query\Alter">Alter</abbr></a>
+    <strong>ALTER_TABLE</strong>(string $tableName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Initialize an alter statement.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/database/query/Alter.html"><abbr title="kanso\framework\database\query\Alter">Alter</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_FROM">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/framework/database/query/Builder.php#L166">line 166</a></div>
+        <code>                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+    <strong>FROM</strong>(string $tableName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the query to query a given table.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td>The table name to use</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_UPDATE">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/framework/database/query/Builder.php#L184">line 184</a></div>
+        <code>                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+    <strong>UPDATE</strong>(string $tableName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the query to UPDATE a given table.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td>The table name to use</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_INSERT_INTO">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/framework/database/query/Builder.php#L200">line 200</a></div>
+        <code>                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+    <strong>INSERT_INTO</strong>(string $tableName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the query to INSERT INTO a given table.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td>The table name to use</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_VALUES">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/framework/database/query/Builder.php#L218">line 218</a></div>
+        <code>                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+    <strong>VALUES</strong>(array $values)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add the values to set.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$values</td>
+                <td>The values to apply</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_SET">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/framework/database/query/Builder.php#L232">line 232</a></div>
+        <code>                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+    <strong>SET</strong>(array $values)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the query to SET and load values.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$values</td>
+                <td>The values to apply</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_DELETE_FROM">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/framework/database/query/Builder.php#L246">line 246</a></div>
+        <code>                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+    <strong>DELETE_FROM</strong>(string $tableName)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the query to DELETE and load table.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td>The table name to use</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_QUERY">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/framework/database/query/Builder.php#L263">line 263</a></div>
+        <code>                    mixed
+    <strong>QUERY</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Execute an INSERT, DELETE, UPDATE, SET statement.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td>Result from the SQL query</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_SELECT">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/framework/database/query/Builder.php#L279">line 279</a></div>
+        <code>                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+    <strong>SELECT</strong>(string $columnNames)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Select values from a table.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$columnNames</td>
+                <td>Column names to select</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_WHERE">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/framework/database/query/Builder.php#L297">line 297</a></div>
+        <code>                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+    <strong>WHERE</strong>(string $column, string $op, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set a where clause.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>Column name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$op</td>
+                <td>Logical operator</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>Value</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_AND_WHERE">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/framework/database/query/Builder.php#L315">line 315</a></div>
+        <code>                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+    <strong>AND_WHERE</strong>(string $column, string $op, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set an and_where clause.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>Column name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$op</td>
+                <td>Logical operator</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>Value</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_OR_WHERE">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/framework/database/query/Builder.php#L333">line 333</a></div>
+        <code>                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+    <strong>OR_WHERE</strong>(string $column, string $op, mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set an or_where clause.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>Column name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$op</td>
+                <td>Logical operator</td>
+            </tr>
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>Value</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_JOIN_ON">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/framework/database/query/Builder.php#L350">line 350</a></div>
+        <code>                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+    <strong>JOIN_ON</strong>(string $tableName, string $query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set an join clause.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td>The table name to join</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$query</td>
+                <td>Column comparison e.g table1.id = table2.column_name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_INNER_JOIN_ON">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/framework/database/query/Builder.php#L369">line 369</a></div>
+        <code>                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+    <strong>INNER_JOIN_ON</strong>(string $tableName, string $query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set an inner join clause.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td>The table name to join</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$query</td>
+                <td>Column comparison e.g table1.id = table2.column_name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_LEFT_JOIN_ON">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/framework/database/query/Builder.php#L388">line 388</a></div>
+        <code>                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+    <strong>LEFT_JOIN_ON</strong>(string $tableName, string $query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set a left join clause.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td>The table name to join</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$query</td>
+                <td>Column comparison e.g table1.id = table2.column_name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_RIGHT_JOIN_ON">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/framework/database/query/Builder.php#L407">line 407</a></div>
+        <code>                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+    <strong>RIGHT_JOIN_ON</strong>(string $tableName, string $query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set a right join clause.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$tableName</td>
+                <td>The table name to join</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$query</td>
+                <td>Column comparison e.g table1.id = table2.column_name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_OUTER_JOIN_ON">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/framework/database/query/Builder.php#L426">line 426</a></div>
+        <code>                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+    <strong>OUTER_JOIN_ON</strong>(string $table, string $query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set an outer join clause.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$table</td>
+                <td>The table name to join</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$query</td>
+                <td>Column comparison e.g table1.id = table2.column_name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ORDER_BY">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/framework/database/query/Builder.php#L445">line 445</a></div>
+        <code>                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+    <strong>ORDER_BY</strong>(string $key, string $direction = &#039;DESC&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the orderby.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>The column name to use</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$direction</td>
+                <td>'DESC'|'ASC' (optional) (default 'DESC')</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_GROUP_BY">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/framework/database/query/Builder.php#L461">line 461</a></div>
+        <code>                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+    <strong>GROUP_BY</strong>(string $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set group by.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>The column name to group on</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_GROUP_CONCAT">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/framework/database/query/Builder.php#L478">line 478</a></div>
+        <code>                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+    <strong>GROUP_CONCAT</strong>(string $keys, string $as)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add group concat.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$keys</td>
+                <td>Concat keys</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$as</td>
+                <td>As value</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_LIMIT">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/framework/database/query/Builder.php#L495">line 495</a></div>
+        <code>                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+    <strong>LIMIT</strong>(int $offset, int $limit = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set the limit/offset.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$offset</td>
+                <td>Offset to start at</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$limit</td>
+                <td>Limit results (optional) (default null)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_ROW">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/framework/database/query/Builder.php#L508">line 508</a></div>
+        <code>                    mixed
+    <strong>ROW</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Execute a query and limit to single row.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_FIND">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/framework/database/query/Builder.php#L521">line 521</a></div>
+        <code>                    mixed
+    <strong>FIND</strong>(int $id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Execute a query and limit to single row
+and/or find a single row by id.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$id</td>
+                <td>Row id to find (optional) (default null)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_FIND_ALL">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/framework/database/query/Builder.php#L532">line 532</a></div>
+        <code>                    mixed
+    <strong>FIND_ALL</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Execute a query and find all rows.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

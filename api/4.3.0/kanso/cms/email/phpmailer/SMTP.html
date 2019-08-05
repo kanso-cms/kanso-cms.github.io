@@ -1,0 +1,2152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>kanso\cms\email\phpmailer\SMTP | Kanso CMS API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:kanso_cms_email_phpmailer_SMTP" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
+                                            <option value="../../../../../4.0.0/index.html" data-version="4.0.0">4.0.0</option>
+                                            <option value="../../../../../4.1.0/index.html" data-version="4.1.0">4.1.0</option>
+                                            <option value="../../../../../4.2.0/index.html" data-version="4.2.0">4.2.0</option>
+                                            <option value="../../../../../4.3.0/index.html" data-version="4.3.0">4.3.0</option>
+                                            <option value="../../../../../4.4.0/index.html" data-version="4.4.0">4.4.0</option>
+                                            <option value="../../../../../5.0.0/index.html" data-version="5.0.0">5.0.0</option>
+                                            <option value="../../../../../master/index.html" data-version="master">master branch</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Kanso CMS API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../kanso.html">kanso</a></li><li class="backslash">\</li><li><a href="../../../../kanso/cms.html">cms</a></li><li class="backslash">\</li><li><a href="../../../../kanso/cms/email.html">email</a></li><li class="backslash">\</li><li><a href="../../../../kanso/cms/email/phpmailer.html">phpmailer</a></li><li class="backslash">\</li><li>SMTP</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            SMTP
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>SMTP</strong>        (<a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>PHPMailer RFC821 SMTP email transport class.</p>            <p>Implements RFC 821 SMTP commands and provides some utility methods for sending mail to an SMTP server.</p>                    </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>VERSION</td>
+                <td class="last">
+                    <p><em>The PHPMailer SMTP version number.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>LE</td>
+                <td class="last">
+                    <p><em>SMTP line break constant.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>DEFAULT_PORT</td>
+                <td class="last">
+                    <p><em>The SMTP port to use if one is not specified.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>MAX_LINE_LENGTH</td>
+                <td class="last">
+                    <p><em>The maximum line length allowed by RFC 2822 section 2.1.1.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>DEBUG_OFF</td>
+                <td class="last">
+                    <p><em>Debug level for no output.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>DEBUG_CLIENT</td>
+                <td class="last">
+                    <p><em>Debug level to show client -> server messages.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>DEBUG_SERVER</td>
+                <td class="last">
+                    <p><em>Debug level to show client -> server and server -> client messages.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>DEBUG_CONNECTION</td>
+                <td class="last">
+                    <p><em>Debug level to show connection status, client -> server and server -> client messages.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>DEBUG_LOWLEVEL</td>
+                <td class="last">
+                    <p><em>Debug level to show all messages.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_do_debug">
+                                                                                int
+                </td>
+                <td>$do_debug</td>
+                <td class="last">Debug output level.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_Debugoutput">
+                                                                                string|callable|<abbr title="Psr\Log\LoggerInterface">LoggerInterface</abbr>
+                </td>
+                <td>$Debugoutput</td>
+                <td class="last">How to handle debug output.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_do_verp">
+                                                                                bool
+                </td>
+                <td>$do_verp</td>
+                <td class="last">Whether to use VERP.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_Timeout">
+                                                                                int
+                </td>
+                <td>$Timeout</td>
+                <td class="last">The timeout value for connection, in seconds.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_Timelimit">
+                                                                                int
+                </td>
+                <td>$Timelimit</td>
+                <td class="last">How long to wait for commands to complete, in seconds.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_smtp_transaction_id_patterns">
+                                        protected                                        string[]
+                </td>
+                <td>$smtp_transaction_id_patterns</td>
+                <td class="last">Patterns to extract an SMTP transaction id from reply to a DATA command.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_last_smtp_transaction_id">
+                                        protected                                        string|bool|null
+                </td>
+                <td>$last_smtp_transaction_id</td>
+                <td class="last">The last transaction ID issued in response to a DATA command,
+if one was detected.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_smtp_conn">
+                                        protected                                        <abbr title="kanso\cms\email\phpmailer\?resource">?resource</abbr>
+                </td>
+                <td>$smtp_conn</td>
+                <td class="last">The socket for the server connection.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_error">
+                                        protected                                        array
+                </td>
+                <td>$error</td>
+                <td class="last">Error information, if any, for the last SMTP command.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_helo_rply">
+                                        protected                                        string|null
+                </td>
+                <td>$helo_rply</td>
+                <td class="last">The reply the server sent to us for HELO.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_server_caps">
+                                        protected                                        array|null
+                </td>
+                <td>$server_caps</td>
+                <td class="last">The set of SMTP extensions sent in reply to EHLO command.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_last_reply">
+                                        protected                                        string
+                </td>
+                <td>$last_reply</td>
+                <td class="last">The most recent reply received from the server.</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_edebug">edebug</a>(string $str, int $level = 0)
+        
+                                            <p>Output debugging info via a user-selected method.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_connect">connect</a>(string $host, int $port = null, int $timeout = 30, array $options = [])
+        
+                                            <p>Connect to an SMTP server.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_startTLS">startTLS</a>()
+        
+                                            <p>Initiate a TLS (encrypted) session.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_authenticate">authenticate</a>(string $username, string $password, string $authtype = null, <a href="../../../../kanso/cms/email/phpmailer/OAuth.html"><abbr title="kanso\cms\email\phpmailer\OAuth">OAuth</abbr></a> $OAuth = null)
+        
+                                            <p>Perform SMTP authentication.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hmac">hmac</a>(string $data, string $key)
+        
+                                            <p>Calculate an MD5 HMAC hash.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_connected">connected</a>()
+        
+                                            <p>Check connection state.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_close">close</a>()
+        
+                                            <p>Close the socket and clean up the state of the class.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_data">data</a>(string $msg_data)
+        
+                                            <p>Send an SMTP DATA command.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hello">hello</a>(string $host = &#039;&#039;)
+        
+                                            <p>Send an SMTP HELO or EHLO command.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sendHello">sendHello</a>(string $hello, string $host)
+        
+                                            <p>Send an SMTP HELO or EHLO command.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseHelloFields">parseHelloFields</a>(string $type)
+        
+                                            <p>Parse a reply to HELO/EHLO command to discover server extensions.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mail">mail</a>(string $from)
+        
+                                            <p>Send an SMTP MAIL command.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_quit">quit</a>(bool $close_on_error = true)
+        
+                                            <p>Send an SMTP QUIT command.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_recipient">recipient</a>(string $address)
+        
+                                            <p>Send an SMTP RCPT command.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_reset">reset</a>()
+        
+                                            <p>Send an SMTP RSET command.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sendCommand">sendCommand</a>(string $command, string $commandstring, int|array $expect)
+        
+                                            <p>Send a command to an SMTP server and check its return code.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sendAndMail">sendAndMail</a>(string $from)
+        
+                                            <p>Send an SMTP SAML command.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_verify">verify</a>(string $name)
+        
+                                            <p>Send an SMTP VRFY command.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_noop">noop</a>()
+        
+                                            <p>Send an SMTP NOOP command.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_turn">turn</a>()
+        
+                                            <p>Send an SMTP TURN command.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int|bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_client_send">client_send</a>(string $data, string $command = &#039;&#039;)
+        
+                                            <p>Send raw data to the server.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getError">getError</a>()
+        
+                                            <p>Get the latest error.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getServerExtList">getServerExtList</a>()
+        
+                                            <p>Get SMTP extensions available on the server.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getServerExt">getServerExt</a>(string $name)
+        
+                                            <p>Get metadata about the SMTP server from its HELO/EHLO response.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLastReply">getLastReply</a>()
+        
+                                            <p>Get the last reply from the server.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get_lines">get_lines</a>()
+        
+                                            <p>Read the SMTP server's response.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setVerp">setVerp</a>(bool $enabled = false)
+        
+                                            <p>Enable or disable VERP address generation.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getVerp">getVerp</a>()
+        
+                                            <p>Get VERP address generation mode.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setError">setError</a>(string $message, string $detail = &#039;&#039;, string $smtp_code = &#039;&#039;, string $smtp_code_ex = &#039;&#039;)
+        
+                                            <p>Set error messages and codes.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDebugOutput">setDebugOutput</a>(string|callable $method = &#039;echo&#039;)
+        
+                                            <p>Set debug output method.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDebugOutput">getDebugOutput</a>()
+        
+                                            <p>Get debug output method.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setDebugLevel">setDebugLevel</a>(int $level = 0)
+        
+                                            <p>Set debug output level.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDebugLevel">getDebugLevel</a>()
+        
+                                            <p>Get debug output level.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setTimeout">setTimeout</a>(int $timeout = 0)
+        
+                                            <p>Set SMTP timeout.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getTimeout">getTimeout</a>()
+        
+                                            <p>Get SMTP timeout.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_errorHandler">errorHandler</a>(int $errno, string $errmsg, string $errfile = &#039;&#039;, int $errline = 0)
+        
+                                            <p>Reports an error number and string.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool|null|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_recordLastTransactionID">recordLastTransactionID</a>()
+        
+                                            <p>Extract and return the ID of the last SMTP transaction based on
+a list of patterns provided in SMTP::$smtp_transaction_id_patterns.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool|null|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLastTransactionID">getLastTransactionID</a>()
+        
+                                            <p>Get the queue/transaction ID of the last SMTP transaction
+If no reply has been received yet, it will return null.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_edebug">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L229">line 229</a></div>
+        <code>            protected        
+    <strong>edebug</strong>(string $str, int $level = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Output debugging info via a user-selected method.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$str</td>
+                <td>Debug string to output</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$level</td>
+                <td>The debug level of this message; see DEBUG_* constants</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <abbr title="kanso\cms\email\phpmailer\SMTP::$Debugoutput">SMTP::$Debugoutput</abbr>
+                                    </td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>
+                                            <abbr title="kanso\cms\email\phpmailer\SMTP::$do_debug">SMTP::$do_debug</abbr>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_connect">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L288">line 288</a></div>
+        <code>                    bool
+    <strong>connect</strong>(string $host, int $port = null, int $timeout = 30, array $options = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Connect to an SMTP server.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$host</td>
+                <td>SMTP server IP or host name</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$port</td>
+                <td>The port number to connect to</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$timeout</td>
+                <td>How long to wait for the connection to open</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$options</td>
+                <td>An array of options for stream_context_create()</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_startTLS">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L383">line 383</a></div>
+        <code>                    bool
+    <strong>startTLS</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Initiate a TLS (encrypted) session.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_authenticate">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L424">line 424</a></div>
+        <code>                    bool
+    <strong>authenticate</strong>(string $username, string $password, string $authtype = null, <a href="../../../../kanso/cms/email/phpmailer/OAuth.html"><abbr title="kanso\cms\email\phpmailer\OAuth">OAuth</abbr></a> $OAuth = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Perform SMTP authentication.</p>                    <p>Must be run after hello().</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$username</td>
+                <td>The user name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$password</td>
+                <td>The password</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$authtype</td>
+                <td>The auth type (CRAM-MD5, PLAIN, LOGIN, XOAUTH2)</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../kanso/cms/email/phpmailer/OAuth.html"><abbr title="kanso\cms\email\phpmailer\OAuth">OAuth</abbr></a></td>
+                <td>$OAuth</td>
+                <td>An optional OAuth instance for XOAUTH2 authentication</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>True if successfully authenticated</td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <abbr title="kanso\cms\email\phpmailer\hello()">hello()</abbr>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hmac">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L555">line 555</a></div>
+        <code>            protected        string
+    <strong>hmac</strong>(string $data, string $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Calculate an MD5 HMAC hash.</p>                    <p>Works like hash_hmac('md5', $data, $key)
+in case that function is not available.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$data</td>
+                <td>The data to hash</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>The key to hash with</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_connected">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L587">line 587</a></div>
+        <code>                    bool
+    <strong>connected</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check connection state.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>True if connected</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_close">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L614">line 614</a></div>
+        <code>                    
+    <strong>close</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Close the socket and clean up the state of the class.</p>                    <p>Don't use this function without first trying to use QUIT.</p>                            </div>
+                <div class="tags">
+            
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <abbr title="kanso\cms\email\phpmailer\quit()">quit()</abbr>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_data">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L640">line 640</a></div>
+        <code>                    bool
+    <strong>data</strong>(string $msg_data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Send an SMTP DATA command.</p>                    <p>Issues a data command and sends the msg_data to the server,
+finializing the mail transaction. $msg_data is the message
+that is to be send with the headers. Each header needs to be
+on a single line followed by a <CRLF> with the message headers
+and the message body being separated by an additional <CRLF>.
+Implements RFC 821: DATA <CRLF>.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$msg_data</td>
+                <td>Message data to send</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hello">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L732">line 732</a></div>
+        <code>                    bool
+    <strong>hello</strong>(string $host = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Send an SMTP HELO or EHLO command.</p>                    <p>Used to identify the sending server to the receiving server.
+This makes sure that client and server are in a known state.
+Implements RFC 821: HELO <SP> <domain> <CRLF>
+and RFC 2821 EHLO.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$host</td>
+                <td>The host name or IP to connect to</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sendHello">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L749">line 749</a></div>
+        <code>            protected        bool
+    <strong>sendHello</strong>(string $hello, string $host)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Send an SMTP HELO or EHLO command.</p>                    <p>Low-level implementation used by hello().</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$hello</td>
+                <td>The HELO string</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$host</td>
+                <td>The hostname to say we are</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <abbr title="kanso\cms\email\phpmailer\hello()">hello()</abbr>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseHelloFields">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L768">line 768</a></div>
+        <code>            protected        
+    <strong>parseHelloFields</strong>(string $type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Parse a reply to HELO/EHLO command to discover server extensions.</p>                    <p>In case of HELO, the only parameter that can be discovered is a server name.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td><code>HELO</code> or <code>EHLO</code></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mail">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L816">line 816</a></div>
+        <code>                    bool
+    <strong>mail</strong>(string $from)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Send an SMTP MAIL command.</p>                    <p>Starts a mail transaction from the email address specified in
+$from. Returns true if successful or false otherwise. If True
+the mail transaction is started and then one or more recipient
+commands may be called followed by a data command.
+Implements RFC 821: MAIL <SP> FROM:<reverse-path> <CRLF>.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$from</td>
+                <td>Source address of this message</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_quit">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L836">line 836</a></div>
+        <code>                    bool
+    <strong>quit</strong>(bool $close_on_error = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Send an SMTP QUIT command.</p>                    <p>Closes the socket if there is no error or the $close_on_error argument is true.
+Implements from RFC 821: QUIT <CRLF>.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$close_on_error</td>
+                <td>Should the connection close if an error occurs?</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_recipient">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L858">line 858</a></div>
+        <code>                    bool
+    <strong>recipient</strong>(string $address)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Send an SMTP RCPT command.</p>                    <p>Sets the TO argument to $toaddr.
+Returns true if the recipient was accepted false if it was rejected.
+Implements from RFC 821: RCPT <SP> TO:<forward-path> <CRLF>.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$address</td>
+                <td>The address the message is being sent to</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reset">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L874">line 874</a></div>
+        <code>                    bool
+    <strong>reset</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Send an SMTP RSET command.</p>                    <p>Abort any transaction that is currently in progress.
+Implements RFC 821: RSET <CRLF>.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>True on success</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sendCommand">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L888">line 888</a></div>
+        <code>            protected        bool
+    <strong>sendCommand</strong>(string $command, string $commandstring, int|array $expect)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Send a command to an SMTP server and check its return code.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$command</td>
+                <td>The command name - not sent to the server</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$commandstring</td>
+                <td>The actual command to send</td>
+            </tr>
+                    <tr>
+                <td>int|array</td>
+                <td>$expect</td>
+                <td>One or more expected integer success codes</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td>True on success</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sendAndMail">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L959">line 959</a></div>
+        <code>                    bool
+    <strong>sendAndMail</strong>(string $from)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Send an SMTP SAML command.</p>                    <p>Starts a mail transaction from the email address specified in $from.
+Returns true if successful or false otherwise. If True
+the mail transaction is started and then one or more recipient
+commands may be called followed by a data command. This command
+will send the message to the users terminal if they are logged
+in and send them an email.
+Implements RFC 821: SAML <SP> FROM:<reverse-path> <CRLF>.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$from</td>
+                <td>The address the message is from</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_verify">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L971">line 971</a></div>
+        <code>                    bool
+    <strong>verify</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Send an SMTP VRFY command.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>The name to verify</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_noop">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L982">line 982</a></div>
+        <code>                    bool
+    <strong>noop</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Send an SMTP NOOP command.</p>                    <p>Used to keep keep-alives alive, doesn't actually do anything.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_turn">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L996">line 996</a></div>
+        <code>                    bool
+    <strong>turn</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Send an SMTP TURN command.</p>                    <p>This is an optional command for SMTP that this class does not support.
+This method is here to make the RFC821 Definition complete for this class
+and <em>may</em> be implemented in future.
+Implements from RFC 821: TURN <CRLF>.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_client_send">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L1012">line 1012</a></div>
+        <code>                    int|bool
+    <strong>client_send</strong>(string $data, string $command = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Send raw data to the server.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$data</td>
+                <td>The data to send</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$command</td>
+                <td>Optionally, the command this is part of, used only for controlling debug output</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int|bool</td>
+            <td>The number of bytes sent to the server or false on error</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getError">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L1034">line 1034</a></div>
+        <code>                    array
+    <strong>getError</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the latest error.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getServerExtList">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L1044">line 1044</a></div>
+        <code>                    array|null
+    <strong>getServerExtList</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get SMTP extensions available on the server.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getServerExt">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L1066">line 1066</a></div>
+        <code>                    mixed
+    <strong>getServerExt</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get metadata about the SMTP server from its HELO/EHLO response.</p>                    <p>The method works in three ways, dependent on argument value and current state:
+  1. HELO/EHLO has not been sent - returns null and populates $this->error.
+  2. HELO has been sent -
+    $name == 'HELO': returns server name
+    $name == 'EHLO': returns boolean false
+    $name == any other string: returns null and populates $this->error
+  3. EHLO has been sent -
+    $name == 'HELO'|'EHLO': returns the server name
+    $name == any other string: if extension $name exists, returns True
+      or its options (e.g. AUTH mechanisms supported). Otherwise returns False.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Name of SMTP extension or 'HELO'|'EHLO'</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLastReply">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L1094">line 1094</a></div>
+        <code>                    string
+    <strong>getLastReply</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the last reply from the server.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get_lines">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L1108">line 1108</a></div>
+        <code>            protected        string
+    <strong>get_lines</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Read the SMTP server's response.</p>                    <p>Either before eof or socket timeout occurs on the operation.
+With SMTP we can tell if we have more lines to read if the
+4th character is '-' symbol. If it is a space then we don't
+need to read anything else.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setVerp">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L1169">line 1169</a></div>
+        <code>                    
+    <strong>setVerp</strong>(bool $enabled = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Enable or disable VERP address generation.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$enabled</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getVerp">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L1179">line 1179</a></div>
+        <code>                    bool
+    <strong>getVerp</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get VERP address generation mode.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setError">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L1192">line 1192</a></div>
+        <code>            protected        
+    <strong>setError</strong>(string $message, string $detail = &#039;&#039;, string $smtp_code = &#039;&#039;, string $smtp_code_ex = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set error messages and codes.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$message</td>
+                <td>The error message</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$detail</td>
+                <td>Further detail on the error</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$smtp_code</td>
+                <td>An associated SMTP error code</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$smtp_code_ex</td>
+                <td>Extended SMTP code</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDebugOutput">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L1207">line 1207</a></div>
+        <code>                    
+    <strong>setDebugOutput</strong>(string|callable $method = &#039;echo&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set debug output method.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|callable</td>
+                <td>$method</td>
+                <td>The name of the mechanism to use for debugging output, or a callable to handle it</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDebugOutput">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L1217">line 1217</a></div>
+        <code>                    string
+    <strong>getDebugOutput</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get debug output method.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setDebugLevel">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L1227">line 1227</a></div>
+        <code>                    
+    <strong>setDebugLevel</strong>(int $level = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set debug output level.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$level</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDebugLevel">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L1237">line 1237</a></div>
+        <code>                    int
+    <strong>getDebugLevel</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get debug output level.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setTimeout">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L1247">line 1247</a></div>
+        <code>                    
+    <strong>setTimeout</strong>(int $timeout = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set SMTP timeout.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$timeout</td>
+                <td>The timeout duration in seconds</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getTimeout">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L1257">line 1257</a></div>
+        <code>                    int
+    <strong>getTimeout</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get SMTP timeout.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_errorHandler">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L1270">line 1270</a></div>
+        <code>            protected        
+    <strong>errorHandler</strong>(int $errno, string $errmsg, string $errfile = &#039;&#039;, int $errline = 0)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Reports an error number and string.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$errno</td>
+                <td>The error number returned by PHP</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$errmsg</td>
+                <td>The error message returned by PHP</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$errfile</td>
+                <td>The file the error occurred in</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$errline</td>
+                <td>The line number the error occurred on</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_recordLastTransactionID">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L1293">line 1293</a></div>
+        <code>            protected        bool|null|string
+    <strong>recordLastTransactionID</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Extract and return the ID of the last SMTP transaction based on
+a list of patterns provided in SMTP::$smtp_transaction_id_patterns.</p>                    <p>Relies on the host providing the ID in response to a DATA command.
+If no reply has been received yet, it will return null.
+If no pattern was matched, it will return false.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool|null|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLastTransactionID">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.3.0/kanso/cms/email/phpmailer/SMTP.php#L1321">line 1321</a></div>
+        <code>                    bool|null|string
+    <strong>getLastTransactionID</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the queue/transaction ID of the last SMTP transaction
+If no reply has been received yet, it will return null.</p>                    <p>If no pattern was matched, it will return false.</p>                            </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool|null|string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                            <h4>See also</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>
+                                            <abbr title="kanso\cms\email\phpmailer\recordLastTransactionID()">recordLastTransactionID()</abbr>
+                                    </td>
+                <td></td>
+            </tr>
+            </table>
+
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

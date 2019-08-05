@@ -28,6 +28,7 @@
                                             <option value="../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
                                             <option value="../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
                                             <option value="../../../../4.0.0/index.html" data-version="4.0.0">4.0.0</option>
+                                            <option value="../../../../5.0.0/index.html" data-version="5.0.0">5.0.0</option>
                                             <option value="../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -112,6 +113,16 @@
                                             <p>Send a CURL request to a url.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;false|string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get">get</a>(string $url, array $_options = [], array $headers = [], array $queries = [], string $auth = &#039;&#039;, string $contentType = &#039;text/html&#039;, string $accept = &#039;text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3&#039;)
+        
+                                            <p>Send a CURL request to a url.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
             </div>
 
 
@@ -173,6 +184,76 @@
                     <table class="table table-condensed">
         <tr>
             <td>false|array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/utility/Curl.php#L96">line 96</a></div>
+        <code>        static            false|string
+    <strong>get</strong>(string $url, array $_options = [], array $headers = [], array $queries = [], string $auth = &#039;&#039;, string $contentType = &#039;text/html&#039;, string $accept = &#039;text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Send a CURL request to a url.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$url</td>
+                <td>The url to request to</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$_options</td>
+                <td>Any additional options to use (optional) (default [])</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$headers</td>
+                <td>Any additional headers to send (optional) (default [])</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$queries</td>
+                <td>Query string as array (optional) (default [])</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$auth</td>
+                <td>HTTP 'Authorization' header (optional) (default '')</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$contentType</td>
+                <td>HTTP content type header (optional) (default 'application/json')</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$accept</td>
+                <td>HTTP accept header (optional) (default 'application/json')</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>false|string</td>
             <td></td>
         </tr>
     </table>

@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>kanso\framework\shell\process\pipes\WindowsPipes | Kanso CMS API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../../css/sami.css">
+        <script src="../../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../../js/typeahead.min.js"></script>
+        <script src="../../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:kanso_framework_shell_process_pipes_WindowsPipes" data-root-path="../../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
+                                            <option value="../../../../../../4.0.0/index.html" data-version="4.0.0">4.0.0</option>
+                                            <option value="../../../../../../4.1.0/index.html" data-version="4.1.0">4.1.0</option>
+                                            <option value="../../../../../../4.2.0/index.html" data-version="4.2.0">4.2.0</option>
+                                            <option value="../../../../../../4.3.0/index.html" data-version="4.3.0">4.3.0</option>
+                                            <option value="../../../../../../4.4.0/index.html" data-version="4.4.0">4.4.0</option>
+                                            <option value="../../../../../../5.0.0/index.html" data-version="5.0.0">5.0.0</option>
+                                            <option value="../../../../../../master/index.html" data-version="master">master branch</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../../index.html">Kanso CMS API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../../kanso.html">kanso</a></li><li class="backslash">\</li><li><a href="../../../../../kanso/framework.html">framework</a></li><li class="backslash">\</li><li><a href="../../../../../kanso/framework/shell.html">shell</a></li><li class="backslash">\</li><li><a href="../../../../../kanso/framework/shell/process.html">process</a></li><li class="backslash">\</li><li><a href="../../../../../kanso/framework/shell/process/pipes.html">pipes</a></li><li class="backslash">\</li><li>WindowsPipes</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            WindowsPipes
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>WindowsPipes</strong>        extends <a href="../../../../../kanso/framework/shell/process/pipes/AbstractPipes.html"><abbr title="kanso\framework\shell\process\pipes\AbstractPipes">AbstractPipes</abbr></a>        (<a href="https://github.com/kanso-cms/cms/blob/4.4.0/kanso/framework/shell/process/pipes/WindowsPipes.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>WindowsPipes implementation uses temporary files as handles.</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_pipes">
+                                                                                array
+                </td>
+                <td>$pipes</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../../kanso/framework/shell/process/pipes/AbstractPipes.html#property_pipes"><abbr title="kanso\framework\shell\process\pipes\AbstractPipes">AbstractPipes</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>($input, $haveReadSupport)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_close">close</a>()
+        
+                                            <p>Closes file handles and pipes.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_hasSystemCallBeenInterrupted">hasSystemCallBeenInterrupted</a>()
+        
+                                            <p>Returns true if a system call has been interrupted.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../kanso/framework/shell/process/pipes/AbstractPipes.html#method_hasSystemCallBeenInterrupted"><abbr title="kanso\framework\shell\process\pipes\AbstractPipes">AbstractPipes</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_unblock">unblock</a>()
+        
+                                            <p>Unblocks streams.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../kanso/framework/shell/process/pipes/AbstractPipes.html#method_unblock"><abbr title="kanso\framework\shell\process\pipes\AbstractPipes">AbstractPipes</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_write">write</a>()
+        
+                                            <p>Writes input to stdin.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../kanso/framework/shell/process/pipes/AbstractPipes.html#method_write"><abbr title="kanso\framework\shell\process\pipes\AbstractPipes">AbstractPipes</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___destruct">__destruct</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getDescriptors">getDescriptors</a>()
+        
+                                            <p>Returns an array of descriptors for the use of proc_open.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getFiles">getFiles</a>()
+        
+                                            <p>Returns an array of filenames indexed by their related stream in case these pipes use temporary files.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string[]
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_readAndWrite">readAndWrite</a>(bool $blocking, bool $close = false)
+        
+                                            <p>Reads data in file handles and pipes.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_haveReadSupport">haveReadSupport</a>()
+        
+                                            <p>Returns if pipes are able to read output.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_areOpen">areOpen</a>()
+        
+                                            <p>Returns if the current state has open file handles or pipes.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.4.0/kanso/framework/shell/process/pipes/WindowsPipes.php#L41">line 41</a></div>
+        <code>                    
+    <strong>__construct</strong>($input, $haveReadSupport)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$input</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$haveReadSupport</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_close">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.4.0/kanso/framework/shell/process/pipes/WindowsPipes.php#L154">line 154</a></div>
+        <code>                    
+    <strong>close</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Closes file handles and pipes.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_hasSystemCallBeenInterrupted">
+        <div class="location">in <a href="../../../../../kanso/framework/shell/process/pipes/AbstractPipes.html#method_hasSystemCallBeenInterrupted"><abbr title="kanso\framework\shell\process\pipes\AbstractPipes">AbstractPipes</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/4.4.0/kanso/framework/shell/process/pipes/AbstractPipes.php#L60">line 60</a></div>
+        <code>            protected        bool
+    <strong>hasSystemCallBeenInterrupted</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns true if a system call has been interrupted.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unblock">
+        <div class="location">in <a href="../../../../../kanso/framework/shell/process/pipes/AbstractPipes.html#method_unblock"><abbr title="kanso\framework\shell\process\pipes\AbstractPipes">AbstractPipes</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/4.4.0/kanso/framework/shell/process/pipes/AbstractPipes.php#L71">line 71</a></div>
+        <code>            protected        
+    <strong>unblock</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Unblocks streams.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_write">
+        <div class="location">in <a href="../../../../../kanso/framework/shell/process/pipes/AbstractPipes.html#method_write"><abbr title="kanso\framework\shell\process\pipes\AbstractPipes">AbstractPipes</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/4.4.0/kanso/framework/shell/process/pipes/AbstractPipes.php#L92">line 92</a></div>
+        <code>            protected        
+    <strong>write</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Writes input to stdin.</p>                                                </div>
+                <div class="tags">
+            
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../../kanso/framework/shell/process/exception/InvalidArgumentException.html"><abbr title="kanso\framework\shell\process\exception\InvalidArgumentException">InvalidArgumentException</abbr></a></td>
+                <td>When an input iterator yields a non supported value</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___destruct">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.4.0/kanso/framework/shell/process/pipes/WindowsPipes.php#L64">line 64</a></div>
+        <code>                    
+    <strong>__destruct</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getDescriptors">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.4.0/kanso/framework/shell/process/pipes/WindowsPipes.php#L73">line 73</a></div>
+        <code>                    array
+    <strong>getDescriptors</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns an array of descriptors for the use of proc_open.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getFiles">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.4.0/kanso/framework/shell/process/pipes/WindowsPipes.php#L98">line 98</a></div>
+        <code>                    string[]
+    <strong>getFiles</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns an array of filenames indexed by their related stream in case these pipes use temporary files.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string[]</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_readAndWrite">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.4.0/kanso/framework/shell/process/pipes/WindowsPipes.php#L106">line 106</a></div>
+        <code>                    string[]
+    <strong>readAndWrite</strong>(bool $blocking, bool $close = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Reads data in file handles and pipes.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$blocking</td>
+                <td>Whether to use blocking calls or not.</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$close</td>
+                <td>Whether to close pipes if they've reached EOF.</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string[]</td>
+            <td>An array of read data indexed by their fd.</td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_haveReadSupport">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.4.0/kanso/framework/shell/process/pipes/WindowsPipes.php#L138">line 138</a></div>
+        <code>                    bool
+    <strong>haveReadSupport</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns if pipes are able to read output.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_areOpen">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.4.0/kanso/framework/shell/process/pipes/WindowsPipes.php#L146">line 146</a></div>
+        <code>                    bool
+    <strong>areOpen</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns if the current state has open file handles or pipes.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

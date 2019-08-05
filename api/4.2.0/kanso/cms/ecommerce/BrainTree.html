@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>kanso\cms\ecommerce\BrainTree | Kanso CMS API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:kanso_cms_ecommerce_BrainTree" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
+                                            <option value="../../../../4.0.0/index.html" data-version="4.0.0">4.0.0</option>
+                                            <option value="../../../../4.1.0/index.html" data-version="4.1.0">4.1.0</option>
+                                            <option value="../../../../4.2.0/index.html" data-version="4.2.0">4.2.0</option>
+                                            <option value="../../../../4.3.0/index.html" data-version="4.3.0">4.3.0</option>
+                                            <option value="../../../../4.4.0/index.html" data-version="4.4.0">4.4.0</option>
+                                            <option value="../../../../5.0.0/index.html" data-version="5.0.0">5.0.0</option>
+                                            <option value="../../../../master/index.html" data-version="master">master branch</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Kanso CMS API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../kanso.html">kanso</a></li><li class="backslash">\</li><li><a href="../../../kanso/cms.html">cms</a></li><li class="backslash">\</li><li><a href="../../../kanso/cms/ecommerce.html">ecommerce</a></li><li class="backslash">\</li><li>BrainTree</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            BrainTree
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>BrainTree</strong>        extends <a href="../../../kanso/cms/ecommerce/UtilityBase.html"><abbr title="kanso\cms\ecommerce\UtilityBase">UtilityBase</abbr></a>        (<a href="https://github.com/kanso-cms/cms/blob/4.2.0/kanso/cms/ecommerce/BrainTree.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Coupon manager utility class.</p>                                </div>
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../kanso/framework/ioc/ContainerAwareTrait.html"><abbr title="kanso\framework\ioc\ContainerAwareTrait">ContainerAwareTrait</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Container aware trait.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../kanso/framework/common/SqlBuilderTrait.html"><abbr title="kanso\framework\common\SqlBuilderTrait">SqlBuilderTrait</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    SQL Builder Trait.
+                </div>
+            </div>
+            </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_container">
+                                        protected                                        <a href="../../../kanso/framework/ioc/Container.html"><abbr title="kanso\framework\ioc\Container">Container</abbr></a>
+                </td>
+                <td>$container</td>
+                <td class="last">IoC container instance.</td>
+                <td><small>from&nbsp;<a href="../../../kanso/framework/ioc/ContainerAwareTrait.html#property_container"><abbr title="kanso\framework\ioc\ContainerAwareTrait">ContainerAwareTrait</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_sql">
+                                        protected                                        <a href="../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>|null
+                </td>
+                <td>$sql</td>
+                <td class="last">SQL query builder instance.</td>
+                <td><small>from&nbsp;<a href="../../../kanso/framework/common/SqlBuilderTrait.html#property_sql"><abbr title="kanso\framework\common\SqlBuilderTrait">SqlBuilderTrait</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../kanso/framework/ioc/Container.html"><abbr title="kanso\framework\ioc\Container">Container</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_container">container</a>()
+        
+                                            <p>Sets and or gets the container.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../kanso/framework/ioc/ContainerAwareTrait.html#method_container"><abbr title="kanso\framework\ioc\ContainerAwareTrait">ContainerAwareTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___get">__get</a>(string $key)
+        
+                                            <p>Resolves item from the container using overloading.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../kanso/framework/ioc/ContainerAwareTrait.html#method___get"><abbr title="kanso\framework\ioc\ContainerAwareTrait">ContainerAwareTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sql">sql</a>()
+        
+                                            <p>Instantiate and/or return a query builder instance.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../kanso/framework/common/SqlBuilderTrait.html#method_sql"><abbr title="kanso\framework\common\SqlBuilderTrait">SqlBuilderTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_token">token</a>()
+        
+                                            <p>Generate and return a token for JS nonce.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Braintree\Transaction">Transaction</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_transaction">transaction</a>(array $sale)
+        
+                                            <p>Find an existing customer's card by id.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Braintree\PaymentMethod">PaymentMethod</abbr>|false
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_findCustomerCard">findCustomerCard</a>(int $cardId, int $userId)
+        
+                                            <p>Find an existing customer's card by id.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_cards">cards</a>()
+        
+                                            <p>Get logged in user's stored credit cards from BT.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Braintree\Customer">Customer</abbr>|null
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_customer">customer</a>()
+        
+                                            <p>Get the logged in customer.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Braintree\Result\Error">Error</abbr>|<abbr title="Braintree\Result\Successful">Successful</abbr>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_createCustomer">createCustomer</a>()
+        
+                                            <p>Create New Braintree customer.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <abbr title="Braintree\PaymentMethod">PaymentMethod</abbr>|false
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addCard">addCard</a>(string $nonce)
+        
+                                            <p>Create New Braintree customer.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_container">
+        <div class="location">in <a href="../../../kanso/framework/ioc/ContainerAwareTrait.html#method_container"><abbr title="kanso\framework\ioc\ContainerAwareTrait">ContainerAwareTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/4.2.0/kanso/framework/ioc/ContainerAwareTrait.php#L30">line 30</a></div>
+        <code>                    <a href="../../../kanso/framework/ioc/Container.html"><abbr title="kanso\framework\ioc\Container">Container</abbr></a>
+    <strong>container</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets and or gets the container.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../kanso/framework/ioc/Container.html"><abbr title="kanso\framework\ioc\Container">Container</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___get">
+        <div class="location">in <a href="../../../kanso/framework/ioc/ContainerAwareTrait.html#method___get"><abbr title="kanso\framework\ioc\ContainerAwareTrait">ContainerAwareTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/4.2.0/kanso/framework/ioc/ContainerAwareTrait.php#L47">line 47</a></div>
+        <code>                    mixed
+    <strong>__get</strong>(string $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Resolves item from the container using overloading.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>Key</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sql">
+        <div class="location">in <a href="../../../kanso/framework/common/SqlBuilderTrait.html#method_sql"><abbr title="kanso\framework\common\SqlBuilderTrait">SqlBuilderTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/4.2.0/kanso/framework/common/SqlBuilderTrait.php#L33">line 33</a></div>
+        <code>            protected        <a href="../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+    <strong>sql</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Instantiate and/or return a query builder instance.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_token">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.2.0/kanso/cms/ecommerce/BrainTree.php#L44">line 44</a></div>
+        <code>                    string
+    <strong>token</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Generate and return a token for JS nonce.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_transaction">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.2.0/kanso/cms/ecommerce/BrainTree.php#L67">line 67</a></div>
+        <code>                    <abbr title="Braintree\Transaction">Transaction</abbr>
+    <strong>transaction</strong>(array $sale)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Find an existing customer's card by id.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$sale</td>
+                <td>Transaction configuration</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Braintree\Transaction">Transaction</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_findCustomerCard">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.2.0/kanso/cms/ecommerce/BrainTree.php#L82">line 82</a></div>
+        <code>                    <abbr title="Braintree\PaymentMethod">PaymentMethod</abbr>|false
+    <strong>findCustomerCard</strong>(int $cardId, int $userId)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Find an existing customer's card by id.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$cardId</td>
+                <td>The card id from our database</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$userId</td>
+                <td>The user id</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Braintree\PaymentMethod">PaymentMethod</abbr>|false</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cards">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.2.0/kanso/cms/ecommerce/BrainTree.php#L109">line 109</a></div>
+        <code>                    array
+    <strong>cards</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get logged in user's stored credit cards from BT.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_customer">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.2.0/kanso/cms/ecommerce/BrainTree.php#L144">line 144</a></div>
+        <code>                    <abbr title="Braintree\Customer">Customer</abbr>|null
+    <strong>customer</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the logged in customer.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Braintree\Customer">Customer</abbr>|null</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_createCustomer">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.2.0/kanso/cms/ecommerce/BrainTree.php#L158">line 158</a></div>
+        <code>                    <abbr title="Braintree\Result\Error">Error</abbr>|<abbr title="Braintree\Result\Successful">Successful</abbr>
+    <strong>createCustomer</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create New Braintree customer.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Braintree\Result\Error">Error</abbr>|<abbr title="Braintree\Result\Successful">Successful</abbr></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Exception">Exception</a></td>
+                <td>If customer couldn't be created</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addCard">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.2.0/kanso/cms/ecommerce/BrainTree.php#L186">line 186</a></div>
+        <code>                    <abbr title="Braintree\PaymentMethod">PaymentMethod</abbr>|false
+    <strong>addCard</strong>(string $nonce)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create New Braintree customer.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$nonce</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><abbr title="Braintree\PaymentMethod">PaymentMethod</abbr>|false</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

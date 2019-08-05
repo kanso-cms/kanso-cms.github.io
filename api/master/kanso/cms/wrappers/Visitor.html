@@ -28,6 +28,7 @@
                                             <option value="../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
                                             <option value="../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
                                             <option value="../../../../4.0.0/index.html" data-version="4.0.0">4.0.0</option>
+                                            <option value="../../../../5.0.0/index.html" data-version="5.0.0">5.0.0</option>
                                             <option value="../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -261,7 +262,7 @@
                 <div class="col-md-8 type">
                     <a href="#method_addVisit">addVisit</a>(array $row)
         
-                                            <p>Adds the current visit.</p>                </div>
+                                            <p>Adds the current visit. Ends the last one.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -341,7 +342,7 @@
                 <div class="col-md-8 type">
                     <a href="#method_heartBeat">heartBeat</a>()
         
-                                            <p>Sets a visitor's last active to now.</p>                </div>
+                                            <p>Mark visitor as still active on page.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -615,7 +616,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_save">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/Visitor.php#L338">line 338</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/Visitor.php#L367">line 367</a></div>
         <code>                    bool
     <strong>save</strong>()
         </code>
@@ -645,7 +646,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_delete">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/Visitor.php#L375">line 375</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/Visitor.php#L404">line 404</a></div>
         <code>                    bool
     <strong>delete</strong>()
         </code>
@@ -745,7 +746,7 @@
     
 
                     <div class="method-description">
-                                    <p>Adds the current visit.</p>                                                </div>
+                                    <p>Adds the current visit. Ends the last one.</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -766,7 +767,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isLead">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/Visitor.php#L77">line 77</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/Visitor.php#L86">line 86</a></div>
         <code>                    bool
     <strong>isLead</strong>()
         </code>
@@ -796,7 +797,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isFirstVisit">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/Visitor.php#L88">line 88</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/Visitor.php#L97">line 97</a></div>
         <code>                    bool
     <strong>isFirstVisit</strong>()
         </code>
@@ -826,7 +827,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_visits">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/Visitor.php#L99">line 99</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/Visitor.php#L108">line 108</a></div>
         <code>                    array
     <strong>visits</strong>()
         </code>
@@ -856,7 +857,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_countVisits">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/Visitor.php#L119">line 119</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/Visitor.php#L128">line 128</a></div>
         <code>                    int
     <strong>countVisits</strong>()
         </code>
@@ -886,7 +887,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_previousVisit">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/Visitor.php#L130">line 130</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/Visitor.php#L139">line 139</a></div>
         <code>                    <a href="../../../kanso/cms/wrappers/Visit.html"><abbr title="kanso\cms\wrappers\Visit">Visit</abbr></a>|false
     <strong>previousVisit</strong>()
         </code>
@@ -916,7 +917,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_timeSincePrevVisit">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/Visitor.php#L148">line 148</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/Visitor.php#L160">line 160</a></div>
         <code>                    int
     <strong>timeSincePrevVisit</strong>()
         </code>
@@ -946,7 +947,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_firstVisit">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/Visitor.php#L166">line 166</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/Visitor.php#L178">line 178</a></div>
         <code>                    <a href="../../../kanso/cms/wrappers/Visit.html"><abbr title="kanso\cms\wrappers\Visit">Visit</abbr></a>
     <strong>firstVisit</strong>()
         </code>
@@ -976,7 +977,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_heartBeat">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/Visitor.php#L176">line 176</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/Visitor.php#L189">line 189</a></div>
         <code>                    
     <strong>heartBeat</strong>()
         </code>
@@ -986,7 +987,7 @@
     
 
                     <div class="method-description">
-                                    <p>Sets a visitor's last active to now.</p>                                                </div>
+                                    <p>Mark visitor as still active on page.</p>                    <p>Sets a visitor's last active to now.</p>                            </div>
                 <div class="tags">
             
             
@@ -997,7 +998,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_makeLead">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/Visitor.php#L191">line 191</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/Visitor.php#L213">line 213</a></div>
         <code>                    bool
     <strong>makeLead</strong>(string $email, string $name = &#039;&#039;)
         </code>
@@ -1042,7 +1043,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_bounced">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/Visitor.php#L211">line 211</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/Visitor.php#L233">line 233</a></div>
         <code>                    bool
     <strong>bounced</strong>()
         </code>
@@ -1072,7 +1073,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_channel">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/Visitor.php#L222">line 222</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/Visitor.php#L244">line 244</a></div>
         <code>                    string
     <strong>channel</strong>()
         </code>
@@ -1102,7 +1103,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_medium">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/Visitor.php#L263">line 263</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/Visitor.php#L285">line 285</a></div>
         <code>                    string
     <strong>medium</strong>()
         </code>
@@ -1132,7 +1133,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_grade">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/Visitor.php#L310">line 310</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/wrappers/Visitor.php#L333">line 333</a></div>
         <code>                    string|int
     <strong>grade</strong>(<a href="../../../kanso/cms/wrappers/Visitor.html"><abbr title="kanso\cms\wrappers\Visitor">Visitor</abbr></a> $visitor = null, bool $returnString = false)
         </code>
@@ -1146,6 +1147,7 @@
 <li>Visitor</li>
 <li>Lead</li>
 <li>SQL</li>
+<li>Customer</li>
 </ol>
 </p>                            </div>
                 <div class="tags">

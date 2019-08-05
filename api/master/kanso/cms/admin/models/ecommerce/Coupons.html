@@ -28,6 +28,7 @@
                                             <option value="../../../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
                                             <option value="../../../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
                                             <option value="../../../../../../4.0.0/index.html" data-version="4.0.0">4.0.0</option>
+                                            <option value="../../../../../../5.0.0/index.html" data-version="5.0.0">5.0.0</option>
                                             <option value="../../../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -102,6 +103,15 @@
     <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-6">
+                                            <a href="../../../../../kanso/framework/common/SqlBuilderTrait.html"><abbr title="kanso\framework\common\SqlBuilderTrait">SqlBuilderTrait</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    SQL Builder Trait.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
                                             <a href="../../../../../kanso/framework/ioc/ContainerAwareTrait.html"><abbr title="kanso\framework\ioc\ContainerAwareTrait">ContainerAwareTrait</abbr></a>
                                             
                 </div>
@@ -124,20 +134,20 @@
                 <td><small>from&nbsp;<a href="../../../../../kanso/framework/ioc/ContainerAwareTrait.html#property_container"><abbr title="kanso\framework\ioc\ContainerAwareTrait">ContainerAwareTrait</abbr></a></small></td>
             </tr>
                     <tr>
+                <td class="type" id="property_sql">
+                                        protected                                        <a href="../../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>|null
+                </td>
+                <td>$sql</td>
+                <td class="last">SQL query builder instance.</td>
+                <td><small>from&nbsp;<a href="../../../../../kanso/framework/common/SqlBuilderTrait.html#property_sql"><abbr title="kanso\framework\common\SqlBuilderTrait">SqlBuilderTrait</abbr></a></small></td>
+            </tr>
+                    <tr>
                 <td class="type" id="property_requestName">
                                         protected                                        string
                 </td>
                 <td>$requestName</td>
                 <td class="last">Identifying name of the requested page.</td>
                 <td><small>from&nbsp;<a href="../../../../../kanso/cms/admin/models/BaseModel.html#property_requestName"><abbr title="kanso\cms\admin\models\BaseModel">BaseModel</abbr></a></small></td>
-            </tr>
-                    <tr>
-                <td class="type" id="property_sql">
-                                        protected                                        <a href="../../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
-                </td>
-                <td>$sql</td>
-                <td class="last">Identifying name of the requested page.</td>
-                <td><small>from&nbsp;<a href="../../../../../kanso/cms/admin/models/BaseModel.html#property_sql"><abbr title="kanso\cms\admin\models\BaseModel">BaseModel</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type" id="property_post">
@@ -185,6 +195,16 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    <a href="../../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sql">sql</a>()
+        
+                                            <p>Instantiate and/or return a query builder instance.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../kanso/framework/common/SqlBuilderTrait.html#method_sql"><abbr title="kanso\framework\common\SqlBuilderTrait">SqlBuilderTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-8 type">
@@ -225,16 +245,6 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    <a href="../../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_sql">sql</a>()
-        
-                                            <p>Returns query builder instance.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../../../kanso/cms/admin/models/BaseModel.html#method_sql"><abbr title="kanso\cms\admin\models\BaseModel">BaseModel</abbr></a></small></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
                     bool
                 </div>
                 <div class="col-md-8 type">
@@ -253,16 +263,6 @@
                                             <p>Returns the values required to display a POST
 response message.</p>                </div>
                 <div class="col-md-2"><small>from&nbsp;<a href="../../../../../kanso/cms/admin/models/BaseModel.html#method_postMessage"><abbr title="kanso\cms\admin\models\BaseModel">BaseModel</abbr></a></small></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    array|false
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_parsePost">parsePost</a>()
-        
-                                            <p>Parse and validate the POST request from the submitted form.</p>                </div>
-                <div class="col-md-2"></div>
             </div>
             </div>
 
@@ -362,6 +362,36 @@ response message.</p>                </div>
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_sql">
+        <div class="location">in <a href="../../../../../kanso/framework/common/SqlBuilderTrait.html#method_sql"><abbr title="kanso\framework\common\SqlBuilderTrait">SqlBuilderTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/common/SqlBuilderTrait.php#L33">line 33</a></div>
+        <code>            protected        <a href="../../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+    <strong>sql</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Instantiate and/or return a query builder instance.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_onPOST">
         <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/admin/models/ecommerce/Coupons.php#L35">line 35</a></div>
         <code>                    
@@ -426,7 +456,7 @@ response message.</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_init">
-        <div class="location">in <a href="../../../../../kanso/cms/admin/models/BaseModel.html#method_init"><abbr title="kanso\cms\admin\models\BaseModel">BaseModel</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/admin/models/BaseModel.php#L62">line 62</a></div>
+        <div class="location">in <a href="../../../../../kanso/cms/admin/models/BaseModel.html#method_init"><abbr title="kanso\cms\admin\models\BaseModel">BaseModel</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/admin/models/BaseModel.php#L57">line 57</a></div>
         <code>                    
     <strong>init</strong>(string $requestName)
         </code>
@@ -456,38 +486,8 @@ response message.</p>                </div>
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_sql">
-        <div class="location">in <a href="../../../../../kanso/cms/admin/models/BaseModel.html#method_sql"><abbr title="kanso\cms\admin\models\BaseModel">BaseModel</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/admin/models/BaseModel.php#L75">line 75</a></div>
-        <code>            protected        <a href="../../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
-    <strong>sql</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Returns query builder instance.</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
                     <h3 id="method_isLoggedIn">
-        <div class="location">in <a href="../../../../../kanso/cms/admin/models/BaseModel.html#method_isLoggedIn"><abbr title="kanso\cms\admin\models\BaseModel">BaseModel</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/admin/models/BaseModel.php#L91">line 91</a></div>
+        <div class="location">in <a href="../../../../../kanso/cms/admin/models/BaseModel.html#method_isLoggedIn"><abbr title="kanso\cms\admin\models\BaseModel">BaseModel</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/admin/models/BaseModel.php#L70">line 70</a></div>
         <code>            protected        bool
     <strong>isLoggedIn</strong>()
         </code>
@@ -517,7 +517,7 @@ response message.</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_postMessage">
-        <div class="location">in <a href="../../../../../kanso/cms/admin/models/BaseModel.html#method_postMessage"><abbr title="kanso\cms\admin\models\BaseModel">BaseModel</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/admin/models/BaseModel.php#L105">line 105</a></div>
+        <div class="location">in <a href="../../../../../kanso/cms/admin/models/BaseModel.html#method_postMessage"><abbr title="kanso\cms\admin\models\BaseModel">BaseModel</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/admin/models/BaseModel.php#L84">line 84</a></div>
         <code>            protected        array
     <strong>postMessage</strong>(string $class, string $msg)
         </code>
@@ -551,36 +551,6 @@ response message.</p>                                                </div>
                     <table class="table table-condensed">
         <tr>
             <td>array</td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_parsePost">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/admin/models/ecommerce/Coupons.php#L60">line 60</a></div>
-        <code>                    array|false
-    <strong>parsePost</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Parse and validate the POST request from the submitted form.</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>array|false</td>
             <td></td>
         </tr>
     </table>

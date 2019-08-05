@@ -28,6 +28,7 @@
                                             <option value="../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
                                             <option value="../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
                                             <option value="../../../../4.0.0/index.html" data-version="4.0.0">4.0.0</option>
+                                            <option value="../../../../5.0.0/index.html" data-version="5.0.0">5.0.0</option>
                                             <option value="../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -109,6 +110,15 @@
                     Container aware trait.
                 </div>
             </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../kanso/framework/common/SqlBuilderTrait.html"><abbr title="kanso\framework\common\SqlBuilderTrait">SqlBuilderTrait</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    SQL Builder Trait.
+                </div>
+            </div>
             </div>
     
     
@@ -122,6 +132,14 @@
                 <td>$container</td>
                 <td class="last">IoC container instance.</td>
                 <td><small>from&nbsp;<a href="../../../kanso/framework/ioc/ContainerAwareTrait.html#property_container"><abbr title="kanso\framework\ioc\ContainerAwareTrait">ContainerAwareTrait</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_sql">
+                                        protected                                        <a href="../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>|null
+                </td>
+                <td>$sql</td>
+                <td class="last">SQL query builder instance.</td>
+                <td><small>from&nbsp;<a href="../../../kanso/framework/common/SqlBuilderTrait.html#property_sql"><abbr title="kanso\framework\common\SqlBuilderTrait">SqlBuilderTrait</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type" id="property_cookieKey">
@@ -159,22 +177,22 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    <a href="../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sql">sql</a>()
+        
+                                            <p>Instantiate and/or return a query builder instance.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../kanso/framework/common/SqlBuilderTrait.html#method_sql"><abbr title="kanso\framework\common\SqlBuilderTrait">SqlBuilderTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method___construct">__construct</a>()
         
                                             <p>Constructor.</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    <a href="../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_sql">sql</a>()
-        
-                                            <p>Return a new query builder instance.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -216,6 +234,16 @@
         
                                             <p>After a visitor logs out, their cookie and sessions get wiped
 This function retains their original visitor id.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mergeVisitor">mergeVisitor</a>(string $newVisitorId)
+        
+                                            <p>Merges the current visitor with another one.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -295,8 +323,38 @@ This function retains their original visitor id.</p>                </div>
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_sql">
+        <div class="location">in <a href="../../../kanso/framework/common/SqlBuilderTrait.html#method_sql"><abbr title="kanso\framework\common\SqlBuilderTrait">SqlBuilderTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/common/SqlBuilderTrait.php#L33">line 33</a></div>
+        <code>            protected        <a href="../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+    <strong>sql</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Instantiate and/or return a query builder instance.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/crm/Crm.php#L44">line 44</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/crm/Crm.php#L45">line 45</a></div>
         <code>                    
     <strong>__construct</strong>()
         </code>
@@ -316,38 +374,8 @@ This function retains their original visitor id.</p>                </div>
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_sql">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/crm/Crm.php#L68">line 68</a></div>
-        <code>            protected        <a href="../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
-    <strong>sql</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Return a new query builder instance.</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
-            <td></td>
-        </tr>
-    </table>
-
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
                     <h3 id="method_visitor">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/crm/Crm.php#L79">line 79</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/crm/Crm.php#L80">line 80</a></div>
         <code>                    <a href="../../../kanso/cms/wrappers/Visitor.html"><abbr title="kanso\cms\wrappers\Visitor">Visitor</abbr></a>
     <strong>visitor</strong>()
         </code>
@@ -377,7 +405,7 @@ This function retains their original visitor id.</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_leadProvider">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/crm/Crm.php#L90">line 90</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/crm/Crm.php#L91">line 91</a></div>
         <code>                    <a href="../../../kanso/cms/wrappers/providers/LeadProvider.html"><abbr title="kanso\cms\wrappers\providers\LeadProvider">LeadProvider</abbr></a>
     <strong>leadProvider</strong>()
         </code>
@@ -407,7 +435,7 @@ This function retains their original visitor id.</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_login">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/crm/Crm.php#L192">line 192</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/crm/Crm.php#L101">line 101</a></div>
         <code>                    
     <strong>login</strong>()
         </code>
@@ -428,7 +456,7 @@ This function retains their original visitor id.</p>                </div>
             </div>
                     <div class="method-item">
                     <h3 id="method_logout">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/crm/Crm.php#L222">line 222</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/crm/Crm.php#L131">line 131</a></div>
         <code>                    
     <strong>logout</strong>()
         </code>
@@ -442,6 +470,46 @@ This function retains their original visitor id.</p>                </div>
 This function retains their original visitor id.</p>                                                </div>
                 <div class="tags">
             
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mergeVisitor">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/crm/Crm.php#L144">line 144</a></div>
+        <code>                    bool
+    <strong>mergeVisitor</strong>(string $newVisitorId)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Merges the current visitor with another one.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$newVisitorId</td>
+                <td>New visitor id</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>

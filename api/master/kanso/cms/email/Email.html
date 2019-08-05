@@ -28,6 +28,7 @@
                                             <option value="../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
                                             <option value="../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
                                             <option value="../../../../4.0.0/index.html" data-version="4.0.0">4.0.0</option>
+                                            <option value="../../../../5.0.0/index.html" data-version="5.0.0">5.0.0</option>
                                             <option value="../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -107,19 +108,39 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>(<a href="../../../kanso/framework/file/Filesystem.html"><abbr title="kanso\framework\file\Filesystem">Filesystem</abbr></a> $filesystem, <a href="../../../kanso/cms/email/phpmailer/PHPMailer.html"><abbr title="kanso\cms\email\phpmailer\PHPMailer">PHPMailer</abbr></a> $smtpMailer, <a href="../../../kanso/cms/email/Log.html"><abbr title="kanso\cms\email\Log">Log</abbr></a> $log, array $theme = [], bool $useStmp = false, array $smtpSettings = [])
+                    <a href="#method___construct">__construct</a>(<a href="../../../kanso/framework/file/Filesystem.html"><abbr title="kanso\framework\file\Filesystem">Filesystem</abbr></a> $filesystem, <a href="../../../kanso/cms/email/utility/Log.html"><abbr title="kanso\cms\email\utility\Log">Log</abbr></a> $log, <a href="../../../kanso/cms/email/utility/Sender.html"><abbr title="kanso\cms\email\utility\Sender">Sender</abbr></a> $sender, <a href="../../../kanso/cms/email/utility/Queue.html"><abbr title="kanso\cms\email\utility\Queue">Queue</abbr></a> $queue, array $theme = [])
         
                                             <p>Constructor.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    string
+                    <a href="../../../kanso/cms/email/utility/Queue.html"><abbr title="kanso\cms\email\utility\Queue">Queue</abbr></a>
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_preset">preset</a>(string $template, array $vars = [], bool $includeKanso = false)
+                    <a href="#method_queue">queue</a>()
         
-                                            <p>Load a preset template.</p>                </div>
+                                            <p>Returns the email queue.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../kanso/cms/email/utility/Log.html"><abbr title="kanso\cms\email\utility\Log">Log</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_log">log</a>()
+        
+                                            <p>Returns the email loger.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../kanso/cms/email/utility/Sender.html"><abbr title="kanso\cms\email\utility\Sender">Sender</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sender">sender</a>()
+        
+                                            <p>Returns the email Sender.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -130,6 +151,16 @@
                     <a href="#method_send">send</a>(string $toEmail, string $senderName, string $senderEmail, string $subject, string $content, string $format = &#039;html&#039;)
         
                                             <p>Send an HTML or plain text email.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_preset">preset</a>(string $template, array $vars = [], bool $includeKanso = false)
+        
+                                            <p>Load a preset template.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -170,9 +201,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/Email.php#L100">line 100</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/Email.php#L94">line 94</a></div>
         <code>                    
-    <strong>__construct</strong>(<a href="../../../kanso/framework/file/Filesystem.html"><abbr title="kanso\framework\file\Filesystem">Filesystem</abbr></a> $filesystem, <a href="../../../kanso/cms/email/phpmailer/PHPMailer.html"><abbr title="kanso\cms\email\phpmailer\PHPMailer">PHPMailer</abbr></a> $smtpMailer, <a href="../../../kanso/cms/email/Log.html"><abbr title="kanso\cms\email\Log">Log</abbr></a> $log, array $theme = [], bool $useStmp = false, array $smtpSettings = [])
+    <strong>__construct</strong>(<a href="../../../kanso/framework/file/Filesystem.html"><abbr title="kanso\framework\file\Filesystem">Filesystem</abbr></a> $filesystem, <a href="../../../kanso/cms/email/utility/Log.html"><abbr title="kanso\cms\email\utility\Log">Log</abbr></a> $log, <a href="../../../kanso/cms/email/utility/Sender.html"><abbr title="kanso\cms\email\utility\Sender">Sender</abbr></a> $sender, <a href="../../../kanso/cms/email/utility/Queue.html"><abbr title="kanso\cms\email\utility\Queue">Queue</abbr></a> $queue, array $theme = [])
         </code>
     </h3>
     <div class="details">
@@ -191,29 +222,24 @@
                 <td>Filesystem instance</td>
             </tr>
                     <tr>
-                <td><a href="../../../kanso/cms/email/phpmailer/PHPMailer.html"><abbr title="kanso\cms\email\phpmailer\PHPMailer">PHPMailer</abbr></a></td>
-                <td>$smtpMailer</td>
-                <td>SMTP mail utility</td>
-            </tr>
-                    <tr>
-                <td><a href="../../../kanso/cms/email/Log.html"><abbr title="kanso\cms\email\Log">Log</abbr></a></td>
+                <td><a href="../../../kanso/cms/email/utility/Log.html"><abbr title="kanso\cms\email\utility\Log">Log</abbr></a></td>
                 <td>$log</td>
                 <td>Mail logging utility</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../kanso/cms/email/utility/Sender.html"><abbr title="kanso\cms\email\utility\Sender">Sender</abbr></a></td>
+                <td>$sender</td>
+                <td>Email sender utility</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../kanso/cms/email/utility/Queue.html"><abbr title="kanso\cms\email\utility\Queue">Queue</abbr></a></td>
+                <td>$queue</td>
+                <td>Email queue utility</td>
             </tr>
                     <tr>
                 <td>array</td>
                 <td>$theme</td>
                 <td>Array of theme options (optional) (default [])</td>
-            </tr>
-                    <tr>
-                <td>bool</td>
-                <td>$useStmp</td>
-                <td>Use SMTP to send emails (optional) (default false)</td>
-            </tr>
-                    <tr>
-                <td>array</td>
-                <td>$smtpSettings</td>
-                <td>SMTP setings</td>
             </tr>
             </table>
 
@@ -225,10 +251,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_preset">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/Email.php#L123">line 123</a></div>
-        <code>                    string
-    <strong>preset</strong>(string $template, array $vars = [], bool $includeKanso = false)
+                    <h3 id="method_queue">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/Email.php#L113">line 113</a></div>
+        <code>                    <a href="../../../kanso/cms/email/utility/Queue.html"><abbr title="kanso\cms\email\utility\Queue">Queue</abbr></a>
+    <strong>queue</strong>()
         </code>
     </h3>
     <div class="details">
@@ -236,34 +262,74 @@
     
 
                     <div class="method-description">
-                                    <p>Load a preset template.</p>                                                </div>
+                                    <p>Returns the email queue.</p>                                                </div>
                 <div class="tags">
-                            <h4>Parameters</h4>
-
-                    <table class="table table-condensed">
-                    <tr>
-                <td>string</td>
-                <td>$template</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>array</td>
-                <td>$vars</td>
-                <td></td>
-            </tr>
-                    <tr>
-                <td>bool</td>
-                <td>$includeKanso</td>
-                <td></td>
-            </tr>
-            </table>
-
             
                             <h4>Return Value</h4>
 
                     <table class="table table-condensed">
         <tr>
-            <td>string</td>
+            <td><a href="../../../kanso/cms/email/utility/Queue.html"><abbr title="kanso\cms\email\utility\Queue">Queue</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_log">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/Email.php#L124">line 124</a></div>
+        <code>                    <a href="../../../kanso/cms/email/utility/Log.html"><abbr title="kanso\cms\email\utility\Log">Log</abbr></a>
+    <strong>log</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the email loger.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../kanso/cms/email/utility/Log.html"><abbr title="kanso\cms\email\utility\Log">Log</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sender">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/Email.php#L135">line 135</a></div>
+        <code>                    <a href="../../../kanso/cms/email/utility/Sender.html"><abbr title="kanso\cms\email\utility\Sender">Sender</abbr></a>
+    <strong>sender</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the email Sender.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../kanso/cms/email/utility/Sender.html"><abbr title="kanso\cms\email\utility\Sender">Sender</abbr></a></td>
             <td></td>
         </tr>
     </table>
@@ -276,7 +342,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_send">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/Email.php#L149">line 149</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/Email.php#L152">line 152</a></div>
         <code>                    bool
     <strong>send</strong>(string $toEmail, string $senderName, string $senderEmail, string $subject, string $content, string $format = &#039;html&#039;)
         </code>
@@ -340,8 +406,58 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_preset">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/Email.php#L178">line 178</a></div>
+        <code>                    string
+    <strong>preset</strong>(string $template, array $vars = [], bool $includeKanso = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Load a preset template.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$template</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$vars</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$includeKanso</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_html">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/Email.php#L214">line 214</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/Email.php#L200">line 200</a></div>
         <code>                    string
     <strong>html</strong>(string $subject, string $content)
         </code>
@@ -386,7 +502,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_theme">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/Email.php#L237">line 237</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/Email.php#L223">line 223</a></div>
         <code>                    array
     <strong>theme</strong>(array $theme = [])
         </code>
@@ -426,7 +542,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_button">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/Email.php#L253">line 253</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/email/Email.php#L239">line 239</a></div>
         <code>                    string
     <strong>button</strong>(string $href, string $text, string $size = &#039;md&#039;)
         </code>

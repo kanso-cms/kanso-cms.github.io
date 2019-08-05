@@ -28,6 +28,7 @@
                                             <option value="../../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
                                             <option value="../../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
                                             <option value="../../../../../4.0.0/index.html" data-version="4.0.0">4.0.0</option>
+                                            <option value="../../../../../5.0.0/index.html" data-version="5.0.0">5.0.0</option>
                                             <option value="../../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -96,6 +97,20 @@
             <div class="description">
             <p>CMS Query object.</p>                                </div>
     
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../../kanso/framework/common/SqlBuilderTrait.html"><abbr title="kanso\framework\common\SqlBuilderTrait">SqlBuilderTrait</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    SQL Builder Trait.
+                </div>
+            </div>
+            </div>
     
     
             <h2>Properties</h2>
@@ -103,11 +118,11 @@
             <table class="table table-condensed">
                     <tr>
                 <td class="type" id="property_sql">
-                                        protected                                        <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                                        protected                                        <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>|null
                 </td>
                 <td>$sql</td>
                 <td class="last">SQL query builder instance.</td>
-                <td></td>
+                <td><small>from&nbsp;<a href="../../../../kanso/framework/common/SqlBuilderTrait.html#property_sql"><abbr title="kanso\framework\common\SqlBuilderTrait">SqlBuilderTrait</abbr></a></small></td>
             </tr>
                     <tr>
                 <td class="type" id="property_container">
@@ -133,6 +148,16 @@
             <div class="container-fluid underlined">
                     <div class="row">
                 <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sql">sql</a>()
+        
+                                            <p>Instantiate and/or return a query builder instance.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/common/SqlBuilderTrait.html#method_sql"><abbr title="kanso\framework\common\SqlBuilderTrait">SqlBuilderTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-8 type">
@@ -151,16 +176,6 @@
                                             <p>Returns query builder instance.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_sql">sql</a>()
-        
-                                            <p>Returns query builder instance.</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
             </div>
 
 
@@ -168,8 +183,38 @@
 
             <div id="method-details">
                     <div class="method-item">
+                    <h3 id="method_sql">
+        <div class="location">in <a href="../../../../kanso/framework/common/SqlBuilderTrait.html#method_sql"><abbr title="kanso\framework\common\SqlBuilderTrait">SqlBuilderTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/common/SqlBuilderTrait.php#L33">line 33</a></div>
+        <code>            protected        <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+    <strong>sql</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Instantiate and/or return a query builder instance.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/query/helpers/Helper.php#L48">line 48</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/query/helpers/Helper.php#L43">line 43</a></div>
         <code>                    
     <strong>__construct</strong>(<a href="../../../../kanso/framework/ioc/Container.html"><abbr title="kanso\framework\ioc\Container">Container</abbr></a> $container)
         </code>
@@ -200,7 +245,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_setParent">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/query/helpers/Helper.php#L59">line 59</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/query/helpers/Helper.php#L54">line 54</a></div>
         <code>                    
     <strong>setParent</strong>(<a href="../../../../kanso/cms/query/Query.html"><abbr title="kanso\cms\query\Query">Query</abbr></a> $query)
         </code>
@@ -223,36 +268,6 @@
             </table>
 
             
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_sql">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/query/helpers/Helper.php#L70">line 70</a></div>
-        <code>            protected        <a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
-    <strong>sql</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Returns query builder instance.</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
-            <td></td>
-        </tr>
-    </table>
-
             
             
                     </div>

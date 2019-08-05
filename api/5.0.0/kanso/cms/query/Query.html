@@ -1,0 +1,5485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>kanso\cms\query\Query | Kanso CMS API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:kanso_cms_query_Query" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
+                                            <option value="../../../../4.0.0/index.html" data-version="4.0.0">4.0.0</option>
+                                            <option value="../../../../5.0.0/index.html" data-version="5.0.0">5.0.0</option>
+                                            <option value="../../../../master/index.html" data-version="master">master branch</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Kanso CMS API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../kanso.html">kanso</a></li><li class="backslash">\</li><li><a href="../../../kanso/cms.html">cms</a></li><li class="backslash">\</li><li><a href="../../../kanso/cms/query.html">query</a></li><li class="backslash">\</li><li>Query</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Query
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Query</strong>        extends <a href="../../../kanso/cms/query/QueryBase.html"><abbr title="kanso\cms\query\QueryBase">QueryBase</abbr></a>        (<a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>CMS Query object.</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_requestType">
+                                                                                string|null
+                </td>
+                <td>$requestType</td>
+                <td class="last">The page request type.</td>
+                <td><small>from&nbsp;<a href="../../../kanso/cms/query/QueryBase.html#property_requestType"><abbr title="kanso\cms\query\QueryBase">QueryBase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_queryStr">
+                                                                                string|null
+                </td>
+                <td>$queryStr</td>
+                <td class="last">The string-query to use on the database.</td>
+                <td><small>from&nbsp;<a href="../../../kanso/cms/query/QueryBase.html#property_queryStr"><abbr title="kanso\cms\query\QueryBase">QueryBase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_pageIndex">
+                                                                                int
+                </td>
+                <td>$pageIndex</td>
+                <td class="last">Current page request if it exists.</td>
+                <td><small>from&nbsp;<a href="../../../kanso/cms/query/QueryBase.html#property_pageIndex"><abbr title="kanso\cms\query\QueryBase">QueryBase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_postIndex">
+                                                                                int
+                </td>
+                <td>$postIndex</td>
+                <td class="last">Current post index of paginated array of posts.</td>
+                <td><small>from&nbsp;<a href="../../../kanso/cms/query/QueryBase.html#property_postIndex"><abbr title="kanso\cms\query\QueryBase">QueryBase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_postCount">
+                                                                                int
+                </td>
+                <td>$postCount</td>
+                <td class="last">Current post count.</td>
+                <td><small>from&nbsp;<a href="../../../kanso/cms/query/QueryBase.html#property_postCount"><abbr title="kanso\cms\query\QueryBase">QueryBase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_posts">
+                                                                                array
+                </td>
+                <td>$posts</td>
+                <td class="last">Array of posts from query result.</td>
+                <td><small>from&nbsp;<a href="../../../kanso/cms/query/QueryBase.html#property_posts"><abbr title="kanso\cms\query\QueryBase">QueryBase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_post">
+                                                                                <a href="../../../kanso/cms/wrappers/Post.html"><abbr title="kanso\cms\wrappers\Post">Post</abbr></a>|null
+                </td>
+                <td>$post</td>
+                <td class="last">The current post.</td>
+                <td><small>from&nbsp;<a href="../../../kanso/cms/query/QueryBase.html#property_post"><abbr title="kanso\cms\query\QueryBase">QueryBase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_taxonomySlug">
+                                                                                string|null
+                </td>
+                <td>$taxonomySlug</td>
+                <td class="last">Current taxonomy slug if applicable (e.g tag, category, author).</td>
+                <td><small>from&nbsp;<a href="../../../kanso/cms/query/QueryBase.html#property_taxonomySlug"><abbr title="kanso\cms\query\QueryBase">QueryBase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_attachmentURL">
+                                                                                string|null
+                </td>
+                <td>$attachmentURL</td>
+                <td class="last">Current attachment URL: if applicable (e.g foo.com/app/public/uploads/my-image_large.png).</td>
+                <td><small>from&nbsp;<a href="../../../kanso/cms/query/QueryBase.html#property_attachmentURL"><abbr title="kanso\cms\query\QueryBase">QueryBase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_attachmentSize">
+                                                                                string|null
+                </td>
+                <td>$attachmentSize</td>
+                <td class="last">Current attachment size: if applicable (image_large).</td>
+                <td><small>from&nbsp;<a href="../../../kanso/cms/query/QueryBase.html#property_attachmentSize"><abbr title="kanso\cms\query\QueryBase">QueryBase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_searchQuery">
+                                                                                string|null
+                </td>
+                <td>$searchQuery</td>
+                <td class="last">Search term if applicable.</td>
+                <td><small>from&nbsp;<a href="../../../kanso/cms/query/QueryBase.html#property_searchQuery"><abbr title="kanso\cms\query\QueryBase">QueryBase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_helperClasses">
+                                                                                array
+                </td>
+                <td>$helperClasses</td>
+                <td class="last">Helper classes.</td>
+                <td><small>from&nbsp;<a href="../../../kanso/cms/query/QueryBase.html#property_helperClasses"><abbr title="kanso\cms\query\QueryBase">QueryBase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_helpers">
+                                                                                array
+                </td>
+                <td>$helpers</td>
+                <td class="last">Helper classes.</td>
+                <td><small>from&nbsp;<a href="../../../kanso/cms/query/QueryBase.html#property_helpers"><abbr title="kanso\cms\query\QueryBase">QueryBase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_headerScripts">
+                                                                                array
+                </td>
+                <td>$headerScripts</td>
+                <td class="last">Header scripts.</td>
+                <td><small>from&nbsp;<a href="../../../kanso/cms/query/QueryBase.html#property_headerScripts"><abbr title="kanso\cms\query\QueryBase">QueryBase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_headerStyles">
+                                                                                array
+                </td>
+                <td>$headerStyles</td>
+                <td class="last">Header scripts.</td>
+                <td><small>from&nbsp;<a href="../../../kanso/cms/query/QueryBase.html#property_headerStyles"><abbr title="kanso\cms\query\QueryBase">QueryBase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_footerScripts">
+                                                                                array
+                </td>
+                <td>$footerScripts</td>
+                <td class="last">Footer scripts.</td>
+                <td><small>from&nbsp;<a href="../../../kanso/cms/query/QueryBase.html#property_footerScripts"><abbr title="kanso\cms\query\QueryBase">QueryBase</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_container">
+                                        protected                                        <a href="../../../kanso/framework/ioc/Container.html"><abbr title="kanso\framework\ioc\Container">Container</abbr></a>
+                </td>
+                <td>$container</td>
+                <td class="last">IoC container instance.</td>
+                <td><small>from&nbsp;<a href="../../../kanso/cms/query/QueryBase.html#property_container"><abbr title="kanso\cms\query\QueryBase">QueryBase</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../kanso/framework/ioc/Container.html"><abbr title="kanso\framework\ioc\Container">Container</abbr></a> $container)
+        
+                                            <p>Constructor.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../kanso/cms/query/QueryBase.html#method___construct"><abbr title="kanso\cms\query\QueryBase">QueryBase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../kanso/cms/query/Query.html"><abbr title="kanso\cms\query\Query">Query</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_create">create</a>(string $queryStr = &#039;&#039;)
+        
+                                            <p>Create and return a new Query object.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../kanso/cms/query/QueryBase.html#method_create"><abbr title="kanso\cms\query\QueryBase">QueryBase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../kanso/cms/query/helpers/Helper.html"><abbr title="kanso\cms\query\helpers\Helper">Helper</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_helper">helper</a>(string $name)
+        
+                                            <p>Retrieves and returns a helper class by name.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../kanso/cms/query/QueryBase.html#method_helper"><abbr title="kanso\cms\query\QueryBase">QueryBase</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_applyQuery">applyQuery</a>(string $queryStr)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_attachment">the_attachment</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_all_the_attachments">all_the_attachments</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_attachment_url">the_attachment_url</a>(int $id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_attachment_size">the_attachment_size</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_author">the_author</a>(int $post_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_author_exists">author_exists</a>($author_name)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_has_author_thumbnail">has_author_thumbnail</a>($author_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_author_name">the_author_name</a>(int $author_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_author_url">the_author_url</a>(int $author_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_author_thumbnail">the_author_thumbnail</a>(int $author_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_author_bio">the_author_bio</a>(int $author_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_author_twitter">the_author_twitter</a>(int $author_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_author_google">the_author_google</a>(int $author_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_author_facebook">the_author_facebook</a>(int $author_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_author_instagram">the_author_instagram</a>(int $author_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_all_the_authors">all_the_authors</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_author_posts">the_author_posts</a>(int $author_id, bool $published = true)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_category_exists">category_exists</a>($category_name)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_category">the_category</a>(int $post_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_category_name">the_category_name</a>(int $post_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_categories">the_categories</a>(int $post_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_categories_list">the_categories_list</a>(int $post_id = null, string $glue = &#039;, &#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_category_slug">the_category_slug</a>(int $category_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_category_url">the_category_url</a>(int $category_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_all_the_categories">all_the_categories</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_has_categories">has_categories</a>(int $post_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_category_posts">the_category_posts</a>(int $category_id, bool $published = true)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_comments_open">comments_open</a>(int $post_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_has_comments">has_comments</a>(int $post_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_comments_number">comments_number</a>(int $post_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get_comment">get_comment</a>(int $comment_id)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get_comments">get_comments</a>(int $post_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_display_comments">display_comments</a>(array $args = null, int $post_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_comment_form">comment_form</a>(array $args = null, int $post_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get_gravatar">get_gravatar</a>(string $email_or_md5, int $size = 160, bool $srcOnly = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_website_title">website_title</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_website_description">website_description</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_domain_name">domain_name</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_meta_description">the_meta_description</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_meta_title">the_meta_title</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_canonical_url">the_canonical_url</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_previous_page_title">the_previous_page_title</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_next_page_title">the_next_page_title</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_next_page_url">the_next_page_url</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_previous_page_url">the_previous_page_url</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_previous_page">the_previous_page</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_next_page">the_next_page</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pagination_links">pagination_links</a>(array $args = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_post_id">the_post_id</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_excerpt">the_excerpt</a>(int $post_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_post_status">the_post_status</a>(int $post_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_post_type">the_post_type</a>(int $post_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_post_meta">the_post_meta</a>($post_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_time">the_time</a>(string $format = &#039;U&#039;, int $post_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_modified_time">the_modified_time</a>(string $format = &#039;U&#039;, int $post_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_has_post_thumbnail">has_post_thumbnail</a>(int $post_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_title">the_title</a>(int $post_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_permalink">the_permalink</a>(int $post_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_slug">the_slug</a>(int $post_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_content">the_content</a>(int $post_id = null, $raw = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_post_thumbnail">the_post_thumbnail</a>(int $post_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_post_thumbnail_src">the_post_thumbnail_src</a>(int $post_id = null, string $size = &#039;original&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_display_thumbnail">display_thumbnail</a>($thumbnail, $size = &#039;original&#039;, $width = &#039;&#039;, $height = &#039;&#039;, string $classes = &#039;&#039;, string $id = &#039;&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_all_static_pages">all_static_pages</a>(bool $published = true)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_all_custom_posts">all_custom_posts</a>(string $type, bool $published = true)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_post">the_post</a>(int $post_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_posts">the_posts</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_posts_count">the_posts_count</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_posts_per_page">posts_per_page</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_have_posts">have_posts</a>(int $post_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_rewind_posts">rewind_posts</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method__next">_next</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method__previous">_previous</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_search_query">search_query</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_get_search_form">get_search_form</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_tag_exists">tag_exists</a>($tag_name)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_tags">the_tags</a>(int $post_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_tags_list">the_tags_list</a>(int $post_id = null, string $glue = &#039;, &#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_tag_slug">the_tag_slug</a>(int $tag_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_tag_url">the_tag_url</a>(int $tag_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_taxonomy">the_taxonomy</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_all_the_tags">all_the_tags</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_has_tags">has_tags</a>(int $post_id = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_tag_posts">the_tag_posts</a>(int $tag_id, bool $published = true)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_header">the_header</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_footer">the_footer</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_sidebar">the_sidebar</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_include_template">include_template</a>(string $template_name, array $data = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_enqueue_script">enqueue_script</a>(string $src = &#039;&#039;, string $ver = null, bool $inFooter = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_enqueue_style">enqueue_style</a>(string $src = &#039;&#039;, string $ver = null, string $media = &#039;all&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_enqueue_inline_style">enqueue_inline_style</a>(string $css = &#039;&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_enqueue_inline_script">enqueue_inline_script</a>(string $js = &#039;&#039;, bool $inFooter = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_kanso_head">kanso_head</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_kanso_footer">kanso_footer</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_themes_directory">themes_directory</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_theme_name">theme_name</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_theme_directory">theme_directory</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_theme_url">theme_url</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_home_url">home_url</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blog_url">blog_url</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blog_location">blog_location</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_attachments_url">the_attachments_url</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_base_url">base_url</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_user">user</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_loggedIn">is_loggedIn</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_user_is_admin">user_is_admin</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_the_page_type">the_page_type</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_single">is_single</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_custom_post">is_custom_post</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_home">is_home</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_blog_location">is_blog_location</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_front_page">is_front_page</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_page">is_page</a>($slug = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_search">is_search</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_tag">is_tag</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_category">is_category</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_author">is_author</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_admin">is_admin</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_attachment">is_attachment</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_is_not_found">is_not_found</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fetchPageIndex">fetchPageIndex</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_reset">reset</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_filterPosts">filterPosts</a>(string $requestType)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../../kanso/cms/query/QueryBase.html#method___construct"><abbr title="kanso\cms\query\QueryBase">QueryBase</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/QueryBase.php#L182">line 182</a></div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../kanso/framework/ioc/Container.html"><abbr title="kanso\framework\ioc\Container">Container</abbr></a> $container)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../kanso/framework/ioc/Container.html"><abbr title="kanso\framework\ioc\Container">Container</abbr></a></td>
+                <td>$container</td>
+                <td>IoC container</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_create">
+        <div class="location">in <a href="../../../kanso/cms/query/QueryBase.html#method_create"><abbr title="kanso\cms\query\QueryBase">QueryBase</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/QueryBase.php#L198">line 198</a></div>
+        <code>                    <a href="../../../kanso/cms/query/Query.html"><abbr title="kanso\cms\query\Query">Query</abbr></a>
+    <strong>create</strong>(string $queryStr = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create and return a new Query object.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$queryStr</td>
+                <td>Query to filter posts</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../kanso/cms/query/Query.html"><abbr title="kanso\cms\query\Query">Query</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_helper">
+        <div class="location">in <a href="../../../kanso/cms/query/QueryBase.html#method_helper"><abbr title="kanso\cms\query\QueryBase">QueryBase</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/QueryBase.php#L215">line 215</a></div>
+        <code>                    <a href="../../../kanso/cms/query/helpers/Helper.html"><abbr title="kanso\cms\query\helpers\Helper">Helper</abbr></a>
+    <strong>helper</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Retrieves and returns a helper class by name.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Name of helper class</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../kanso/cms/query/helpers/Helper.html"><abbr title="kanso\cms\query\helpers\Helper">Helper</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/InvalidArgumentException">InvalidArgumentException</a></td>
+                <td>If class does not exist</td>
+            </tr>
+            </table>
+
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_applyQuery">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L632">line 632</a></div>
+        <code>                    
+    <strong>applyQuery</strong>(string $queryStr)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$queryStr</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_attachment">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L17">line 17</a></div>
+        <code>                    
+    <strong>the_attachment</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_all_the_attachments">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L22">line 22</a></div>
+        <code>                    
+    <strong>all_the_attachments</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_attachment_url">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L27">line 27</a></div>
+        <code>                    
+    <strong>the_attachment_url</strong>(int $id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_attachment_size">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L32">line 32</a></div>
+        <code>                    
+    <strong>the_attachment_size</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_author">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L37">line 37</a></div>
+        <code>                    
+    <strong>the_author</strong>(int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_author_exists">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L42">line 42</a></div>
+        <code>                    bool
+    <strong>author_exists</strong>($author_name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$author_name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_has_author_thumbnail">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L47">line 47</a></div>
+        <code>                    bool
+    <strong>has_author_thumbnail</strong>($author_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$author_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_author_name">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L52">line 52</a></div>
+        <code>                    
+    <strong>the_author_name</strong>(int $author_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$author_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_author_url">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L57">line 57</a></div>
+        <code>                    
+    <strong>the_author_url</strong>(int $author_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$author_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_author_thumbnail">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L62">line 62</a></div>
+        <code>                    
+    <strong>the_author_thumbnail</strong>(int $author_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$author_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_author_bio">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L67">line 67</a></div>
+        <code>                    
+    <strong>the_author_bio</strong>(int $author_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$author_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_author_twitter">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L72">line 72</a></div>
+        <code>                    
+    <strong>the_author_twitter</strong>(int $author_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$author_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_author_google">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L77">line 77</a></div>
+        <code>                    
+    <strong>the_author_google</strong>(int $author_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$author_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_author_facebook">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L82">line 82</a></div>
+        <code>                    
+    <strong>the_author_facebook</strong>(int $author_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$author_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_author_instagram">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L87">line 87</a></div>
+        <code>                    
+    <strong>the_author_instagram</strong>(int $author_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$author_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_all_the_authors">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L92">line 92</a></div>
+        <code>                    array
+    <strong>all_the_authors</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_author_posts">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L97">line 97</a></div>
+        <code>                    array
+    <strong>the_author_posts</strong>(int $author_id, bool $published = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$author_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$published</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_category_exists">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L102">line 102</a></div>
+        <code>                    bool
+    <strong>category_exists</strong>($category_name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$category_name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_category">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L107">line 107</a></div>
+        <code>                    
+    <strong>the_category</strong>(int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_category_name">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L112">line 112</a></div>
+        <code>                    
+    <strong>the_category_name</strong>(int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_categories">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L117">line 117</a></div>
+        <code>                    array
+    <strong>the_categories</strong>(int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_categories_list">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L122">line 122</a></div>
+        <code>                    string
+    <strong>the_categories_list</strong>(int $post_id = null, string $glue = &#039;, &#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$glue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_category_slug">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L127">line 127</a></div>
+        <code>                    
+    <strong>the_category_slug</strong>(int $category_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$category_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_category_url">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L132">line 132</a></div>
+        <code>                    
+    <strong>the_category_url</strong>(int $category_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$category_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_all_the_categories">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L137">line 137</a></div>
+        <code>                    array
+    <strong>all_the_categories</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_has_categories">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L142">line 142</a></div>
+        <code>                    bool
+    <strong>has_categories</strong>(int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_category_posts">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L147">line 147</a></div>
+        <code>                    array
+    <strong>the_category_posts</strong>(int $category_id, bool $published = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$category_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$published</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_comments_open">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L152">line 152</a></div>
+        <code>                    bool
+    <strong>comments_open</strong>(int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_has_comments">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L157">line 157</a></div>
+        <code>                    bool
+    <strong>has_comments</strong>(int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_comments_number">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L162">line 162</a></div>
+        <code>                    int
+    <strong>comments_number</strong>(int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get_comment">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L167">line 167</a></div>
+        <code>                    
+    <strong>get_comment</strong>(int $comment_id)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$comment_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get_comments">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L172">line 172</a></div>
+        <code>                    array
+    <strong>get_comments</strong>(int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_display_comments">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L177">line 177</a></div>
+        <code>                    string
+    <strong>display_comments</strong>(array $args = null, int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_comment_form">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L182">line 182</a></div>
+        <code>                    string
+    <strong>comment_form</strong>(array $args = null, int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get_gravatar">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L187">line 187</a></div>
+        <code>                    
+    <strong>get_gravatar</strong>(string $email_or_md5, int $size = 160, bool $srcOnly = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$email_or_md5</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$size</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$srcOnly</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_website_title">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L192">line 192</a></div>
+        <code>                    string
+    <strong>website_title</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_website_description">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L197">line 197</a></div>
+        <code>                    string
+    <strong>website_description</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_domain_name">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L202">line 202</a></div>
+        <code>                    string
+    <strong>domain_name</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_meta_description">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L207">line 207</a></div>
+        <code>                    string
+    <strong>the_meta_description</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_meta_title">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L212">line 212</a></div>
+        <code>                    string
+    <strong>the_meta_title</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_canonical_url">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L217">line 217</a></div>
+        <code>                    string
+    <strong>the_canonical_url</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_previous_page_title">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L222">line 222</a></div>
+        <code>                    
+    <strong>the_previous_page_title</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_next_page_title">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L227">line 227</a></div>
+        <code>                    
+    <strong>the_next_page_title</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_next_page_url">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L232">line 232</a></div>
+        <code>                    
+    <strong>the_next_page_url</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_previous_page_url">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L237">line 237</a></div>
+        <code>                    
+    <strong>the_previous_page_url</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_previous_page">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L242">line 242</a></div>
+        <code>                    
+    <strong>the_previous_page</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_next_page">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L247">line 247</a></div>
+        <code>                    
+    <strong>the_next_page</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pagination_links">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L252">line 252</a></div>
+        <code>                    string
+    <strong>pagination_links</strong>(array $args = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$args</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_post_id">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L257">line 257</a></div>
+        <code>                    
+    <strong>the_post_id</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_excerpt">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L262">line 262</a></div>
+        <code>                    
+    <strong>the_excerpt</strong>(int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_post_status">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L267">line 267</a></div>
+        <code>                    
+    <strong>the_post_status</strong>(int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_post_type">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L272">line 272</a></div>
+        <code>                    
+    <strong>the_post_type</strong>(int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_post_meta">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L277">line 277</a></div>
+        <code>                    array
+    <strong>the_post_meta</strong>($post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$post_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_time">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L282">line 282</a></div>
+        <code>                    
+    <strong>the_time</strong>(string $format = &#039;U&#039;, int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$format</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_modified_time">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L287">line 287</a></div>
+        <code>                    
+    <strong>the_modified_time</strong>(string $format = &#039;U&#039;, int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$format</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_has_post_thumbnail">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L292">line 292</a></div>
+        <code>                    bool
+    <strong>has_post_thumbnail</strong>(int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_title">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L297">line 297</a></div>
+        <code>                    
+    <strong>the_title</strong>(int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_permalink">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L302">line 302</a></div>
+        <code>                    
+    <strong>the_permalink</strong>(int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_slug">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L307">line 307</a></div>
+        <code>                    
+    <strong>the_slug</strong>(int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_content">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L312">line 312</a></div>
+        <code>                    string
+    <strong>the_content</strong>(int $post_id = null, $raw = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$raw</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_post_thumbnail">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L317">line 317</a></div>
+        <code>                    
+    <strong>the_post_thumbnail</strong>(int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_post_thumbnail_src">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L322">line 322</a></div>
+        <code>                    
+    <strong>the_post_thumbnail_src</strong>(int $post_id = null, string $size = &#039;original&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$size</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_display_thumbnail">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L327">line 327</a></div>
+        <code>                    string
+    <strong>display_thumbnail</strong>($thumbnail, $size = &#039;original&#039;, $width = &#039;&#039;, $height = &#039;&#039;, string $classes = &#039;&#039;, string $id = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$thumbnail</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$size</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$width</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$height</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$classes</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_all_static_pages">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L332">line 332</a></div>
+        <code>                    array
+    <strong>all_static_pages</strong>(bool $published = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$published</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_all_custom_posts">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L337">line 337</a></div>
+        <code>                    array
+    <strong>all_custom_posts</strong>(string $type, bool $published = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$type</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$published</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_post">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L342">line 342</a></div>
+        <code>                    
+    <strong>the_post</strong>(int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_posts">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L347">line 347</a></div>
+        <code>                    array
+    <strong>the_posts</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_posts_count">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L352">line 352</a></div>
+        <code>                    int
+    <strong>the_posts_count</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_posts_per_page">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L357">line 357</a></div>
+        <code>                    int
+    <strong>posts_per_page</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_have_posts">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L362">line 362</a></div>
+        <code>                    bool
+    <strong>have_posts</strong>(int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_rewind_posts">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L367">line 367</a></div>
+        <code>                    
+    <strong>rewind_posts</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method__next">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L372">line 372</a></div>
+        <code>                    
+    <strong>_next</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method__previous">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L377">line 377</a></div>
+        <code>                    
+    <strong>_previous</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_search_query">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L382">line 382</a></div>
+        <code>                    
+    <strong>search_query</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_get_search_form">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L387">line 387</a></div>
+        <code>                    string
+    <strong>get_search_form</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_tag_exists">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L392">line 392</a></div>
+        <code>                    
+    <strong>tag_exists</strong>($tag_name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$tag_name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_tags">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L397">line 397</a></div>
+        <code>                    
+    <strong>the_tags</strong>(int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_tags_list">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L402">line 402</a></div>
+        <code>                    string
+    <strong>the_tags_list</strong>(int $post_id = null, string $glue = &#039;, &#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$glue</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_tag_slug">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L407">line 407</a></div>
+        <code>                    
+    <strong>the_tag_slug</strong>(int $tag_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$tag_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_tag_url">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L412">line 412</a></div>
+        <code>                    
+    <strong>the_tag_url</strong>(int $tag_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$tag_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_taxonomy">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L417">line 417</a></div>
+        <code>                    
+    <strong>the_taxonomy</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_all_the_tags">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L422">line 422</a></div>
+        <code>                    array
+    <strong>all_the_tags</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_has_tags">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L427">line 427</a></div>
+        <code>                    
+    <strong>has_tags</strong>(int $post_id = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$post_id</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_tag_posts">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L432">line 432</a></div>
+        <code>                    array
+    <strong>the_tag_posts</strong>(int $tag_id, bool $published = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$tag_id</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$published</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_header">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L437">line 437</a></div>
+        <code>                    string
+    <strong>the_header</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_footer">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L442">line 442</a></div>
+        <code>                    string
+    <strong>the_footer</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_sidebar">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L447">line 447</a></div>
+        <code>                    string
+    <strong>the_sidebar</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_include_template">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L452">line 452</a></div>
+        <code>                    string
+    <strong>include_template</strong>(string $template_name, array $data = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$template_name</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_enqueue_script">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L457">line 457</a></div>
+        <code>                    
+    <strong>enqueue_script</strong>(string $src = &#039;&#039;, string $ver = null, bool $inFooter = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$src</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$ver</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$inFooter</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_enqueue_style">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L462">line 462</a></div>
+        <code>                    
+    <strong>enqueue_style</strong>(string $src = &#039;&#039;, string $ver = null, string $media = &#039;all&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$src</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$ver</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$media</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_enqueue_inline_style">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L467">line 467</a></div>
+        <code>                    
+    <strong>enqueue_inline_style</strong>(string $css = &#039;&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$css</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_enqueue_inline_script">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L472">line 472</a></div>
+        <code>                    
+    <strong>enqueue_inline_script</strong>(string $js = &#039;&#039;, bool $inFooter = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$js</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$inFooter</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_kanso_head">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L477">line 477</a></div>
+        <code>                    
+    <strong>kanso_head</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_kanso_footer">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L482">line 482</a></div>
+        <code>                    
+    <strong>kanso_footer</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_themes_directory">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L487">line 487</a></div>
+        <code>                    string
+    <strong>themes_directory</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_theme_name">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L492">line 492</a></div>
+        <code>                    string
+    <strong>theme_name</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_theme_directory">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L497">line 497</a></div>
+        <code>                    string
+    <strong>theme_directory</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_theme_url">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L502">line 502</a></div>
+        <code>                    string
+    <strong>theme_url</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_home_url">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L507">line 507</a></div>
+        <code>                    string
+    <strong>home_url</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blog_url">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L512">line 512</a></div>
+        <code>                    string
+    <strong>blog_url</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blog_location">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L517">line 517</a></div>
+        <code>                    
+    <strong>blog_location</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_attachments_url">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L522">line 522</a></div>
+        <code>                    string
+    <strong>the_attachments_url</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_base_url">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L527">line 527</a></div>
+        <code>                    string
+    <strong>base_url</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_user">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L532">line 532</a></div>
+        <code>                    
+    <strong>user</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_loggedIn">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L537">line 537</a></div>
+        <code>                    bool
+    <strong>is_loggedIn</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_user_is_admin">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L542">line 542</a></div>
+        <code>                    bool
+    <strong>user_is_admin</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_the_page_type">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L547">line 547</a></div>
+        <code>                    string
+    <strong>the_page_type</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_single">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L552">line 552</a></div>
+        <code>                    bool
+    <strong>is_single</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_custom_post">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L557">line 557</a></div>
+        <code>                    bool
+    <strong>is_custom_post</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_home">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L562">line 562</a></div>
+        <code>                    bool
+    <strong>is_home</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_blog_location">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L567">line 567</a></div>
+        <code>                    bool
+    <strong>is_blog_location</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_front_page">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L572">line 572</a></div>
+        <code>                    bool
+    <strong>is_front_page</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_page">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L577">line 577</a></div>
+        <code>                    bool
+    <strong>is_page</strong>($slug = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$slug</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_search">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L582">line 582</a></div>
+        <code>                    bool
+    <strong>is_search</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_tag">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L587">line 587</a></div>
+        <code>                    bool
+    <strong>is_tag</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_category">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L592">line 592</a></div>
+        <code>                    bool
+    <strong>is_category</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_author">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L597">line 597</a></div>
+        <code>                    bool
+    <strong>is_author</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_admin">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L602">line 602</a></div>
+        <code>                    bool
+    <strong>is_admin</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_attachment">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L607">line 607</a></div>
+        <code>                    bool
+    <strong>is_attachment</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_is_not_found">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L612">line 612</a></div>
+        <code>                    bool
+    <strong>is_not_found</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fetchPageIndex">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L617">line 617</a></div>
+        <code>                    
+    <strong>fetchPageIndex</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reset">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L622">line 622</a></div>
+        <code>                    
+    <strong>reset</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_filterPosts">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/query/Query.php#L627">line 627</a></div>
+        <code>                    
+    <strong>filterPosts</strong>(string $requestType)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$requestType</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

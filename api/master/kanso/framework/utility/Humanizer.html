@@ -28,6 +28,7 @@
                                             <option value="../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
                                             <option value="../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
                                             <option value="../../../../4.0.0/index.html" data-version="4.0.0">4.0.0</option>
+                                            <option value="../../../../5.0.0/index.html" data-version="5.0.0">5.0.0</option>
                                             <option value="../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -120,6 +121,16 @@
                     <a href="#method_timeAgo">timeAgo</a>(mixed $time)
         
                                             <p>Returns a time ago from a timestamp or strtotime string.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_timeElapsed">timeElapsed</a>(mixed $time)
+        
+                                            <p>Returns a time elapsed.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -224,8 +235,48 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_timeElapsed">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/utility/Humanizer.php#L99">line 99</a></div>
+        <code>        static            string
+    <strong>timeElapsed</strong>(mixed $time)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns a time elapsed.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$time</td>
+                <td>A valid UNIX timestamp or PHP valid "strtotime" parameter</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method_pluralize">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/utility/Humanizer.php#L100">line 100</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/utility/Humanizer.php#L139">line 139</a></div>
         <code>        static            string
     <strong>pluralize</strong>(string $word, int $count = 2)
         </code>

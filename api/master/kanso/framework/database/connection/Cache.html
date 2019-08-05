@@ -28,6 +28,7 @@
                                             <option value="../../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
                                             <option value="../../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
                                             <option value="../../../../../4.0.0/index.html" data-version="4.0.0">4.0.0</option>
+                                            <option value="../../../../../5.0.0/index.html" data-version="5.0.0">5.0.0</option>
                                             <option value="../../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -107,19 +108,19 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method___construct">__construct</a>()
+                    <a href="#method___construct">__construct</a>(bool $enabled = true)
         
                                             <p>Constructor.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    bool
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_enabled">enabled</a>()
         
-                                            <p>Enable the cache.</p>                </div>
+                                            <p>Is the cache enabled?</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -144,20 +145,10 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_setQuery">setQuery</a>(string $queryStr, array $params)
-        
-                                            <p>Set the current query being executed.</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
                     bool
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_has">has</a>()
+                    <a href="#method_has">has</a>(string $queryStr, array $params)
         
                                             <p>Is the query cached ?</p>                </div>
                 <div class="col-md-2"></div>
@@ -167,7 +158,7 @@
                     mixed
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_get">get</a>()
+                    <a href="#method_get">get</a>(string $queryStr, array $params)
         
                                             <p>Get cached result.</p>                </div>
                 <div class="col-md-2"></div>
@@ -177,7 +168,7 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_put">put</a>(mixed $result)
+                    <a href="#method_put">put</a>(string $queryStr, array $params, mixed $result)
         
                                             <p>Save a cached result.</p>                </div>
                 <div class="col-md-2"></div>
@@ -187,19 +178,9 @@
                     
                 </div>
                 <div class="col-md-8 type">
-                    <a href="#method_clear">clear</a>()
+                    <a href="#method_clear">clear</a>(string $queryStr)
         
                                             <p>Clear current table from results.</p>                </div>
-                <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    string
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_getQueryType">getQueryType</a>(string $query)
-        
-                                            <p>Gets the query type from the query string.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -210,9 +191,9 @@
             <div id="method-details">
                     <div class="method-item">
                     <h3 id="method___construct">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/Cache.php#L80">line 80</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/Cache.php#L39">line 39</a></div>
         <code>                    
-    <strong>__construct</strong>()
+    <strong>__construct</strong>(bool $enabled = true)
         </code>
     </h3>
     <div class="details">
@@ -222,6 +203,16 @@
                     <div class="method-description">
                                     <p>Constructor.</p>                                                </div>
                 <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$enabled</td>
+                <td>Enable or disable the cahce</td>
+            </tr>
+            </table>
+
             
             
             
@@ -231,8 +222,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_enabled">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/Cache.php#L89">line 89</a></div>
-        <code>                    
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/Cache.php#L50">line 50</a></div>
+        <code>                    bool
     <strong>enabled</strong>()
         </code>
     </h3>
@@ -241,9 +232,18 @@
     
 
                     <div class="method-description">
-                                    <p>Enable the cache.</p>                                                </div>
+                                    <p>Is the cache enabled?</p>                                                </div>
                 <div class="tags">
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
             
             
                     </div>
@@ -252,7 +252,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_enable">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/Cache.php#L99">line 99</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/Cache.php#L60">line 60</a></div>
         <code>                    
     <strong>enable</strong>()
         </code>
@@ -273,7 +273,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_disable">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/Cache.php#L109">line 109</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/Cache.php#L70">line 70</a></div>
         <code>                    
     <strong>disable</strong>()
         </code>
@@ -293,10 +293,10 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_setQuery">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/Cache.php#L121">line 121</a></div>
-        <code>                    
-    <strong>setQuery</strong>(string $queryStr, array $params)
+                    <h3 id="method_has">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/Cache.php#L83">line 83</a></div>
+        <code>                    bool
+    <strong>has</strong>(string $queryStr, array $params)
         </code>
     </h3>
     <div class="details">
@@ -304,7 +304,7 @@
     
 
                     <div class="method-description">
-                                    <p>Set the current query being executed.</p>                                                </div>
+                                    <p>Is the query cached ?</p>                                                </div>
                 <div class="tags">
                             <h4>Parameters</h4>
 
@@ -321,27 +321,6 @@
             </tr>
             </table>
 
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_has">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/Cache.php#L145">line 145</a></div>
-        <code>                    bool
-    <strong>has</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Is the query cached ?</p>                                                </div>
-                <div class="tags">
             
                             <h4>Return Value</h4>
 
@@ -360,9 +339,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_get">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/Cache.php#L171">line 171</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/Cache.php#L112">line 112</a></div>
         <code>                    mixed
-    <strong>get</strong>()
+    <strong>get</strong>(string $queryStr, array $params)
         </code>
     </h3>
     <div class="details">
@@ -372,6 +351,21 @@
                     <div class="method-description">
                                     <p>Get cached result.</p>                                                </div>
                 <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$queryStr</td>
+                <td>SQL query string</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$params</td>
+                <td>SQL query parameters</td>
+            </tr>
+            </table>
+
             
                             <h4>Return Value</h4>
 
@@ -390,9 +384,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_put">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/Cache.php#L187">line 187</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/Cache.php#L130">line 130</a></div>
         <code>                    
-    <strong>put</strong>(mixed $result)
+    <strong>put</strong>(string $queryStr, array $params, mixed $result)
         </code>
     </h3>
     <div class="details">
@@ -405,6 +399,16 @@
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$queryStr</td>
+                <td>SQL query string</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$params</td>
+                <td>SQL query parameters</td>
+            </tr>
                     <tr>
                 <td>mixed</td>
                 <td>$result</td>
@@ -421,9 +425,9 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_clear">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/Cache.php#L200">line 200</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/Cache.php#L143">line 143</a></div>
         <code>                    
-    <strong>clear</strong>()
+    <strong>clear</strong>(string $queryStr)
         </code>
     </h3>
     <div class="details">
@@ -433,47 +437,17 @@
                     <div class="method-description">
                                     <p>Clear current table from results.</p>                                                </div>
                 <div class="tags">
-            
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_getQueryType">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/database/connection/Cache.php#L259">line 259</a></div>
-        <code>            protected        string
-    <strong>getQueryType</strong>(string $query)
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Gets the query type from the query string.</p>                                                </div>
-                <div class="tags">
                             <h4>Parameters</h4>
 
                     <table class="table table-condensed">
                     <tr>
                 <td>string</td>
-                <td>$query</td>
-                <td>SQL query</td>
+                <td>$queryStr</td>
+                <td></td>
             </tr>
             </table>
 
             
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td>string</td>
-            <td></td>
-        </tr>
-    </table>
-
             
             
                     </div>

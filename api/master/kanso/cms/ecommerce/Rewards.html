@@ -28,6 +28,7 @@
                                             <option value="../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
                                             <option value="../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
                                             <option value="../../../../4.0.0/index.html" data-version="4.0.0">4.0.0</option>
+                                            <option value="../../../../5.0.0/index.html" data-version="5.0.0">5.0.0</option>
                                             <option value="../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -109,6 +110,15 @@
                     Container aware trait.
                 </div>
             </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../kanso/framework/common/SqlBuilderTrait.html"><abbr title="kanso\framework\common\SqlBuilderTrait">SqlBuilderTrait</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    SQL Builder Trait.
+                </div>
+            </div>
             </div>
     
     
@@ -125,11 +135,11 @@
             </tr>
                     <tr>
                 <td class="type" id="property_sql">
-                                        protected                                        <a href="../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                                        protected                                        <a href="../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>|null
                 </td>
                 <td>$sql</td>
                 <td class="last">SQL query builder instance.</td>
-                <td><small>from&nbsp;<a href="../../../kanso/cms/ecommerce/UtilityBase.html#property_sql"><abbr title="kanso\cms\ecommerce\UtilityBase">UtilityBase</abbr></a></small></td>
+                <td><small>from&nbsp;<a href="../../../kanso/framework/common/SqlBuilderTrait.html#property_sql"><abbr title="kanso\framework\common\SqlBuilderTrait">SqlBuilderTrait</abbr></a></small></td>
             </tr>
             </table>
 
@@ -159,6 +169,16 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
+                    <a href="../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sql">sql</a>()
+        
+                                            <p>Instantiate and/or return a query builder instance.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../kanso/framework/common/SqlBuilderTrait.html#method_sql"><abbr title="kanso\framework\common\SqlBuilderTrait">SqlBuilderTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
                     
                 </div>
                 <div class="col-md-8 type">
@@ -166,16 +186,6 @@
         
                                             <p>Constructor.</p>                </div>
                 <div class="col-md-2"></div>
-            </div>
-                    <div class="row">
-                <div class="col-md-2 type">
-                    <a href="../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
-                </div>
-                <div class="col-md-8 type">
-                    <a href="#method_sql">sql</a>()
-        
-                                            <p>Instantiate and/or return a query builder instance.</p>                </div>
-                <div class="col-md-2"><small>from&nbsp;<a href="../../../kanso/cms/ecommerce/UtilityBase.html#method_sql"><abbr title="kanso\cms\ecommerce\UtilityBase">UtilityBase</abbr></a></small></div>
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
@@ -219,7 +229,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    int
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_addPoints">addPoints</a>(int $points, string $description, int $userId = null)
@@ -229,7 +239,7 @@
             </div>
                     <div class="row">
                 <div class="col-md-2 type">
-                    
+                    int
                 </div>
                 <div class="col-md-8 type">
                     <a href="#method_minusPoints">minusPoints</a>(int $points, string $description, int $userId = null)
@@ -344,6 +354,36 @@
 
             </div>
                     <div class="method-item">
+                    <h3 id="method_sql">
+        <div class="location">in <a href="../../../kanso/framework/common/SqlBuilderTrait.html#method_sql"><abbr title="kanso\framework\common\SqlBuilderTrait">SqlBuilderTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/common/SqlBuilderTrait.php#L33">line 33</a></div>
+        <code>            protected        <a href="../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
+    <strong>sql</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Instantiate and/or return a query builder instance.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
                     <h3 id="method___construct">
         <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/ecommerce/Rewards.php#L41">line 41</a></div>
         <code>                    
@@ -373,36 +413,6 @@
             </table>
 
             
-            
-            
-                    </div>
-    </div>
-
-            </div>
-                    <div class="method-item">
-                    <h3 id="method_sql">
-        <div class="location">in <a href="../../../kanso/cms/ecommerce/UtilityBase.html#method_sql"><abbr title="kanso\cms\ecommerce\UtilityBase">UtilityBase</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/ecommerce/UtilityBase.php#L45">line 45</a></div>
-        <code>            protected        <a href="../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a>
-    <strong>sql</strong>()
-        </code>
-    </h3>
-    <div class="details">
-            
-    
-
-                    <div class="method-description">
-                                    <p>Instantiate and/or return a query builder instance.</p>                                                </div>
-                <div class="tags">
-            
-                            <h4>Return Value</h4>
-
-                    <table class="table table-condensed">
-        <tr>
-            <td><a href="../../../kanso/framework/database/query/Builder.html"><abbr title="kanso\framework\database\query\Builder">Builder</abbr></a></td>
-            <td></td>
-        </tr>
-    </table>
-
             
             
                     </div>
@@ -607,8 +617,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_addPoints">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/ecommerce/Rewards.php#L167">line 167</a></div>
-        <code>                    
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/ecommerce/Rewards.php#L168">line 168</a></div>
+        <code>                    int
     <strong>addPoints</strong>(int $points, string $description, int $userId = null)
         </code>
     </h3>
@@ -640,6 +650,15 @@
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
             
                             <h4>Exceptions</h4>
 
@@ -657,8 +676,8 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_minusPoints">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/ecommerce/Rewards.php#L194">line 194</a></div>
-        <code>                    
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/ecommerce/Rewards.php#L196">line 196</a></div>
+        <code>                    int
     <strong>minusPoints</strong>(int $points, string $description, int $userId = null)
         </code>
     </h3>
@@ -690,6 +709,15 @@
             </table>
 
             
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
             
                             <h4>Exceptions</h4>
 
@@ -707,7 +735,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_createCoupon">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/ecommerce/Rewards.php#L224">line 224</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/ecommerce/Rewards.php#L226">line 226</a></div>
         <code>                    string
     <strong>createCoupon</strong>(string $name, string $description, int $discount, int $points, int $userId = null)
         </code>
@@ -776,7 +804,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_calcPoints">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/ecommerce/Rewards.php#L259">line 259</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/ecommerce/Rewards.php#L261">line 261</a></div>
         <code>                    int
     <strong>calcPoints</strong>(float $spend)
         </code>
@@ -816,7 +844,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_calcDiscount">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/ecommerce/Rewards.php#L272">line 272</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/cms/ecommerce/Rewards.php#L274">line 274</a></div>
         <code>                    int
     <strong>calcDiscount</strong>(int $points)
         </code>

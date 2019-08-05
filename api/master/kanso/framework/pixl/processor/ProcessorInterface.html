@@ -28,6 +28,7 @@
                                             <option value="../../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
                                             <option value="../../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
                                             <option value="../../../../../4.0.0/index.html" data-version="4.0.0">4.0.0</option>
+                                            <option value="../../../../../5.0.0/index.html" data-version="5.0.0">5.0.0</option>
                                             <option value="../../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
             </form>
@@ -190,6 +191,16 @@
                     <a href="#method_crop">crop</a>(int $width, int $height, bool $allow_enlarge = false)
         
                                             <p>Crop to width and height.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/pixl/processor/ProcessorInterface.html"><abbr title="kanso\framework\pixl\processor\ProcessorInterface">ProcessorInterface</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addBackground">addBackground</a>(int $red, int $green, int $blue)
+        
+                                            <p>Add a background to the image.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
             </div>
@@ -578,6 +589,65 @@
     </table>
 
             
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addBackground">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/pixl/processor/ProcessorInterface.php#L111">line 111</a></div>
+        <code>                    <a href="../../../../kanso/framework/pixl/processor/ProcessorInterface.html"><abbr title="kanso\framework\pixl\processor\ProcessorInterface">ProcessorInterface</abbr></a>
+    <strong>addBackground</strong>(int $red, int $green, int $blue)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add a background to the image.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$red</td>
+                <td>Red color value</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$green</td>
+                <td>Green color value</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$blue</td>
+                <td>Blue color value</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/pixl/processor/ProcessorInterface.html"><abbr title="kanso\framework\pixl\processor\ProcessorInterface">ProcessorInterface</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+                            <h4>Exceptions</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/RuntimeException">RuntimeException</a></td>
+                <td>If file is not an image or not provided</td>
+            </tr>
+            </table>
+
             
                     </div>
     </div>

@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>kanso\framework\database\connection\ConnectionHandler | Kanso CMS API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:kanso_framework_database_connection_ConnectionHandler" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
+                                            <option value="../../../../../4.0.0/index.html" data-version="4.0.0">4.0.0</option>
+                                            <option value="../../../../../4.1.0/index.html" data-version="4.1.0">4.1.0</option>
+                                            <option value="../../../../../4.2.0/index.html" data-version="4.2.0">4.2.0</option>
+                                            <option value="../../../../../4.3.0/index.html" data-version="4.3.0">4.3.0</option>
+                                            <option value="../../../../../4.4.0/index.html" data-version="4.4.0">4.4.0</option>
+                                            <option value="../../../../../5.0.0/index.html" data-version="5.0.0">5.0.0</option>
+                                            <option value="../../../../../master/index.html" data-version="master">master branch</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Kanso CMS API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../kanso.html">kanso</a></li><li class="backslash">\</li><li><a href="../../../../kanso/framework.html">framework</a></li><li class="backslash">\</li><li><a href="../../../../kanso/framework/database.html">database</a></li><li class="backslash">\</li><li><a href="../../../../kanso/framework/database/connection.html">connection</a></li><li class="backslash">\</li><li>ConnectionHandler</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            ConnectionHandler
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>ConnectionHandler</strong>        (<a href="https://github.com/kanso-cms/cms/blob/4.1.0/kanso/framework/database/connection/ConnectionHandler.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Database connection handler.</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_log">
+                                        protected                                        array
+                </td>
+                <td>$log</td>
+                <td class="last">Query log.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_parameters">
+                                        protected                                        array
+                </td>
+                <td>$parameters</td>
+                <td class="last">Parameters for currently executing query statement.</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../../kanso/framework/database/connection/Connection.html"><abbr title="kanso\framework\database\connection\Connection">Connection</abbr></a> $connection, <a href="../../../../kanso/framework/database/connection/Cache.html"><abbr title="kanso\framework\database\connection\Cache">Cache</abbr></a> $cache)
+        
+                                            <p>Constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/database/connection/Cache.html"><abbr title="kanso\framework\database\connection\Cache">Cache</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_cache">cache</a>()
+        
+                                            <p>Returns the cache.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_bind">bind</a>(string $column, string $value)
+        
+                                            <p>Add the parameter to the parameter array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_bindMore">bindMore</a>(array $parray = [])
+        
+                                            <p>Add more parameters to the parameter array.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_query">query</a>(string $query, array $params = [], int $fetchmode = PDO::FETCH_ASSOC)
+        
+                                            <p>If the SQL query contains a SELECT or SHOW statement it
+returns an array containing all of the result set row.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_column">column</a>(string $query, array $params = [])
+        
+                                            <p>Returns an array which represents a column from the result set.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_tablePrefix">tablePrefix</a>()
+        
+                                            <p>Returns the table prefix for the connection.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_row">row</a>(string $query, array $params = [], int $fetchmode = PDO::FETCH_ASSOC)
+        
+                                            <p>Returns an array which represents a row from the result set.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_single">single</a>(string $query, array $params = [])
+        
+                                            <p>Returns the value of one single field/column.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_lastInsertId">lastInsertId</a>()
+        
+                                            <p>Returns the last inserted id.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    array
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getLog">getLog</a>()
+        
+                                            <p>Returns the connection query log.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_cleanQuery">cleanQuery</a>(string $sql)
+        
+                                            <p>Safely format the query consistently.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_prepareQueryForLog">prepareQueryForLog</a>(string $query, array $params)
+        
+                                            <p>Prepares query for logging.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_log">log</a>(string $query, array $params, float $start, bool $fromCache = false)
+        
+                                            <p>Adds a query to the query log.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getQueryType">getQueryType</a>(string $query)
+        
+                                            <p>Gets the query type from the query string.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sanitizeValue">sanitizeValue</a>(mixed $value)
+        
+                                            <p>Gets the query type from the query string.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.1.0/kanso/framework/database/connection/ConnectionHandler.php#L61">line 61</a></div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../../kanso/framework/database/connection/Connection.html"><abbr title="kanso\framework\database\connection\Connection">Connection</abbr></a> $connection, <a href="../../../../kanso/framework/database/connection/Cache.html"><abbr title="kanso\framework\database\connection\Cache">Cache</abbr></a> $cache)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../kanso/framework/database/connection/Connection.html"><abbr title="kanso\framework\database\connection\Connection">Connection</abbr></a></td>
+                <td>$connection</td>
+                <td>PDO connection</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../kanso/framework/database/connection/Cache.html"><abbr title="kanso\framework\database\connection\Cache">Cache</abbr></a></td>
+                <td>$cache</td>
+                <td>Connection cache</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cache">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.1.0/kanso/framework/database/connection/ConnectionHandler.php#L74">line 74</a></div>
+        <code>                    <a href="../../../../kanso/framework/database/connection/Cache.html"><abbr title="kanso\framework\database\connection\Cache">Cache</abbr></a>
+    <strong>cache</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the cache.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/database/connection/Cache.html"><abbr title="kanso\framework\database\connection\Cache">Cache</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bind">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.1.0/kanso/framework/database/connection/ConnectionHandler.php#L123">line 123</a></div>
+        <code>                    
+    <strong>bind</strong>(string $column, string $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add the parameter to the parameter array.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$column</td>
+                <td>Column key name</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$value</td>
+                <td>Value to bind</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bindMore">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.1.0/kanso/framework/database/connection/ConnectionHandler.php#L134">line 134</a></div>
+        <code>                    
+    <strong>bindMore</strong>(array $parray = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Add more parameters to the parameter array.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$parray</td>
+                <td>Array of column => value</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_query">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.1.0/kanso/framework/database/connection/ConnectionHandler.php#L159">line 159</a></div>
+        <code>                    mixed
+    <strong>query</strong>(string $query, array $params = [], int $fetchmode = PDO::FETCH_ASSOC)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>If the SQL query contains a SELECT or SHOW statement it
+returns an array containing all of the result set row.</p>                    <p>If the SQL statement is a DELETE, INSERT, or UPDATE statement
+it returns the number of affected rows.</p>                            </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$query</td>
+                <td>The query to execute</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$params</td>
+                <td>Assoc array of parameters to bind (optional) (default [])</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$fetchmode</td>
+                <td>PHP PDO::ATTR_DEFAULT_FETCH_MODE constant or integer</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_column">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.1.0/kanso/framework/database/connection/ConnectionHandler.php#L252">line 252</a></div>
+        <code>                    array
+    <strong>column</strong>(string $query, array $params = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns an array which represents a column from the result set.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$query</td>
+                <td>The query to execute</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$params</td>
+                <td>Assoc array of parameters to bind (optional) (default [])</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_tablePrefix">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.1.0/kanso/framework/database/connection/ConnectionHandler.php#L274">line 274</a></div>
+        <code>                    string
+    <strong>tablePrefix</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the table prefix for the connection.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_row">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.1.0/kanso/framework/database/connection/ConnectionHandler.php#L288">line 288</a></div>
+        <code>                    array
+    <strong>row</strong>(string $query, array $params = [], int $fetchmode = PDO::FETCH_ASSOC)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns an array which represents a row from the result set.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$query</td>
+                <td>The query to execute</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$params</td>
+                <td>Assoc array of parameters to bind (optional) (default [])</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$fetchmode</td>
+                <td>PHP PDO::ATTR_DEFAULT_FETCH_MODE constant or integer</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_single">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.1.0/kanso/framework/database/connection/ConnectionHandler.php#L303">line 303</a></div>
+        <code>                    string
+    <strong>single</strong>(string $query, array $params = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the value of one single field/column.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$query</td>
+                <td>The query to execute</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$params</td>
+                <td>Assoc array of parameters to bind (optional) (default [])</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_lastInsertId">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.1.0/kanso/framework/database/connection/ConnectionHandler.php#L316">line 316</a></div>
+        <code>                    mixed
+    <strong>lastInsertId</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the last inserted id.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getLog">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.1.0/kanso/framework/database/connection/ConnectionHandler.php#L327">line 327</a></div>
+        <code>                    array
+    <strong>getLog</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns the connection query log.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>array</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_cleanQuery">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.1.0/kanso/framework/database/connection/ConnectionHandler.php#L339">line 339</a></div>
+        <code>                    string
+    <strong>cleanQuery</strong>(string $sql)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Safely format the query consistently.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$sql</td>
+                <td>SQL query statement</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_prepareQueryForLog">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.1.0/kanso/framework/database/connection/ConnectionHandler.php#L352">line 352</a></div>
+        <code>            protected        string
+    <strong>prepareQueryForLog</strong>(string $query, array $params)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Prepares query for logging.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$query</td>
+                <td>SQL query</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$params</td>
+                <td>Query paramaters</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_log">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.1.0/kanso/framework/database/connection/ConnectionHandler.php#L380">line 380</a></div>
+        <code>            protected        
+    <strong>log</strong>(string $query, array $params, float $start, bool $fromCache = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Adds a query to the query log.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$query</td>
+                <td>SQL query</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$params</td>
+                <td>Query parameters</td>
+            </tr>
+                    <tr>
+                <td>float</td>
+                <td>$start</td>
+                <td>Start time in microseconds</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$fromCache</td>
+                <td>Was the query loaded from the cache?</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getQueryType">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.1.0/kanso/framework/database/connection/ConnectionHandler.php#L396">line 396</a></div>
+        <code>            protected        string
+    <strong>getQueryType</strong>(string $query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the query type from the query string.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$query</td>
+                <td>SQL query</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sanitizeValue">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/4.1.0/kanso/framework/database/connection/ConnectionHandler.php#L408">line 408</a></div>
+        <code>            protected        mixed
+    <strong>sanitizeValue</strong>(mixed $value)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Gets the query type from the query string.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$value</td>
+                <td>A query value to sanitize</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

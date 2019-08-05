@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>kanso\cms\analytics\Analytics | Kanso CMS API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:kanso_cms_analytics_Analytics" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
+                                            <option value="../../../../4.0.0/index.html" data-version="4.0.0">4.0.0</option>
+                                            <option value="../../../../5.0.0/index.html" data-version="5.0.0">5.0.0</option>
+                                            <option value="../../../../master/index.html" data-version="master">master branch</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Kanso CMS API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../kanso.html">kanso</a></li><li class="backslash">\</li><li><a href="../../../kanso/cms.html">cms</a></li><li class="backslash">\</li><li><a href="../../../kanso/cms/analytics.html">analytics</a></li><li class="backslash">\</li><li>Analytics</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Analytics
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Analytics</strong>        extends <a href="../../../kanso/framework/mvc/model/Model.html"><abbr title="kanso\framework\mvc\model\Model">Model</abbr></a>        (<a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/analytics/Analytics.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Google/Facebook Analytics Utility.</p>                                </div>
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../kanso/framework/ioc/ContainerAwareTrait.html"><abbr title="kanso\framework\ioc\ContainerAwareTrait">ContainerAwareTrait</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Container aware trait.
+                </div>
+            </div>
+            </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_container">
+                                        protected                                        <a href="../../../kanso/framework/ioc/Container.html"><abbr title="kanso\framework\ioc\Container">Container</abbr></a>
+                </td>
+                <td>$container</td>
+                <td class="last">IoC container instance.</td>
+                <td><small>from&nbsp;<a href="../../../kanso/framework/ioc/ContainerAwareTrait.html#property_container"><abbr title="kanso\framework\ioc\ContainerAwareTrait">ContainerAwareTrait</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../kanso/framework/ioc/Container.html"><abbr title="kanso\framework\ioc\Container">Container</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_container">container</a>()
+        
+                                            <p>Sets and or gets the container.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../kanso/framework/ioc/ContainerAwareTrait.html#method_container"><abbr title="kanso\framework\ioc\ContainerAwareTrait">ContainerAwareTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___get">__get</a>(string $key)
+        
+                                            <p>Resolves item from the container using overloading.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../kanso/framework/ioc/ContainerAwareTrait.html#method___get"><abbr title="kanso\framework\ioc\ContainerAwareTrait">ContainerAwareTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(bool $gAnalyticsEnabled, string $gAnalyticsId, bool $adwordsEnabled, string $gAdwordsId, string $googleAwCvId, bool $fbEnabled, string $fbPixelId)
+        
+                                            <p>Constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_googleTrackingCode">googleTrackingCode</a>()
+        
+                                            <p>Get the main Google Analytics tracking code.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_facebookTrackingCode">facebookTrackingCode</a>()
+        
+                                            <p>Get the main Facebook tracking code.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_googleTrackingProductView">googleTrackingProductView</a>()
+        
+                                            <p>Track a product view for Google Analytics.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_facebookTrackingProductView">facebookTrackingProductView</a>()
+        
+                                            <p>Track a product view for Facebook.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_googleTrackingStartCheckout">googleTrackingStartCheckout</a>(array $order)
+        
+                                            <p>Track a checkout started event for Google Analytics.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_facebookTrackingStartCheckout">facebookTrackingStartCheckout</a>(array $order)
+        
+                                            <p>Track a checkout started event for Facebook Analytics.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_googleTrackCheckoutComplete">googleTrackCheckoutComplete</a>(array $order)
+        
+                                            <p>Track a checkout complete for Google Analytics.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_facebookTrackCheckoutComplete">facebookTrackCheckoutComplete</a>(array $order)
+        
+                                            <p>Track a checkout complete for Facebook.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_container">
+        <div class="location">in <a href="../../../kanso/framework/ioc/ContainerAwareTrait.html#method_container"><abbr title="kanso\framework\ioc\ContainerAwareTrait">ContainerAwareTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/framework/ioc/ContainerAwareTrait.php#L30">line 30</a></div>
+        <code>                    <a href="../../../kanso/framework/ioc/Container.html"><abbr title="kanso\framework\ioc\Container">Container</abbr></a>
+    <strong>container</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets and or gets the container.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../kanso/framework/ioc/Container.html"><abbr title="kanso\framework\ioc\Container">Container</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___get">
+        <div class="location">in <a href="../../../kanso/framework/ioc/ContainerAwareTrait.html#method___get"><abbr title="kanso\framework\ioc\ContainerAwareTrait">ContainerAwareTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/framework/ioc/ContainerAwareTrait.php#L47">line 47</a></div>
+        <code>                    mixed
+    <strong>__get</strong>(string $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Resolves item from the container using overloading.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>Key</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/analytics/Analytics.php#L80">line 80</a></div>
+        <code>                    
+    <strong>__construct</strong>(bool $gAnalyticsEnabled, string $gAnalyticsId, bool $adwordsEnabled, string $gAdwordsId, string $googleAwCvId, bool $fbEnabled, string $fbPixelId)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$gAnalyticsEnabled</td>
+                <td>Enable or disable google analytics</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$gAnalyticsId</td>
+                <td>Google analytics tracking id</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$adwordsEnabled</td>
+                <td>Enable or disable google adwords</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$gAdwordsId</td>
+                <td>Google adwords tracking id</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$googleAwCvId</td>
+                <td>Google adwords conversion id</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$fbEnabled</td>
+                <td>Enable or disable fb pixel</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$fbPixelId</td>
+                <td>Facebook pixel tracking id</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_googleTrackingCode">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/analytics/Analytics.php#L103">line 103</a></div>
+        <code>                    string
+    <strong>googleTrackingCode</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the main Google Analytics tracking code.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_facebookTrackingCode">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/analytics/Analytics.php#L124">line 124</a></div>
+        <code>                    string
+    <strong>facebookTrackingCode</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get the main Facebook tracking code.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_googleTrackingProductView">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/analytics/Analytics.php#L147">line 147</a></div>
+        <code>                    string
+    <strong>googleTrackingProductView</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Track a product view for Google Analytics.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_facebookTrackingProductView">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/analytics/Analytics.php#L177">line 177</a></div>
+        <code>                    string
+    <strong>facebookTrackingProductView</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Track a product view for Facebook.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_googleTrackingStartCheckout">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/analytics/Analytics.php#L202">line 202</a></div>
+        <code>                    string
+    <strong>googleTrackingStartCheckout</strong>(array $order)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Track a checkout started event for Google Analytics.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$order</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_facebookTrackingStartCheckout">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/analytics/Analytics.php#L237">line 237</a></div>
+        <code>                    string
+    <strong>facebookTrackingStartCheckout</strong>(array $order)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Track a checkout started event for Facebook Analytics.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$order</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_googleTrackCheckoutComplete">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/analytics/Analytics.php#L267">line 267</a></div>
+        <code>                    string
+    <strong>googleTrackCheckoutComplete</strong>(array $order)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Track a checkout complete for Google Analytics.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$order</td>
+                <td>Order variables</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_facebookTrackCheckoutComplete">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.0.0/kanso/cms/analytics/Analytics.php#L315">line 315</a></div>
+        <code>                    string
+    <strong>facebookTrackCheckoutComplete</strong>(array $order)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Track a checkout complete for Facebook.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$order</td>
+                <td>Order variables</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
