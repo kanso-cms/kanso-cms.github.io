@@ -56,12 +56,18 @@ chown www-data:www-data -R app/storage
 chown www-data:www-data -R app/public/uploads
 ```
 
-8. Finally add a `.gitignore` file to your `app/configurations` directory to ensure any custom configuration settings you make are not overwritten.
+8. Add a `.gitignore` file to your `app/configurations` directory to ensure any custom configuration settings you make are not overwritten.
 
 ```
 *
 !.gitignore
 !defaults/*
+```
+
+9. Finally you will need to install composer to add Kano's dependencies:
+
+```bash
+composer install
 ```
 
 #### Updating
