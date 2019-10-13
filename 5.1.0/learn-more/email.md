@@ -125,7 +125,7 @@ To send a plain text email, set the last arguement to `plain`.
 
 The `Email` component has a built in queue for sending emails via a `CRON` job. When enabled, emails are sent to the queue automatically, but must be processed manually later.
 
-The advantage of using the queue is faster response times on requests when emails are sent. When enabled, rather than sending emails during the the request, emails are added to the queue and sent later. This means you can skip all the slow email authentication for `SMTP`, send the response to the client immediately.
+The advantage of using the queue is faster response times on requests when emails are sent. When enabled, rather than sending emails during the the request, emails are added to the queue and sent later. This means you can skip all the slow email authentication for `SMTP` and send the response to the client immediately.
 
 To access the queue component directly, use the `queue` method:
 ```php
