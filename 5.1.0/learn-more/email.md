@@ -1,9 +1,9 @@
 # Email
 
 - [Configuration](#configuration)
-	- Native (#native)
-	- SMTP Login (#smtp-login)
-	- SMTP XOAUTH2 (#smtp-XOAUTH2)
+	- [Native](#native)
+	- [SMTP Login](#smtp-login)
+	- [SMTP XOAUTH2](#smtp-XOAUTH2)
 - [Access](#access)
 - [Usage](#usage)
 - [theme](#theme)
@@ -35,6 +35,8 @@ To send emails via regular unsecured `SMTP` with gmail:
 
 #### SMTP XOAUTH2
 Using XOAUTH2 via gmail is the most secure way to send emails with Kanso. However the setup is very complicated. Additionally, authentication with Google is very slow, so it is highly advised that you enable the CMS's email `queue` component and send emails via a `CRON` job.
+
+> Examples for both `CRON` and `XOAUTH2` setup are in `app` directory.
 
 1. Set the `use_smtp` key to `true` and `smtp_settings.auth_type` to `XOAUTH2`.
 2. Set the `client_id`, `client_secret` and `refresh_token`. Instructions on how to generate these can be found [here](https://github.com/PHPMailer/PHPMailer/wiki/Using-Gmail-with-XOAUTH2)
