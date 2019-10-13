@@ -82,3 +82,4 @@ select{-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;appearan
 	- [Shell](/learn-more/shell.md)
 	- [UUID](/learn-more/uuid.md)
 	- [Markdown](/learn-more/markdown.md)
+	- [CRON](/learn-more/cron.md)

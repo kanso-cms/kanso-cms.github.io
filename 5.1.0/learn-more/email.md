@@ -24,7 +24,11 @@ All emails sent via the email service are logged and available in the admin pane
 
 Configuration for the `Email` services are in the `app/configurations/email.php` file.
 
+
 The `Email`component by default will send emails using PHP's native `mail` function. However, it also has the ability to send emails via both `SMTP` and `XOAUTH2` with gmail.
+
+#### Native
+To send emails using PHP's native `mail` function, set `use_smtp` to `false`.
 
 #### SMTP Login
 To send emails via regular unsecured `SMTP` with gmail:
@@ -41,6 +45,8 @@ Using XOAUTH2 via gmail is the most secure way to send emails with Kanso. Howeve
 1. Set the `use_smtp` key to `true` and `smtp_settings.auth_type` to `XOAUTH2`.
 2. Set the `client_id`, `client_secret` and `refresh_token`. Instructions on how to generate these can be found [here](https://github.com/PHPMailer/PHPMailer/wiki/Using-Gmail-with-XOAUTH2)
 3. Finally, it's strongly recmommended to set `queue` to true.
+
+> See the [CRON Documentation](/learn-more/cron) for more details on CRON jobs.
 
 --------------------------------------------------------
 
@@ -168,3 +174,5 @@ The `process` method runs through the queue and sends any emails
 ```php
  $queue->process();
 ```
+
+> See the [CRON Documentation](/learn-more/cron) for more details on CRON jobs.
