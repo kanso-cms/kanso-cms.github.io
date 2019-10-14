@@ -19,17 +19,7 @@ All controllers, migrations and commands are instantiated using the IoC containe
 
 ### Auto Loading
 
-Kanso's built in autoloader should be used for registering any external dependences. External dependencies should be stored in your `vendor/` directory.
-
-Register a namespace with Kanso's autoloader inside the `app/bootstrap.php` file. Make sure you register your namespace before the autoloader is registered.
-
-```php
-$autoloader->addPrefix('VendorRepo', $SERVER['DOCUMENT_ROOT'] . DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . 'vendor-repo');
-```
-
-Now your classes found under the `VendorRepo` namespace will be autoloaded when called following the `PSR-4` spec.
-
-If you have installed Kanso via Composer, you should comment out Kanso's default autoloader inside the `app/bootstrap.php` and require composer's autoloader. 
+Kanso's uses composer's autoloader for registering external dependences. For more details, please see the [Composer Documentation](https://getcomposer.org/doc/).
 
 --------------------------------------------------------
 
