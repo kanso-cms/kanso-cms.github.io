@@ -90,6 +90,12 @@ $pixl->crop(300, 150);
 $pixl->crop(300, 150, true);
 ```
 
+The `addBackground` method allows you to add a background color to an image using `RGB` values:
+```php
+// Add a white background to an image
+$pixl->addBackground(255, 255, 255);
+```
+
 The `save` method saves any changes made. The parameters are `$filename`, `$image_type`, `$quality` and `$permissions` with only the first being mandatory.
 
 ```php
