@@ -1,0 +1,1495 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>kanso\framework\utility\Str | Kanso CMS API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:kanso_framework_utility_Str" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
+                                            <option value="../../../../4.0.0/index.html" data-version="4.0.0">4.0.0</option>
+                                            <option value="../../../../4.1.0/index.html" data-version="4.1.0">4.1.0</option>
+                                            <option value="../../../../4.2.0/index.html" data-version="4.2.0">4.2.0</option>
+                                            <option value="../../../../4.3.0/index.html" data-version="4.3.0">4.3.0</option>
+                                            <option value="../../../../4.4.0/index.html" data-version="4.4.0">4.4.0</option>
+                                            <option value="../../../../5.0.0/index.html" data-version="5.0.0">5.0.0</option>
+                                            <option value="../../../../5.1.0/index.html" data-version="5.1.0">5.1.0</option>
+                                            <option value="../../../../5.2.0/index.html" data-version="5.2.0">5.2.0</option>
+                                            <option value="../../../../master/index.html" data-version="master">master branch</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Kanso CMS API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../kanso.html">kanso</a></li><li class="backslash">\</li><li><a href="../../../kanso/framework.html">framework</a></li><li class="backslash">\</li><li><a href="../../../kanso/framework/utility.html">utility</a></li><li class="backslash">\</li><li>Str</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Str
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Str</strong>        (<a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/framework/utility/Str.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>String helper.</p>                                </div>
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>ALNUM</td>
+                <td class="last">
+                    <p><em>Alphanumeric characters.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>ALPHA</td>
+                <td class="last">
+                    <p><em>Alphabetic characters.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>HEXDEC</td>
+                <td class="last">
+                    <p><em>Hexadecimal characters.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>NUMERIC</td>
+                <td class="last">
+                    <p><em>Numeric characters.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+                    <tr>
+                <td>SYMBOLS</td>
+                <td class="last">
+                    <p><em>ASCII symbols.</em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_nl2br">nl2br</a>(string $string, bool $xhtml = false)
+        
+                                            <p>Replaces newline with <br> or <br />.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_br2nl">br2nl</a>(string $string)
+        
+                                            <p>Replaces <br> and <br /> with newline.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_camel2underscored">camel2underscored</a>(string $string)
+        
+                                            <p>Converts camel case to underscored.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_camel2case">camel2case</a>(string $string)
+        
+                                            <p>Converts camel case to space.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_underscored2camel">underscored2camel</a>(string $string, bool $upper = false)
+        
+                                            <p>Converts underscored to camel case.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_reduce">reduce</a>(string $string, int $length, string $suffix = &#039;&#039;, bool $toChar = true)
+        
+                                            <p>Reduce a string to n characters or words.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_contains">contains</a>(string $string, string $query)
+        
+                                            <p>Check if a string contains another string.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAfterLastChar">getAfterLastChar</a>(string $string, string $query)
+        
+                                            <p>Get characters after last occurrence of string in a target string.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBeforeLastChar">getBeforeLastChar</a>(string $string, string $query)
+        
+                                            <p>Get characters before last occurrence of character.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAfterFirstChar">getAfterFirstChar</a>(string $string, string $query)
+        
+                                            <p>Get characters after first occurrence of character.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBeforeFirstChar">getBeforeFirstChar</a>(string $string, string $query)
+        
+                                            <p>Get characters before first occurrence of character.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getAfterLastWord">getAfterLastWord</a>(string $string, string $query)
+        
+                                            <p>Get characters after last occurrence of word.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_getBeforeLastWord">getBeforeLastWord</a>(string $string, string $query)
+        
+                                            <p>Get characters before last occurance of word.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_random">random</a>(int $length = 55, string $pool = Str::ALNUM)
+        
+                                            <p>Returns a random string of the selected type and length.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_compareNumeric">compareNumeric</a>(string $a, string $b)
+        
+                                            <p>Compare two numerical strings.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_slug">slug</a>(string $str)
+        
+                                            <p>Creates a URL friendly string.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_alpha">alpha</a>(string $str)
+        
+                                            <p>Filters a a string to alpha characters.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_alphaDash">alphaDash</a>(string $str)
+        
+                                            <p>Filters a a string to alpha characters with dashes.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_alphaNum">alphaNum</a>(string $str)
+        
+                                            <p>Filters a a string to alpha-numeric characters.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_alphaNumDash">alphaNumDash</a>(string $str)
+        
+                                            <p>Filters a a string to alpha-numeric characters with dashes.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mysqlEncode">mysqlEncode</a>(string $str)
+        
+                                            <p>Escapes text for entry into mySQL.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mysqlDecode">mysqlDecode</a>(string $str)
+        
+                                            <p>Un-escapes text from entry into mySQL.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_bool">bool</a>(mixed $mixedVar)
+        
+                                            <p>Create a boolean value from a mixed variable.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_queryFilterUri">queryFilterUri</a>(string $uri)
+        
+                                            <p>Remove the query string and santize a uri.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;string
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_strip_tags">strip_tags</a>(string $str, string $tag)
+        
+                                            <p>Remove a specific HTML tag from a string.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_nl2br">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/framework/utility/Str.php#L60">line 60</a></div>
+        <code>        static            string
+    <strong>nl2br</strong>(string $string, bool $xhtml = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Replaces newline with <br> or <br />.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$string</td>
+                <td>The input string</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$xhtml</td>
+                <td>Should we return XHTML?</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_br2nl">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/framework/utility/Str.php#L72">line 72</a></div>
+        <code>        static            string
+    <strong>br2nl</strong>(string $string)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Replaces <br> and <br /> with newline.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$string</td>
+                <td>The input string</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_camel2underscored">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/framework/utility/Str.php#L84">line 84</a></div>
+        <code>        static            string
+    <strong>camel2underscored</strong>(string $string)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Converts camel case to underscored.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$string</td>
+                <td>The input string</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_camel2case">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/framework/utility/Str.php#L96">line 96</a></div>
+        <code>        static            string
+    <strong>camel2case</strong>(string $string)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Converts camel case to space.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$string</td>
+                <td>The input string</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_underscored2camel">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/framework/utility/Str.php#L132">line 132</a></div>
+        <code>        static            string
+    <strong>underscored2camel</strong>(string $string, bool $upper = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Converts underscored to camel case.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$string</td>
+                <td>The input string</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$upper</td>
+                <td>Return upper case camelCase?</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_reduce">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/framework/utility/Str.php#L147">line 147</a></div>
+        <code>        static            string
+    <strong>reduce</strong>(string $string, int $length, string $suffix = &#039;&#039;, bool $toChar = true)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Reduce a string to n characters or words.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$string</td>
+                <td>The target string</td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$length</td>
+                <td>The length to reduce it to</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$suffix</td>
+                <td>A suffix to add (optional) (default '')</td>
+            </tr>
+                    <tr>
+                <td>bool</td>
+                <td>$toChar</td>
+                <td>Limit to characters else words (optional) (default TRUE)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_contains">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/framework/utility/Str.php#L166">line 166</a></div>
+        <code>        static            bool
+    <strong>contains</strong>(string $string, string $query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if a string contains another string.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$string</td>
+                <td>The target string</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$query</td>
+                <td>The query to check for</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAfterLastChar">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/framework/utility/Str.php#L179">line 179</a></div>
+        <code>        static            string
+    <strong>getAfterLastChar</strong>(string $string, string $query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get characters after last occurrence of string in a target string.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$string</td>
+                <td>The target string</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$query</td>
+                <td>The query to check for</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBeforeLastChar">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/framework/utility/Str.php#L194">line 194</a></div>
+        <code>        static            string
+    <strong>getBeforeLastChar</strong>(string $string, string $query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get characters before last occurrence of character.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$string</td>
+                <td>The target string</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$query</td>
+                <td>The query to check for</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAfterFirstChar">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/framework/utility/Str.php#L209">line 209</a></div>
+        <code>        static            string
+    <strong>getAfterFirstChar</strong>(string $string, string $query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get characters after first occurrence of character.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$string</td>
+                <td>The target string</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$query</td>
+                <td>The query to check for</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBeforeFirstChar">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/framework/utility/Str.php#L224">line 224</a></div>
+        <code>        static            string
+    <strong>getBeforeFirstChar</strong>(string $string, string $query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get characters before first occurrence of character.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$string</td>
+                <td>The target string</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$query</td>
+                <td>The query to check for</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getAfterLastWord">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/framework/utility/Str.php#L239">line 239</a></div>
+        <code>        static            string
+    <strong>getAfterLastWord</strong>(string $string, string $query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get characters after last occurrence of word.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$string</td>
+                <td>The target string</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$query</td>
+                <td>The query to check for</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_getBeforeLastWord">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/framework/utility/Str.php#L259">line 259</a></div>
+        <code>        static            string
+    <strong>getBeforeLastWord</strong>(string $string, string $query)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Get characters before last occurance of word.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$string</td>
+                <td>The target string</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$query</td>
+                <td>The query to check for</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_random">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/framework/utility/Str.php#L281">line 281</a></div>
+        <code>        static            string
+    <strong>random</strong>(int $length = 55, string $pool = Str::ALNUM)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Returns a random string of the selected type and length.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$length</td>
+                <td>Desired string length</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$pool</td>
+                <td>Character pool to use</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_compareNumeric">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/framework/utility/Str.php#L303">line 303</a></div>
+        <code>        static            bool
+    <strong>compareNumeric</strong>(string $a, string $b)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Compare two numerical strings.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$a</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$b</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_slug">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/framework/utility/Str.php#L319">line 319</a></div>
+        <code>        static            string
+    <strong>slug</strong>(string $str)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Creates a URL friendly string.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$str</td>
+                <td>The input string</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_alpha">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/framework/utility/Str.php#L331">line 331</a></div>
+        <code>        static            string
+    <strong>alpha</strong>(string $str)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Filters a a string to alpha characters.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$str</td>
+                <td>The input string</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_alphaDash">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/framework/utility/Str.php#L343">line 343</a></div>
+        <code>        static            string
+    <strong>alphaDash</strong>(string $str)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Filters a a string to alpha characters with dashes.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$str</td>
+                <td>The input string</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_alphaNum">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/framework/utility/Str.php#L355">line 355</a></div>
+        <code>        static            string
+    <strong>alphaNum</strong>(string $str)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Filters a a string to alpha-numeric characters.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$str</td>
+                <td>The input string</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_alphaNumDash">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/framework/utility/Str.php#L367">line 367</a></div>
+        <code>        static            string
+    <strong>alphaNumDash</strong>(string $str)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Filters a a string to alpha-numeric characters with dashes.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$str</td>
+                <td>The input string</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mysqlEncode">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/framework/utility/Str.php#L379">line 379</a></div>
+        <code>        static            string
+    <strong>mysqlEncode</strong>(string $str)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Escapes text for entry into mySQL.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$str</td>
+                <td>The input string</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mysqlDecode">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/framework/utility/Str.php#L391">line 391</a></div>
+        <code>        static            string
+    <strong>mysqlDecode</strong>(string $str)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Un-escapes text from entry into mySQL.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$str</td>
+                <td>The input string</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_bool">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/framework/utility/Str.php#L403">line 403</a></div>
+        <code>        static            bool
+    <strong>bool</strong>(mixed $mixedVar)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Create a boolean value from a mixed variable.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>mixed</td>
+                <td>$mixedVar</td>
+                <td>Mixed variable to convert</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_queryFilterUri">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/framework/utility/Str.php#L445">line 445</a></div>
+        <code>        static            string
+    <strong>queryFilterUri</strong>(string $uri)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Remove the query string and santize a uri.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$uri</td>
+                <td>REQUEST_URI</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_strip_tags">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/framework/utility/Str.php#L458">line 458</a></div>
+        <code>        static            string
+    <strong>strip_tags</strong>(string $str, string $tag)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Remove a specific HTML tag from a string.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$str</td>
+                <td>String</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$tag</td>
+                <td>HTML tag name</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>string</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

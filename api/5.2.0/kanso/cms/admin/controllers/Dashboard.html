@@ -1,0 +1,1471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>kanso\cms\admin\controllers\Dashboard | Kanso CMS API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:kanso_cms_admin_controllers_Dashboard" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
+                                            <option value="../../../../../4.0.0/index.html" data-version="4.0.0">4.0.0</option>
+                                            <option value="../../../../../4.1.0/index.html" data-version="4.1.0">4.1.0</option>
+                                            <option value="../../../../../4.2.0/index.html" data-version="4.2.0">4.2.0</option>
+                                            <option value="../../../../../4.3.0/index.html" data-version="4.3.0">4.3.0</option>
+                                            <option value="../../../../../4.4.0/index.html" data-version="4.4.0">4.4.0</option>
+                                            <option value="../../../../../5.0.0/index.html" data-version="5.0.0">5.0.0</option>
+                                            <option value="../../../../../5.1.0/index.html" data-version="5.1.0">5.1.0</option>
+                                            <option value="../../../../../5.2.0/index.html" data-version="5.2.0">5.2.0</option>
+                                            <option value="../../../../../master/index.html" data-version="master">master branch</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Kanso CMS API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../kanso.html">kanso</a></li><li class="backslash">\</li><li><a href="../../../../kanso/cms.html">cms</a></li><li class="backslash">\</li><li><a href="../../../../kanso/cms/admin.html">admin</a></li><li class="backslash">\</li><li><a href="../../../../kanso/cms/admin/controllers.html">controllers</a></li><li class="backslash">\</li><li>Dashboard</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            Dashboard
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>Dashboard</strong>        extends <a href="../../../../kanso/cms/admin/controllers/BaseController.html"><abbr title="kanso\cms\admin\controllers\BaseController">BaseController</abbr></a>        (<a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/cms/admin/controllers/Dashboard.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Admin panel dashboard pages controller.</p>                                </div>
+    
+            <h2>Traits</h2>
+
+        
+    <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../../kanso/framework/mvc/controller/ControllerHelperTrait.html"><abbr title="kanso\framework\mvc\controller\ControllerHelperTrait">ControllerHelperTrait</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Controller helper methods.
+                </div>
+            </div>
+                    <div class="row">
+                <div class="col-md-6">
+                                            <a href="../../../../kanso/framework/ioc/ContainerAwareTrait.html"><abbr title="kanso\framework\ioc\ContainerAwareTrait">ContainerAwareTrait</abbr></a>
+                                            
+                </div>
+                <div class="col-md-6">
+                    Container aware trait.
+                </div>
+            </div>
+            </div>
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_container">
+                                        protected                                        <a href="../../../../kanso/framework/ioc/Container.html"><abbr title="kanso\framework\ioc\Container">Container</abbr></a>
+                </td>
+                <td>$container</td>
+                <td class="last">IoC container instance.</td>
+                <td><small>from&nbsp;<a href="../../../../kanso/framework/ioc/ContainerAwareTrait.html#property_container"><abbr title="kanso\framework\ioc\ContainerAwareTrait">ContainerAwareTrait</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_nextMiddleware">
+                                        protected                                        <a target="_blank" href="http://php.net/Closure">Closure</a>
+                </td>
+                <td>$nextMiddleware</td>
+                <td class="last">Next middleware closure.</td>
+                <td><small>from&nbsp;<a href="../../../../kanso/framework/mvc/controller/Controller.html#property_nextMiddleware"><abbr title="kanso\framework\mvc\controller\Controller">Controller</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_model">
+                                        protected                                        mixed
+                </td>
+                <td>$model</td>
+                <td class="last">Model.</td>
+                <td><small>from&nbsp;<a href="../../../../kanso/framework/mvc/controller/Controller.html#property_model"><abbr title="kanso\framework\mvc\controller\Controller">Controller</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_requestName">
+                                        protected                                        string
+                </td>
+                <td>$requestName</td>
+                <td class="last">The name of the request.</td>
+                <td><small>from&nbsp;<a href="../../../../kanso/cms/admin/controllers/BaseController.html#property_requestName"><abbr title="kanso\cms\admin\controllers\BaseController">BaseController</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_viewVars">
+                                        protected                                        array
+                </td>
+                <td>$viewVars</td>
+                <td class="last">Variables to be passed to the view.</td>
+                <td><small>from&nbsp;<a href="../../../../kanso/cms/admin/controllers/BaseController.html#property_viewVars"><abbr title="kanso\cms\admin\controllers\BaseController">BaseController</abbr></a></small></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    <a href="../../../../kanso/framework/ioc/Container.html"><abbr title="kanso\framework\ioc\Container">Container</abbr></a>
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_container">container</a>()
+        
+                                            <p>Sets and or gets the container.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/ioc/ContainerAwareTrait.html#method_container"><abbr title="kanso\framework\ioc\ContainerAwareTrait">ContainerAwareTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___get">__get</a>(string $key)
+        
+                                            <p>Resolves item from the container using overloading.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/ioc/ContainerAwareTrait.html#method___get"><abbr title="kanso\framework\ioc\ContainerAwareTrait">ContainerAwareTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    mixed
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_nextMiddleware">nextMiddleware</a>()
+        
+                                            <p>Loads the next middleware layer.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/mvc/controller/ControllerHelperTrait.html#method_nextMiddleware"><abbr title="kanso\framework\mvc\controller\ControllerHelperTrait">ControllerHelperTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_fileResponse">fileResponse</a>(string $file, array $data = [], string $format = &#039;text/html&#039;, string $encoding = &#039;utf-8&#039;)
+        
+                                            <p>Sets a file content response.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/mvc/controller/ControllerHelperTrait.html#method_fileResponse"><abbr title="kanso\framework\mvc\controller\ControllerHelperTrait">ControllerHelperTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_jsonResponse">jsonResponse</a>(array $data)
+        
+                                            <p>Sets a JSON content response.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/mvc/controller/ControllerHelperTrait.html#method_jsonResponse"><abbr title="kanso\framework\mvc\controller\ControllerHelperTrait">ControllerHelperTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_redirectResponse">redirectResponse</a>(string $location)
+        
+                                            <p>Sends a temporary redirect response immediately.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/mvc/controller/ControllerHelperTrait.html#method_redirectResponse"><abbr title="kanso\framework\mvc\controller\ControllerHelperTrait">ControllerHelperTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_notFoundResponse">notFoundResponse</a>()
+        
+                                            <p>Sends a 404 response immediately.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/mvc/controller/ControllerHelperTrait.html#method_notFoundResponse"><abbr title="kanso\framework\mvc\controller\ControllerHelperTrait">ControllerHelperTrait</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(<a href="../../../../kanso/framework/http/request/Request.html"><abbr title="kanso\framework\http\request\Request">Request</abbr></a> $request, <a href="../../../../kanso/framework/http/response/Response.html"><abbr title="kanso\framework\http\response\Response">Response</abbr></a> $response, <a target="_blank" href="http://php.net/Closure">Closure</a> $next, string $modelClass)
+        
+                                            <p>Constructor.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/mvc/controller/Controller.html#method___construct"><abbr title="kanso\framework\mvc\controller\Controller">Controller</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_init">init</a>(string $name)
+        
+                                            <p>Initialize the admin panel.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/cms/admin/controllers/BaseController.html#method_init"><abbr title="kanso\cms\admin\controllers\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isLoggedIn">isLoggedIn</a>()
+        
+                                            <p>Check if the client is logged in.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/cms/admin/controllers/BaseController.html#method_isLoggedIn"><abbr title="kanso\cms\admin\controllers\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_dispatch">dispatch</a>()
+        
+                                            <p>Dispatch the request.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/cms/admin/controllers/BaseController.html#method_dispatch"><abbr title="kanso\cms\admin\controllers\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_render">render</a>()
+        
+                                            <p>Render the admin panel.</p>                </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/cms/admin/controllers/BaseController.html#method_render"><abbr title="kanso\cms\admin\controllers\BaseController">BaseController</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_posts">posts</a>()
+        
+                                            <p>Dispatch posts request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_pages">pages</a>()
+        
+                                            <p>Dispatch pages request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_tags">tags</a>()
+        
+                                            <p>Dispatch tags request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_categories">categories</a>()
+        
+                                            <p>Dispatch categories request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_comments">comments</a>()
+        
+                                            <p>Dispatch comments request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_commentUsers">commentUsers</a>()
+        
+                                            <p>Dispatch commentUsers request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_mediaLibrary">mediaLibrary</a>()
+        
+                                            <p>Dispatch mediaLibrary request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_writer">writer</a>()
+        
+                                            <p>Dispatch writer request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_settings">settings</a>()
+        
+                                            <p>Dispatch settings request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_settingsAccount">settingsAccount</a>()
+        
+                                            <p>Dispatch settingsAccount request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_settingsAuthor">settingsAuthor</a>()
+        
+                                            <p>Dispatch settingsAuthor request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_settingsKanso">settingsKanso</a>()
+        
+                                            <p>Dispatch settingsKanso request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_settingsAccess">settingsAccess</a>()
+        
+                                            <p>Dispatch settingsAccess request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_settingsUsers">settingsUsers</a>()
+        
+                                            <p>Dispatch settingsUsers request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_settingsErrors">settingsErrors</a>()
+        
+                                            <p>Dispatch settingsErrors request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_settingsTools">settingsTools</a>()
+        
+                                            <p>Dispatch settingsTools request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_settingsAnalytics">settingsAnalytics</a>()
+        
+                                            <p>Dispatch settingsAnalytics request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_errorLogs">errorLogs</a>()
+        
+                                            <p>Dispatch errorLogs request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_emailLogs">emailLogs</a>()
+        
+                                            <p>Dispatch emailLogs request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_emailPreview">emailPreview</a>()
+        
+                                            <p>Dispatch emailPreview request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_invoice">invoice</a>()
+        
+                                            <p>Dispatch custom page.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_leads">leads</a>()
+        
+                                            <p>Dispatch leads request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_lead">lead</a>()
+        
+                                            <p>Dispatch lead request.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blankPage">blankPage</a>()
+        
+                                            <p>Dispatch custom page.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_customPostType">customPostType</a>()
+        
+                                            <p>Dispatch custom post-type.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_container">
+        <div class="location">in <a href="../../../../kanso/framework/ioc/ContainerAwareTrait.html#method_container"><abbr title="kanso\framework\ioc\ContainerAwareTrait">ContainerAwareTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/framework/ioc/ContainerAwareTrait.php#L30">line 30</a></div>
+        <code>                    <a href="../../../../kanso/framework/ioc/Container.html"><abbr title="kanso\framework\ioc\Container">Container</abbr></a>
+    <strong>container</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets and or gets the container.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td><a href="../../../../kanso/framework/ioc/Container.html"><abbr title="kanso\framework\ioc\Container">Container</abbr></a></td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___get">
+        <div class="location">in <a href="../../../../kanso/framework/ioc/ContainerAwareTrait.html#method___get"><abbr title="kanso\framework\ioc\ContainerAwareTrait">ContainerAwareTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/framework/ioc/ContainerAwareTrait.php#L47">line 47</a></div>
+        <code>                    mixed
+    <strong>__get</strong>(string $key)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Resolves item from the container using overloading.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$key</td>
+                <td>Key</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_nextMiddleware">
+        <div class="location">in <a href="../../../../kanso/framework/mvc/controller/ControllerHelperTrait.html#method_nextMiddleware"><abbr title="kanso\framework\mvc\controller\ControllerHelperTrait">ControllerHelperTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/framework/mvc/controller/ControllerHelperTrait.php#L27">line 27</a></div>
+        <code>            protected        mixed
+    <strong>nextMiddleware</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Loads the next middleware layer.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>mixed</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_fileResponse">
+        <div class="location">in <a href="../../../../kanso/framework/mvc/controller/ControllerHelperTrait.html#method_fileResponse"><abbr title="kanso\framework\mvc\controller\ControllerHelperTrait">ControllerHelperTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/framework/mvc/controller/ControllerHelperTrait.php#L43">line 43</a></div>
+        <code>            protected        
+    <strong>fileResponse</strong>(string $file, array $data = [], string $format = &#039;text/html&#039;, string $encoding = &#039;utf-8&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets a file content response.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$file</td>
+                <td>Absolute path to file</td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td>Data to send to view (optional) (default [])</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$format</td>
+                <td>Format to send the response in (optional) (default 'text/html')</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$encoding</td>
+                <td>Encoding for response (optional) (default 'utf-8')</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_jsonResponse">
+        <div class="location">in <a href="../../../../kanso/framework/mvc/controller/ControllerHelperTrait.html#method_jsonResponse"><abbr title="kanso\framework\mvc\controller\ControllerHelperTrait">ControllerHelperTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/framework/mvc/controller/ControllerHelperTrait.php#L58">line 58</a></div>
+        <code>            protected        
+    <strong>jsonResponse</strong>(array $data)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sets a JSON content response.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$data</td>
+                <td>Data to send as json</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_redirectResponse">
+        <div class="location">in <a href="../../../../kanso/framework/mvc/controller/ControllerHelperTrait.html#method_redirectResponse"><abbr title="kanso\framework\mvc\controller\ControllerHelperTrait">ControllerHelperTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/framework/mvc/controller/ControllerHelperTrait.php#L71">line 71</a></div>
+        <code>            protected        
+    <strong>redirectResponse</strong>(string $location)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sends a temporary redirect response immediately.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$location</td>
+                <td>Relative location to redirect to</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_notFoundResponse">
+        <div class="location">in <a href="../../../../kanso/framework/mvc/controller/ControllerHelperTrait.html#method_notFoundResponse"><abbr title="kanso\framework\mvc\controller\ControllerHelperTrait">ControllerHelperTrait</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/framework/mvc/controller/ControllerHelperTrait.php#L81">line 81</a></div>
+        <code>            protected        
+    <strong>notFoundResponse</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Sends a 404 response immediately.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">in <a href="../../../../kanso/framework/mvc/controller/Controller.html#method___construct"><abbr title="kanso\framework\mvc\controller\Controller">Controller</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/framework/mvc/controller/Controller.php#L47">line 47</a></div>
+        <code>                    
+    <strong>__construct</strong>(<a href="../../../../kanso/framework/http/request/Request.html"><abbr title="kanso\framework\http\request\Request">Request</abbr></a> $request, <a href="../../../../kanso/framework/http/response/Response.html"><abbr title="kanso\framework\http\response\Response">Response</abbr></a> $response, <a target="_blank" href="http://php.net/Closure">Closure</a> $next, string $modelClass)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../../kanso/framework/http/request/Request.html"><abbr title="kanso\framework\http\request\Request">Request</abbr></a></td>
+                <td>$request</td>
+                <td>Request instance</td>
+            </tr>
+                    <tr>
+                <td><a href="../../../../kanso/framework/http/response/Response.html"><abbr title="kanso\framework\http\response\Response">Response</abbr></a></td>
+                <td>$response</td>
+                <td>Response instance</td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$next</td>
+                <td>Next middleware closure</td>
+            </tr>
+                    <tr>
+                <td>string</td>
+                <td>$modelClass</td>
+                <td>Full namespaced class name of the model</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_init">
+        <div class="location">in <a href="../../../../kanso/cms/admin/controllers/BaseController.html#method_init"><abbr title="kanso\cms\admin\controllers\BaseController">BaseController</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/cms/admin/controllers/BaseController.php#L39">line 39</a></div>
+        <code>            protected        
+    <strong>init</strong>(string $name)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Initialize the admin panel.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$name</td>
+                <td>Identifying name of the requested page</td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isLoggedIn">
+        <div class="location">in <a href="../../../../kanso/cms/admin/controllers/BaseController.html#method_isLoggedIn"><abbr title="kanso\cms\admin\controllers\BaseController">BaseController</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/cms/admin/controllers/BaseController.php#L60">line 60</a></div>
+        <code>            protected        bool
+    <strong>isLoggedIn</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Check if the client is logged in.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_dispatch">
+        <div class="location">in <a href="../../../../kanso/cms/admin/controllers/BaseController.html#method_dispatch"><abbr title="kanso\cms\admin\controllers\BaseController">BaseController</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/cms/admin/controllers/BaseController.php#L70">line 70</a></div>
+        <code>            protected        
+    <strong>dispatch</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Dispatch the request.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_render">
+        <div class="location">in <a href="../../../../kanso/cms/admin/controllers/BaseController.html#method_render"><abbr title="kanso\cms\admin\controllers\BaseController">BaseController</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/cms/admin/controllers/BaseController.php#L146">line 146</a></div>
+        <code>            protected        
+    <strong>render</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Render the admin panel.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_posts">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/cms/admin/controllers/Dashboard.php#L22">line 22</a></div>
+        <code>                    
+    <strong>posts</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Dispatch posts request.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_pages">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/cms/admin/controllers/Dashboard.php#L36">line 36</a></div>
+        <code>                    
+    <strong>pages</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Dispatch pages request.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_tags">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/cms/admin/controllers/Dashboard.php#L50">line 50</a></div>
+        <code>                    
+    <strong>tags</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Dispatch tags request.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_categories">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/cms/admin/controllers/Dashboard.php#L62">line 62</a></div>
+        <code>                    
+    <strong>categories</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Dispatch categories request.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_comments">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/cms/admin/controllers/Dashboard.php#L74">line 74</a></div>
+        <code>                    
+    <strong>comments</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Dispatch comments request.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_commentUsers">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/cms/admin/controllers/Dashboard.php#L86">line 86</a></div>
+        <code>                    
+    <strong>commentUsers</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Dispatch commentUsers request.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_mediaLibrary">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/cms/admin/controllers/Dashboard.php#L98">line 98</a></div>
+        <code>                    
+    <strong>mediaLibrary</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Dispatch mediaLibrary request.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_writer">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/cms/admin/controllers/Dashboard.php#L110">line 110</a></div>
+        <code>                    
+    <strong>writer</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Dispatch writer request.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_settings">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/cms/admin/controllers/Dashboard.php#L122">line 122</a></div>
+        <code>                    
+    <strong>settings</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Dispatch settings request.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_settingsAccount">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/cms/admin/controllers/Dashboard.php#L134">line 134</a></div>
+        <code>                    
+    <strong>settingsAccount</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Dispatch settingsAccount request.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_settingsAuthor">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/cms/admin/controllers/Dashboard.php#L146">line 146</a></div>
+        <code>                    
+    <strong>settingsAuthor</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Dispatch settingsAuthor request.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_settingsKanso">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/cms/admin/controllers/Dashboard.php#L158">line 158</a></div>
+        <code>                    
+    <strong>settingsKanso</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Dispatch settingsKanso request.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_settingsAccess">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/cms/admin/controllers/Dashboard.php#L170">line 170</a></div>
+        <code>                    
+    <strong>settingsAccess</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Dispatch settingsAccess request.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_settingsUsers">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/cms/admin/controllers/Dashboard.php#L182">line 182</a></div>
+        <code>                    
+    <strong>settingsUsers</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Dispatch settingsUsers request.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_settingsErrors">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/cms/admin/controllers/Dashboard.php#L194">line 194</a></div>
+        <code>                    
+    <strong>settingsErrors</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Dispatch settingsErrors request.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_settingsTools">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/cms/admin/controllers/Dashboard.php#L206">line 206</a></div>
+        <code>                    
+    <strong>settingsTools</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Dispatch settingsTools request.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_settingsAnalytics">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/cms/admin/controllers/Dashboard.php#L218">line 218</a></div>
+        <code>                    
+    <strong>settingsAnalytics</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Dispatch settingsAnalytics request.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_errorLogs">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/cms/admin/controllers/Dashboard.php#L230">line 230</a></div>
+        <code>                    
+    <strong>errorLogs</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Dispatch errorLogs request.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_emailLogs">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/cms/admin/controllers/Dashboard.php#L242">line 242</a></div>
+        <code>                    
+    <strong>emailLogs</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Dispatch emailLogs request.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_emailPreview">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/cms/admin/controllers/Dashboard.php#L254">line 254</a></div>
+        <code>                    
+    <strong>emailPreview</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Dispatch emailPreview request.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_invoice">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/cms/admin/controllers/Dashboard.php#L266">line 266</a></div>
+        <code>                    
+    <strong>invoice</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Dispatch custom page.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_leads">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/cms/admin/controllers/Dashboard.php#L278">line 278</a></div>
+        <code>                    
+    <strong>leads</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Dispatch leads request.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_lead">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/cms/admin/controllers/Dashboard.php#L290">line 290</a></div>
+        <code>                    
+    <strong>lead</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Dispatch lead request.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blankPage">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/cms/admin/controllers/Dashboard.php#L302">line 302</a></div>
+        <code>                    
+    <strong>blankPage</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Dispatch custom page.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_customPostType">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/5.2.0/kanso/cms/admin/controllers/Dashboard.php#L314">line 314</a></div>
+        <code>                    
+    <strong>customPostType</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Dispatch custom post-type.</p>                                                </div>
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

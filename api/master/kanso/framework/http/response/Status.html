@@ -25,6 +25,14 @@
                 <div id="control-panel">
                     <form action="#" method="GET">
                 <select id="version-switcher" name="version">
+                                            <option value="../../../../../2.0.0/index.html" data-version="2.0.0">2.0.0</option>
+                                            <option value="../../../../../3.0.0/index.html" data-version="3.0.0">3.0.0</option>
+                                            <option value="../../../../../4.0.0/index.html" data-version="4.0.0">4.0.0</option>
+                                            <option value="../../../../../4.1.0/index.html" data-version="4.1.0">4.1.0</option>
+                                            <option value="../../../../../4.2.0/index.html" data-version="4.2.0">4.2.0</option>
+                                            <option value="../../../../../4.3.0/index.html" data-version="4.3.0">4.3.0</option>
+                                            <option value="../../../../../4.4.0/index.html" data-version="4.4.0">4.4.0</option>
+                                            <option value="../../../../../5.0.0/index.html" data-version="5.0.0">5.0.0</option>
                                             <option value="../../../../../5.1.0/index.html" data-version="5.1.0">5.1.0</option>
                                             <option value="../../../../../master/index.html" data-version="master">master branch</option>
                                     </select>
@@ -157,6 +165,16 @@
                     <a href="#method_message">message</a>()
         
                                             <p>Get the message for the current code.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isNotModified">isNotModified</a>()
+        
+                                            <p>Is the response not modified.</p>                </div>
                 <div class="col-md-2"></div>
             </div>
                     <div class="row">
@@ -378,8 +396,38 @@
 
             </div>
                     <div class="method-item">
-                    <h3 id="method_isEmpty">
+                    <h3 id="method_isNotModified">
         <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Status.php#L177">line 177</a></div>
+        <code>                    bool
+    <strong>isNotModified</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Is the response not modified.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isEmpty">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Status.php#L188">line 188</a></div>
         <code>                    bool
     <strong>isEmpty</strong>()
         </code>
@@ -409,7 +457,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isInformational">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Status.php#L188">line 188</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Status.php#L199">line 199</a></div>
         <code>                    bool
     <strong>isInformational</strong>()
         </code>
@@ -439,7 +487,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isOk">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Status.php#L199">line 199</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Status.php#L210">line 210</a></div>
         <code>                    bool
     <strong>isOk</strong>()
         </code>
@@ -469,7 +517,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isSuccessful">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Status.php#L210">line 210</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Status.php#L221">line 221</a></div>
         <code>                    bool
     <strong>isSuccessful</strong>()
         </code>
@@ -499,7 +547,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isRedirect">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Status.php#L221">line 221</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Status.php#L232">line 232</a></div>
         <code>                    bool
     <strong>isRedirect</strong>()
         </code>
@@ -529,7 +577,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isForbidden">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Status.php#L232">line 232</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Status.php#L243">line 243</a></div>
         <code>                    bool
     <strong>isForbidden</strong>()
         </code>
@@ -559,7 +607,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isNotFound">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Status.php#L243">line 243</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Status.php#L254">line 254</a></div>
         <code>                    bool
     <strong>isNotFound</strong>()
         </code>
@@ -589,7 +637,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isClientError">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Status.php#L254">line 254</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Status.php#L265">line 265</a></div>
         <code>                    bool
     <strong>isClientError</strong>()
         </code>
@@ -619,7 +667,7 @@
             </div>
                     <div class="method-item">
                     <h3 id="method_isServerError">
-        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Status.php#L265">line 265</a></div>
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/master/kanso/framework/http/response/Status.php#L276">line 276</a></div>
         <code>                    bool
     <strong>isServerError</strong>()
         </code>
