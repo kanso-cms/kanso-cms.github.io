@@ -9,6 +9,7 @@ select{-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;appearan
 	  	<option value="5.0.0">5.0.0</option>
 	  	<option value="5.1.0">5.1.0</option>
 	  	<option value="5.2.0" selected>5.2.0</option>
+	  	<option value="6.0.0">6.0.0</option>
 	</select>
 </div>
 

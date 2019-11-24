@@ -1,0 +1,2987 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>kanso\framework\utility\markdown\ParsedownExtra | Kanso CMS API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../../css/sami.css">
+        <script src="../../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../../js/bootstrap.min.js"></script>
+        <script src="../../../../js/typeahead.min.js"></script>
+        <script src="../../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:kanso_framework_utility_markdown_ParsedownExtra" data-root-path="../../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../../6.0.0/index.html" data-version="6.0.0">6.0.0</option>
+                                            <option value="../../../../../master/index.html" data-version="master">master branch</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../../index.html">Kanso CMS API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../../traits.html">Traits</a></li>
+                    <li><a href="../../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../../kanso.html">kanso</a></li><li class="backslash">\</li><li><a href="../../../../kanso/framework.html">framework</a></li><li class="backslash">\</li><li><a href="../../../../kanso/framework/utility.html">utility</a></li><li class="backslash">\</li><li><a href="../../../../kanso/framework/utility/markdown.html">markdown</a></li><li class="backslash">\</li><li>ParsedownExtra</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            ParsedownExtra
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>ParsedownExtra</strong>        extends <a href="../../../../kanso/framework/utility/markdown/Parsedown.html"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a>        (<a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/ParsedownExtra.php">View source</a>)
+</p>
+
+        
+    
+
+    
+    
+            <h2>Constants</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td>version</td>
+                <td class="last">
+                    <p><em></em></p>
+                    <p></p>
+                </td>
+            </tr>
+            </table>
+
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_breaksEnabled">
+                                        protected                                        
+                </td>
+                <td>$breaksEnabled</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#property_breaksEnabled"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_markupEscaped">
+                                        protected                                        
+                </td>
+                <td>$markupEscaped</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#property_markupEscaped"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_urlsLinked">
+                                        protected                                        
+                </td>
+                <td>$urlsLinked</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#property_urlsLinked"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_safeMode">
+                                        protected                                        
+                </td>
+                <td>$safeMode</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#property_safeMode"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_safeLinksWhitelist">
+                                        protected                                        
+                </td>
+                <td>$safeLinksWhitelist</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#property_safeLinksWhitelist"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_BlockTypes">
+                                        protected                                        
+                </td>
+                <td>$BlockTypes</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#property_BlockTypes"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_unmarkedBlockTypes">
+                                        protected                                        
+                </td>
+                <td>$unmarkedBlockTypes</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#property_unmarkedBlockTypes"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_InlineTypes">
+                                        protected                                        
+                </td>
+                <td>$InlineTypes</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#property_InlineTypes"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_inlineMarkerList">
+                                        protected                                        
+                </td>
+                <td>$inlineMarkerList</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#property_inlineMarkerList"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_DefinitionData">
+                                        protected                                        
+                </td>
+                <td>$DefinitionData</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#property_DefinitionData"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_specialCharacters">
+                                        protected                                        
+                </td>
+                <td>$specialCharacters</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#property_specialCharacters"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_StrongRegex">
+                                        protected                                        
+                </td>
+                <td>$StrongRegex</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#property_StrongRegex"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_EmRegex">
+                                        protected                                        
+                </td>
+                <td>$EmRegex</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#property_EmRegex"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_regexHtmlAttribute">
+                                        protected                                        
+                </td>
+                <td>$regexHtmlAttribute</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#property_regexHtmlAttribute"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_voidElements">
+                                        protected                                        
+                </td>
+                <td>$voidElements</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#property_voidElements"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_textLevelElements">
+                                        protected                                        
+                </td>
+                <td>$textLevelElements</td>
+                <td class="last"></td>
+                <td><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#property_textLevelElements"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_regexAttribute">
+                                        protected                                        
+                </td>
+                <td>$regexAttribute</td>
+                <td class="last"></td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_text">text</a>($text)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setBreaksEnabled">setBreaksEnabled</a>($breaksEnabled)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_setBreaksEnabled"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setMarkupEscaped">setMarkupEscaped</a>($markupEscaped)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_setMarkupEscaped"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setUrlsLinked">setUrlsLinked</a>($urlsLinked)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_setUrlsLinked"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setSafeMode">setSafeMode</a>($safeMode)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_setSafeMode"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_lines">lines</a>(array $lines)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_lines"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isBlockContinuable">isBlockContinuable</a>($Type)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_isBlockContinuable"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_isBlockCompletable">isBlockCompletable</a>($Type)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_isBlockCompletable"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blockCode">blockCode</a>($Line, $Block = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockCode"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blockCodeContinue">blockCodeContinue</a>($Line, $Block)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockCodeContinue"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blockCodeComplete">blockCodeComplete</a>($Block)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockCodeComplete"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blockComment">blockComment</a>($Line)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockComment"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blockCommentContinue">blockCommentContinue</a>($Line, array $Block)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockCommentContinue"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blockFencedCode">blockFencedCode</a>($Line)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockFencedCode"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blockFencedCodeContinue">blockFencedCodeContinue</a>($Line, $Block)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockFencedCodeContinue"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blockFencedCodeComplete">blockFencedCodeComplete</a>($Block)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockFencedCodeComplete"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blockHeader">blockHeader</a>($Line)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blockList">blockList</a>($Line)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockList"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blockListContinue">blockListContinue</a>($Line, array $Block)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockListContinue"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blockListComplete">blockListComplete</a>(array $Block)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockListComplete"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blockQuote">blockQuote</a>($Line)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockQuote"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blockQuoteContinue">blockQuoteContinue</a>($Line, array $Block)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockQuoteContinue"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blockRule">blockRule</a>($Line)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockRule"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blockSetextHeader">blockSetextHeader</a>($Line, array $Block = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blockMarkup">blockMarkup</a>($Line)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockMarkup"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blockMarkupContinue">blockMarkupContinue</a>($Line, array $Block)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockMarkupContinue"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blockReference">blockReference</a>($Line)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockReference"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blockTable">blockTable</a>($Line, array $Block = null)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockTable"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blockTableContinue">blockTableContinue</a>($Line, array $Block)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockTableContinue"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_paragraph">paragraph</a>($Line)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_paragraph"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_line">line</a>($text, $nonNestables = [])
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_line"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_inlineCode">inlineCode</a>($Excerpt)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_inlineCode"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_inlineEmailTag">inlineEmailTag</a>($Excerpt)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_inlineEmailTag"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_inlineEmphasis">inlineEmphasis</a>($Excerpt)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_inlineEmphasis"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_inlineEscapeSequence">inlineEscapeSequence</a>($Excerpt)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_inlineEscapeSequence"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_inlineImage">inlineImage</a>($Excerpt)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_inlineImage"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_inlineLink">inlineLink</a>($Excerpt)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_inlineMarkup">inlineMarkup</a>($Excerpt)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_inlineMarkup"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_inlineSpecialCharacter">inlineSpecialCharacter</a>($Excerpt)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_inlineSpecialCharacter"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_inlineStrikethrough">inlineStrikethrough</a>($Excerpt)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_inlineStrikethrough"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_inlineUrl">inlineUrl</a>($Excerpt)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_inlineUrl"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_inlineUrlTag">inlineUrlTag</a>($Excerpt)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_inlineUrlTag"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_unmarkedText">unmarkedText</a>($text)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_element">element</a>(array $Element)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_element"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_elements">elements</a>(array $Elements)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_elements"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_li">li</a>($lines)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_li"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parse">parse</a>($text)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_parse"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sanitiseElement">sanitiseElement</a>(array $Element)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_sanitiseElement"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_filterUnsafeUrlInAttribute">filterUnsafeUrlInAttribute</a>(array $Element, $attribute)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_filterUnsafeUrlInAttribute"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_escape">escape</a>($text, $allowQuotes = false)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_escape"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_striAtStart">striAtStart</a>($string, $needle)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_striAtStart"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    static&nbsp;
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_instance">instance</a>($name = &#039;default&#039;)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"><small>from&nbsp;<a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_instance"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a></small></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blockAbbreviation">blockAbbreviation</a>($Line)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blockFootnote">blockFootnote</a>($Line)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blockFootnoteContinue">blockFootnoteContinue</a>($Line, $Block)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blockFootnoteComplete">blockFootnoteComplete</a>($Block)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blockDefinitionList">blockDefinitionList</a>($Line, $Block)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blockDefinitionListContinue">blockDefinitionListContinue</a>($Line, array $Block)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_blockMarkupComplete">blockMarkupComplete</a>($Block)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_inlineFootnoteMarker">inlineFootnoteMarker</a>($Excerpt)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_addDdElement">addDdElement</a>(array $Line, array $Block)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_buildFootnoteElement">buildFootnoteElement</a>()
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_parseAttributeData">parseAttributeData</a>($attributeString)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_processTag">processTag</a>($elementMarkup)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_sortFootnotes">sortFootnotes</a>($A, $B)
+        
+                                            <p class="no-description">No description</p>
+                                    </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method_text">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/ParsedownExtra.php#L50">line 50</a></div>
+        <code>                    
+    <strong>text</strong>($text)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$text</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setBreaksEnabled">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_setBreaksEnabled"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L53">line 53</a></div>
+        <code>                    
+    <strong>setBreaksEnabled</strong>($breaksEnabled)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$breaksEnabled</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setMarkupEscaped">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_setMarkupEscaped"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L62">line 62</a></div>
+        <code>                    
+    <strong>setMarkupEscaped</strong>($markupEscaped)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$markupEscaped</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setUrlsLinked">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_setUrlsLinked"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L71">line 71</a></div>
+        <code>                    
+    <strong>setUrlsLinked</strong>($urlsLinked)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$urlsLinked</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setSafeMode">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_setSafeMode"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L80">line 80</a></div>
+        <code>                    
+    <strong>setSafeMode</strong>($safeMode)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$safeMode</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_lines">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_lines"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L146">line 146</a></div>
+        <code>            protected        
+    <strong>lines</strong>(array $lines)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$lines</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isBlockContinuable">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_isBlockContinuable"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L309">line 309</a></div>
+        <code>            protected        
+    <strong>isBlockContinuable</strong>($Type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_isBlockCompletable">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_isBlockCompletable"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L314">line 314</a></div>
+        <code>            protected        
+    <strong>isBlockCompletable</strong>($Type)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Type</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blockCode">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockCode"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L322">line 322</a></div>
+        <code>            protected        
+    <strong>blockCode</strong>($Line, $Block = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Line</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$Block</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blockCodeContinue">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockCodeContinue"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L348">line 348</a></div>
+        <code>            protected        
+    <strong>blockCodeContinue</strong>($Line, $Block)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Line</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$Block</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blockCodeComplete">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockCodeComplete"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L369">line 369</a></div>
+        <code>            protected        
+    <strong>blockCodeComplete</strong>($Block)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Block</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blockComment">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockComment"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L381">line 381</a></div>
+        <code>            protected        
+    <strong>blockComment</strong>($Line)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Line</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blockCommentContinue">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockCommentContinue"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L403">line 403</a></div>
+        <code>            protected        
+    <strong>blockCommentContinue</strong>($Line, array $Block)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Line</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$Block</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blockFencedCode">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockFencedCode"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L423">line 423</a></div>
+        <code>            protected        
+    <strong>blockFencedCode</strong>($Line)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Line</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blockFencedCodeContinue">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockFencedCodeContinue"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L454">line 454</a></div>
+        <code>            protected        
+    <strong>blockFencedCodeContinue</strong>($Line, $Block)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Line</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$Block</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blockFencedCodeComplete">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockFencedCodeComplete"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L482">line 482</a></div>
+        <code>            protected        
+    <strong>blockFencedCodeComplete</strong>($Block)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Block</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blockHeader">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/ParsedownExtra.php#L211">line 211</a></div>
+        <code>            protected        
+    <strong>blockHeader</strong>($Line)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Line</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blockList">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockList"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L527">line 527</a></div>
+        <code>            protected        
+    <strong>blockList</strong>($Line)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Line</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blockListContinue">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockListContinue"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L566">line 566</a></div>
+        <code>            protected        
+    <strong>blockListContinue</strong>($Line, array $Block)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Line</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$Block</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blockListComplete">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockListComplete"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L624">line 624</a></div>
+        <code>            protected        
+    <strong>blockListComplete</strong>(array $Block)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$Block</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blockQuote">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockQuote"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L643">line 643</a></div>
+        <code>            protected        
+    <strong>blockQuote</strong>($Line)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Line</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blockQuoteContinue">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockQuoteContinue"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L659">line 659</a></div>
+        <code>            protected        
+    <strong>blockQuoteContinue</strong>($Line, array $Block)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Line</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$Block</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blockRule">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockRule"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L686">line 686</a></div>
+        <code>            protected        
+    <strong>blockRule</strong>($Line)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Line</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blockSetextHeader">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/ParsedownExtra.php#L243">line 243</a></div>
+        <code>            protected        
+    <strong>blockSetextHeader</strong>($Line, array $Block = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Line</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$Block</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blockMarkup">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockMarkup"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L721">line 721</a></div>
+        <code>            protected        
+    <strong>blockMarkup</strong>($Line)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Line</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blockMarkupContinue">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockMarkupContinue"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L773">line 773</a></div>
+        <code>            protected        
+    <strong>blockMarkupContinue</strong>($Line, array $Block)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Line</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$Block</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blockReference">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockReference"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L812">line 812</a></div>
+        <code>            protected        
+    <strong>blockReference</strong>($Line)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Line</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blockTable">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockTable"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L841">line 841</a></div>
+        <code>            protected        
+    <strong>blockTable</strong>($Line, array $Block = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Line</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$Block</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blockTableContinue">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_blockTableContinue"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L948">line 948</a></div>
+        <code>            protected        
+    <strong>blockTableContinue</strong>($Line, array $Block)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Line</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$Block</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_paragraph">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_paragraph"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L1002">line 1002</a></div>
+        <code>            protected        
+    <strong>paragraph</strong>($Line)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Line</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_line">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_line"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L1042">line 1042</a></div>
+        <code>                    
+    <strong>line</strong>($text, $nonNestables = [])
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$text</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$nonNestables</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_inlineCode">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_inlineCode"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L1126">line 1126</a></div>
+        <code>            protected        
+    <strong>inlineCode</strong>($Excerpt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Excerpt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_inlineEmailTag">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_inlineEmailTag"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L1145">line 1145</a></div>
+        <code>            protected        
+    <strong>inlineEmailTag</strong>($Excerpt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Excerpt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_inlineEmphasis">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_inlineEmphasis"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L1169">line 1169</a></div>
+        <code>            protected        
+    <strong>inlineEmphasis</strong>($Excerpt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Excerpt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_inlineEscapeSequence">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_inlineEscapeSequence"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L1201">line 1201</a></div>
+        <code>            protected        
+    <strong>inlineEscapeSequence</strong>($Excerpt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Excerpt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_inlineImage">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_inlineImage"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L1212">line 1212</a></div>
+        <code>            protected        
+    <strong>inlineImage</strong>($Excerpt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Excerpt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_inlineLink">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/ParsedownExtra.php#L307">line 307</a></div>
+        <code>            protected        
+    <strong>inlineLink</strong>($Excerpt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Excerpt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_inlineMarkup">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_inlineMarkup"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L1318">line 1318</a></div>
+        <code>            protected        
+    <strong>inlineMarkup</strong>($Excerpt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Excerpt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_inlineSpecialCharacter">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_inlineSpecialCharacter"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L1350">line 1350</a></div>
+        <code>            protected        
+    <strong>inlineSpecialCharacter</strong>($Excerpt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Excerpt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_inlineStrikethrough">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_inlineStrikethrough"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L1371">line 1371</a></div>
+        <code>            protected        
+    <strong>inlineStrikethrough</strong>($Excerpt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Excerpt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_inlineUrl">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_inlineUrl"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L1391">line 1391</a></div>
+        <code>            protected        
+    <strong>inlineUrl</strong>($Excerpt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Excerpt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_inlineUrlTag">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_inlineUrlTag"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L1418">line 1418</a></div>
+        <code>            protected        
+    <strong>inlineUrlTag</strong>($Excerpt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Excerpt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_unmarkedText">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/ParsedownExtra.php#L327">line 327</a></div>
+        <code>            protected        
+    <strong>unmarkedText</strong>($text)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$text</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_element">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_element"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L1458">line 1458</a></div>
+        <code>            protected        
+    <strong>element</strong>(array $Element)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$Element</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_elements">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_elements"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L1508">line 1508</a></div>
+        <code>            protected        
+    <strong>elements</strong>(array $Elements)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$Elements</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_li">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_li"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L1524">line 1524</a></div>
+        <code>            protected        
+    <strong>li</strong>($lines)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$lines</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parse">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_parse"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L1547">line 1547</a></div>
+        <code>                    
+    <strong>parse</strong>($text)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$text</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sanitiseElement">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_sanitiseElement"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L1554">line 1554</a></div>
+        <code>            protected        
+    <strong>sanitiseElement</strong>(array $Element)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$Element</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_filterUnsafeUrlInAttribute">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_filterUnsafeUrlInAttribute"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L1587">line 1587</a></div>
+        <code>            protected        
+    <strong>filterUnsafeUrlInAttribute</strong>(array $Element, $attribute)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$Element</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$attribute</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_escape">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_escape"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L1606">line 1606</a></div>
+        <code>        static    protected        
+    <strong>escape</strong>($text, $allowQuotes = false)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$text</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$allowQuotes</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_striAtStart">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_striAtStart"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L1611">line 1611</a></div>
+        <code>        static    protected        
+    <strong>striAtStart</strong>($string, $needle)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$string</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$needle</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_instance">
+        <div class="location">in <a href="../../../../kanso/framework/utility/markdown/Parsedown.html#method_instance"><abbr title="kanso\framework\utility\markdown\Parsedown">Parsedown</abbr></a> at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/Parsedown.php#L1625">line 1625</a></div>
+        <code>        static            
+    <strong>instance</strong>($name = &#039;default&#039;)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$name</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/ParsedownExtra.php#L30">line 30</a></div>
+        <code>                    
+    <strong>__construct</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blockAbbreviation">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/ParsedownExtra.php#L77">line 77</a></div>
+        <code>            protected        
+    <strong>blockAbbreviation</strong>($Line)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Line</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blockFootnote">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/ParsedownExtra.php#L94">line 94</a></div>
+        <code>            protected        
+    <strong>blockFootnote</strong>($Line)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Line</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blockFootnoteContinue">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/ParsedownExtra.php#L108">line 108</a></div>
+        <code>            protected        
+    <strong>blockFootnoteContinue</strong>($Line, $Block)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Line</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$Block</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blockFootnoteComplete">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/ParsedownExtra.php#L132">line 132</a></div>
+        <code>            protected        
+    <strong>blockFootnoteComplete</strong>($Block)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Block</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blockDefinitionList">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/ParsedownExtra.php#L146">line 146</a></div>
+        <code>            protected        
+    <strong>blockDefinitionList</strong>($Line, $Block)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Line</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$Block</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blockDefinitionListContinue">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/ParsedownExtra.php#L177">line 177</a></div>
+        <code>            protected        
+    <strong>blockDefinitionListContinue</strong>($Line, array $Block)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Line</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$Block</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_blockMarkupComplete">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/ParsedownExtra.php#L230">line 230</a></div>
+        <code>            protected        
+    <strong>blockMarkupComplete</strong>($Block)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Block</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_inlineFootnoteMarker">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/ParsedownExtra.php#L266">line 266</a></div>
+        <code>            protected        
+    <strong>inlineFootnoteMarker</strong>($Excerpt)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$Excerpt</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_addDdElement">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/ParsedownExtra.php#L348">line 348</a></div>
+        <code>            protected        
+    <strong>addDdElement</strong>(array $Line, array $Block)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>array</td>
+                <td>$Line</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>array</td>
+                <td>$Block</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_buildFootnoteElement">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/ParsedownExtra.php#L373">line 373</a></div>
+        <code>            protected        
+    <strong>buildFootnoteElement</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_parseAttributeData">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/ParsedownExtra.php#L438">line 438</a></div>
+        <code>            protected        
+    <strong>parseAttributeData</strong>($attributeString)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$attributeString</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_processTag">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/ParsedownExtra.php#L466">line 466</a></div>
+        <code>            protected        
+    <strong>processTag</strong>($elementMarkup)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$elementMarkup</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_sortFootnotes">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/utility/markdown/ParsedownExtra.php#L522">line 522</a></div>
+        <code>            protected        
+    <strong>sortFootnotes</strong>($A, $B)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td></td>
+                <td>$A</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td></td>
+                <td>$B</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>

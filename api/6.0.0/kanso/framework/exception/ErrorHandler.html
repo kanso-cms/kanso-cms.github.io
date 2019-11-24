@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="index, follow, all" />
+    <title>kanso\framework\exception\ErrorHandler | Kanso CMS API</title>
+
+            <link rel="stylesheet" type="text/css" href="../../../css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/bootstrap-theme.min.css">
+        <link rel="stylesheet" type="text/css" href="../../../css/sami.css">
+        <script src="../../../js/jquery-1.11.1.min.js"></script>
+        <script src="../../../js/bootstrap.min.js"></script>
+        <script src="../../../js/typeahead.min.js"></script>
+        <script src="../../../sami.js"></script>
+        <meta name="MobileOptimized" content="width">
+        <meta name="HandheldFriendly" content="true">
+        <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1">
+    
+    
+    </head>
+
+    <body id="class" data-name="class:kanso_framework_exception_ErrorHandler" data-root-path="../../../">
+            <div id="content">
+        <div id="left-column">
+                <div id="control-panel">
+                    <form action="#" method="GET">
+                <select id="version-switcher" name="version">
+                                            <option value="../../../../6.0.0/index.html" data-version="6.0.0">6.0.0</option>
+                                            <option value="../../../../master/index.html" data-version="master">master branch</option>
+                                    </select>
+            </form>
+                <script>
+            $('option[data-version="'+window.projectVersion+'"]').prop('selected', true);
+        </script>
+        <form id="search-form" action="../../../search.html" method="GET">
+            <span class="glyphicon glyphicon-search"></span>
+            <input name="search"
+                   class="typeahead form-control"
+                   type="search"
+                   placeholder="Search">
+        </form>
+    </div>
+
+                <div id="api-tree"></div>
+
+        </div>
+        <div id="right-column">
+                <nav id="site-nav" class="navbar navbar-default" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-elements">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="../../../index.html">Kanso CMS API</a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar-elements">
+                <ul class="nav navbar-nav">
+                    <li><a href="../../../classes.html">Classes</a></li>
+                                            <li><a href="../../../namespaces.html">Namespaces</a></li>
+                                        <li><a href="../../../interfaces.html">Interfaces</a></li>
+                    <li><a href="../../../traits.html">Traits</a></li>
+                    <li><a href="../../../doc-index.html">Index</a></li>
+                    <li><a href="../../../search.html">Search</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+                        <div class="namespace-breadcrumbs">
+            <ol class="breadcrumb">
+                <li><span class="label label-default">class</span></li>
+                        <li><a href="../../../kanso.html">kanso</a></li><li class="backslash">\</li><li><a href="../../../kanso/framework.html">framework</a></li><li class="backslash">\</li><li><a href="../../../kanso/framework/exception.html">exception</a></li><li class="backslash">\</li><li>ErrorHandler</li>
+            </ol>
+        </div>
+                <div id="page-content">
+                
+    <div class="page-header">
+        <h1>
+            ErrorHandler
+                
+        </h1>
+    </div>
+
+    <p>    class
+    <strong>ErrorHandler</strong>        (<a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/exception/ErrorHandler.php">View source</a>)
+</p>
+
+        
+    
+
+            <div class="description">
+            <p>Error handler.</p>                                </div>
+    
+    
+    
+            <h2>Properties</h2>
+
+            <table class="table table-condensed">
+                    <tr>
+                <td class="type" id="property_disableShutdownHandler">
+                                        protected                                        bool
+                </td>
+                <td>$disableShutdownHandler</td>
+                <td class="last">Is the shutdown handler disabled?</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_disableLoggingFor">
+                                        protected                                        array
+                </td>
+                <td>$disableLoggingFor</td>
+                <td class="last">Exception types that shouldn't be logged.</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td class="type" id="property_handlers">
+                                        protected                                        array
+                </td>
+                <td>$handlers</td>
+                <td class="last">Exception handlers.</td>
+                <td></td>
+            </tr>
+            </table>
+
+    
+            <h2>Methods</h2>
+
+            <div class="container-fluid underlined">
+                    <div class="row">
+                <div class="col-md-2 type">
+                    
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method___construct">__construct</a>(bool $displayErrors, int $errorReporting)
+        
+                                            <p>Constructor.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_register">register</a>()
+        
+                                            <p>Registers the exception handler.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_setLogger">setLogger</a>(<a href="../../../kanso/framework/exception/ErrorLogger.html"><abbr title="kanso\framework\exception\ErrorLogger">ErrorLogger</abbr></a> $logger)
+        
+                                            <p>Set logger instance.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_disableLoggingFor">disableLoggingFor</a>(string|array $exceptionType)
+        
+                                            <p>Disables logging for an exception type.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_disableShutdownHandler">disableShutdownHandler</a>()
+        
+                                            <p>Disables the shutdown handler.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_handle">handle</a>(string $exceptionType, <a target="_blank" href="http://php.net/Closure">Closure</a> $handler)
+        
+                                            <p>Prepends an exception handler to the stack.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearHandlers">clearHandlers</a>(string $exceptionType)
+        
+                                            <p>Clears all error handlers for an exception type.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_replaceHandlers">replaceHandlers</a>(string $exceptionType, <a target="_blank" href="http://php.net/Closure">Closure</a> $handler)
+        
+                                            <p>Replaces all error handlers for an exception type with a new one.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_restore">restore</a>()
+        
+                                            <p>Restore the default error handler.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_clearOutputBuffers">clearOutputBuffers</a>()
+        
+                                            <p>Clear output buffers.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_shouldExceptionBeLogged">shouldExceptionBeLogged</a>(<a target="_blank" href="http://php.net/Throwable">Throwable</a> $exception)
+        
+                                            <p>Should the exception be logged?</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    void
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_handler">handler</a>(<a target="_blank" href="http://php.net/Throwable">Throwable</a> $exception)
+        
+                                            <p>Handles uncaught exceptions.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    int
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_error_reporting">error_reporting</a>(int $errorReporting = null)
+        
+                                            <p>Set or get the Kanso error reporting level.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+                    <div class="row">
+                <div class="col-md-2 type">
+                    bool
+                </div>
+                <div class="col-md-8 type">
+                    <a href="#method_display_errors">display_errors</a>(bool $display_errors = null)
+        
+                                            <p>Set or get the Kanso "display_errors" value.</p>                </div>
+                <div class="col-md-2"></div>
+            </div>
+            </div>
+
+
+        <h2>Details</h2>
+
+            <div id="method-details">
+                    <div class="method-item">
+                    <h3 id="method___construct">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/exception/ErrorHandler.php#L66">line 66</a></div>
+        <code>                    
+    <strong>__construct</strong>(bool $displayErrors, int $errorReporting)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Constructor.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$displayErrors</td>
+                <td></td>
+            </tr>
+                    <tr>
+                <td>int</td>
+                <td>$errorReporting</td>
+                <td></td>
+            </tr>
+            </table>
+
+            
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_register">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/exception/ErrorHandler.php#L96">line 96</a></div>
+        <code>            protected        void
+    <strong>register</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Registers the exception handler.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_setLogger">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/exception/ErrorHandler.php#L120">line 120</a></div>
+        <code>                    void
+    <strong>setLogger</strong>(<a href="../../../kanso/framework/exception/ErrorLogger.html"><abbr title="kanso\framework\exception\ErrorLogger">ErrorLogger</abbr></a> $logger)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set logger instance.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a href="../../../kanso/framework/exception/ErrorLogger.html"><abbr title="kanso\framework\exception\ErrorLogger">ErrorLogger</abbr></a></td>
+                <td>$logger</td>
+                <td>Error logger</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disableLoggingFor">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/exception/ErrorHandler.php#L130">line 130</a></div>
+        <code>                    void
+    <strong>disableLoggingFor</strong>(string|array $exceptionType)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Disables logging for an exception type.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string|array</td>
+                <td>$exceptionType</td>
+                <td>Exception type or array of exception types</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_disableShutdownHandler">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/exception/ErrorHandler.php#L138">line 138</a></div>
+        <code>                    void
+    <strong>disableShutdownHandler</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Disables the shutdown handler.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_handle">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/exception/ErrorHandler.php#L149">line 149</a></div>
+        <code>                    void
+    <strong>handle</strong>(string $exceptionType, <a target="_blank" href="http://php.net/Closure">Closure</a> $handler)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Prepends an exception handler to the stack.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$exceptionType</td>
+                <td>Exception type</td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$handler</td>
+                <td>Exception handler</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearHandlers">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/exception/ErrorHandler.php#L159">line 159</a></div>
+        <code>                    void
+    <strong>clearHandlers</strong>(string $exceptionType)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clears all error handlers for an exception type.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$exceptionType</td>
+                <td>Exception type</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_replaceHandlers">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/exception/ErrorHandler.php#L176">line 176</a></div>
+        <code>                    void
+    <strong>replaceHandlers</strong>(string $exceptionType, <a target="_blank" href="http://php.net/Closure">Closure</a> $handler)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Replaces all error handlers for an exception type with a new one.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>string</td>
+                <td>$exceptionType</td>
+                <td>Exception type</td>
+            </tr>
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Closure">Closure</a></td>
+                <td>$handler</td>
+                <td>Exception handler</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_restore">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/exception/ErrorHandler.php#L186">line 186</a></div>
+        <code>                    void
+    <strong>restore</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Restore the default error handler.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_clearOutputBuffers">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/exception/ErrorHandler.php#L200">line 200</a></div>
+        <code>            protected        void
+    <strong>clearOutputBuffers</strong>()
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Clear output buffers.</p>                                                </div>
+                <div class="tags">
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_shouldExceptionBeLogged">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/exception/ErrorHandler.php#L211">line 211</a></div>
+        <code>            protected        bool
+    <strong>shouldExceptionBeLogged</strong>(<a target="_blank" href="http://php.net/Throwable">Throwable</a> $exception)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Should the exception be logged?</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Throwable">Throwable</a></td>
+                <td>$exception</td>
+                <td>An exception object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_handler">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/exception/ErrorHandler.php#L244">line 244</a></div>
+        <code>                    void
+    <strong>handler</strong>(<a target="_blank" href="http://php.net/Throwable">Throwable</a> $exception)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Handles uncaught exceptions.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td><a target="_blank" href="http://php.net/Throwable">Throwable</a></td>
+                <td>$exception</td>
+                <td>An exception object</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>void</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_error_reporting">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/exception/ErrorHandler.php#L291">line 291</a></div>
+        <code>                    int
+    <strong>error_reporting</strong>(int $errorReporting = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set or get the Kanso error reporting level.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>int</td>
+                <td>$errorReporting</td>
+                <td>(optional) (default NULL)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>int</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+                    <div class="method-item">
+                    <h3 id="method_display_errors">
+        <div class="location">at         <a href="https://github.com/kanso-cms/cms/blob/6.0.0/kanso/framework/exception/ErrorHandler.php#L309">line 309</a></div>
+        <code>                    bool
+    <strong>display_errors</strong>(bool $display_errors = null)
+        </code>
+    </h3>
+    <div class="details">
+            
+    
+
+                    <div class="method-description">
+                                    <p>Set or get the Kanso "display_errors" value.</p>                                                </div>
+                <div class="tags">
+                            <h4>Parameters</h4>
+
+                    <table class="table table-condensed">
+                    <tr>
+                <td>bool</td>
+                <td>$display_errors</td>
+                <td>(optional) (default NULL)</td>
+            </tr>
+            </table>
+
+            
+                            <h4>Return Value</h4>
+
+                    <table class="table table-condensed">
+        <tr>
+            <td>bool</td>
+            <td></td>
+        </tr>
+    </table>
+
+            
+            
+                    </div>
+    </div>
+
+            </div>
+            </div>
+
+    
+            </div>
+                <div id="footer">
+        Generated by <a href="http://sami.sensiolabs.org/">Sami, the API Documentation Generator</a>.
+    </div>
+
+        </div>
+    </div>
+    </body>
+
+</html>
