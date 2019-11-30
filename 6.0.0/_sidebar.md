@@ -70,6 +70,9 @@ select{-webkit-appearance:none;-moz-appearance:none;-ms-appearance:none;appearan
 	- [Checkout](/ecommerce/checkout.md)
 - [Admin Panel](/admin.md)
 - [Deployment](/deployment.md)
+- Command Line
+	- [CLI](/cli/cli.md)
+	- [Commands](/cli/commands.md)
 - Learn More
     - [Analytics](/learn-more/analytics.md)
 	- [Array Helper](/learn-more/array.md)
